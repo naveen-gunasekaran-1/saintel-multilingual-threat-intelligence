@@ -1,0 +1,879 @@
+[
+  {
+    "id": "syn-0001",
+    "text": "Travelling to Chennai next week for my cousin's wedding.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Chennai",
+        "start": 14,
+        "end": 21
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial: gazetteer location, benign"
+  },
+  {
+    "id": "syn-0002",
+    "text": "The Chennai weather has been unbearable this summer.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Chennai",
+        "start": 4,
+        "end": 11
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial"
+  },
+  {
+    "id": "syn-0006",
+    "text": "My uncle retired from ISRO after thirty years of service.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "ISRO",
+        "start": 22,
+        "end": 26
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial"
+  },
+  {
+    "id": "syn-0007",
+    "text": "DRDO announced a new scholarship programme for engineering students.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "DRDO",
+        "start": 0,
+        "end": 4
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial: benign org news"
+  },
+  {
+    "id": "syn-0011",
+    "text": "Kalpakkam has a lovely beach if you avoid the weekend crowd.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Kalpakkam",
+        "start": 0,
+        "end": 9
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial: sensitive site, tourism context"
+  },
+  {
+    "id": "syn-0012",
+    "text": "Visiting the Vizag steel plant museum with the kids on Sunday.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Vizag",
+        "start": 13,
+        "end": 18
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial"
+  },
+  {
+    "id": "syn-0013",
+    "text": "சென்னையில் இன்று நல்ல மழை பெய்தது.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "சென்னை",
+        "start": 0,
+        "end": 6
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "adversarial: Tamil, weather"
+  },
+  {
+    "id": "syn-0014",
+    "text": "ஆவடி பேருந்து நிலையம் அருகில் புதிய கடை திறந்துள்ளது.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "ஆவடி",
+        "start": 0,
+        "end": 4
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "adversarial: Tamil, new shop"
+  },
+  {
+    "id": "syn-0017",
+    "text": "Chennai la oru nalla hotel recommend pannunga.",
+    "script": "romanized",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Chennai",
+        "start": 0,
+        "end": 7
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial: Tanglish, restaurant request"
+  },
+  {
+    "id": "syn-0018",
+    "text": "Avadi la rent evlo irukum theriyuma?",
+    "script": "romanized",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Avadi",
+        "start": 0,
+        "end": 5
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial: Tanglish, rent enquiry"
+  },
+  {
+    "id": "syn-0020",
+    "text": "நாளை சென்னை வருகிறேன், DRDO கண்காட்சி பார்க்க.",
+    "script": "mixed",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "சென்னை",
+        "start": 5,
+        "end": 11
+      },
+      {
+        "type": "organization",
+        "value": "DRDO",
+        "start": 23,
+        "end": 27
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "adversarial: mixed script, public exhibition"
+  },
+  {
+    "id": "syn-0021",
+    "text": "Khela hobe kal amader para te cricket match.",
+    "script": "romanized",
+    "language": "bn",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "adversarial: 'khela hobe' cricket sense; currently scores 0.701 signal"
+  },
+  {
+    "id": "syn-0022",
+    "text": "Khela hobe! Our team will destroy them in the final tomorrow.",
+    "script": "romanized",
+    "language": "bn",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "adversarial: sports trash talk uses attack vocabulary"
+  },
+  {
+    "id": "syn-0023",
+    "text": "We are going to absolutely bomb this presentation if we don't prepare.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "adversarial: 'bomb' idiomatic"
+  },
+  {
+    "id": "syn-0024",
+    "text": "That new phone launch completely killed the competition.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "adversarial: 'killed' idiomatic"
+  },
+  {
+    "id": "syn-0028",
+    "text": "Good morning everyone, have a blessed day.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "plain benign"
+  },
+  {
+    "id": "syn-0029",
+    "text": "Looking for a new laptop, any recommendations under 60k?",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "plain benign"
+  },
+  {
+    "id": "syn-0032",
+    "text": "இன்று மாலை குடும்பத்துடன் திரைப்படம் பார்க்க செல்கிறோம்.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": false,
+    "notes": "plain benign Tamil"
+  },
+  {
+    "id": "syn-0033",
+    "text": "நாளை பள்ளிக்கு விடுமுறை என்று அறிவித்துள்ளனர்.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": false,
+    "notes": "plain benign Tamil: school holiday"
+  },
+  {
+    "id": "syn-0038",
+    "text": "Happy new year to everyone celebrating today!",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "plain benign"
+  },
+  {
+    "id": "syn-0039",
+    "text": "We will shut down the DRDO servers tomorrow at dawn.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "DRDO",
+        "start": 22,
+        "end": 26
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "explicit cyberattack, in-gazetteer org"
+  },
+  {
+    "id": "syn-0040",
+    "text": "Coordinated DDoS planned against DRDO web infrastructure this weekend.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "DRDO",
+        "start": 33,
+        "end": 37
+      },
+      {
+        "type": "tactic",
+        "value": "DDoS",
+        "start": 12,
+        "end": 16
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "explicit"
+  },
+  {
+    "id": "syn-0044",
+    "text": "Phishing campaign against BHEL staff is live, credentials incoming.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "social_engineering",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "BHEL",
+        "start": 26,
+        "end": 30
+      },
+      {
+        "type": "tactic",
+        "value": "Phishing",
+        "start": 0,
+        "end": 8
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "social engineering"
+  },
+  {
+    "id": "syn-0045",
+    "text": "Power grid near Vizag will go dark tonight. Stay tuned.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "infrastructure_disruption",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Vizag",
+        "start": 16,
+        "end": 21
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "infrastructure disruption threat"
+  },
+  {
+    "id": "syn-0046",
+    "text": "நாளை DRDO சர்வர்களை முடக்குவோம்.",
+    "script": "mixed",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "DRDO",
+        "start": 5,
+        "end": 9
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "Tamil + Latin org, mixed script"
+  },
+  {
+    "id": "syn-0047",
+    "text": "நமது இலக்கு Avadi மற்றும் சென்னை. DRDO சர்வர்களை முடக்க வேண்டும்.",
+    "script": "mixed",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Avadi",
+        "start": 12,
+        "end": 17
+      },
+      {
+        "type": "location",
+        "value": "சென்னை",
+        "start": 26,
+        "end": 32
+      },
+      {
+        "type": "organization",
+        "value": "DRDO",
+        "start": 34,
+        "end": 38
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "canonical showcase sentence; IndicNER fragments all three"
+  },
+  {
+    "id": "syn-0048",
+    "text": "கல்பாக்கம் அணுமின் நிலையத்தை குறிவைக்க திட்டம் உள்ளது.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "physical_threat",
+    "entities": [
+      {
+        "type": "location",
+        "value": "கல்பாக்கம்",
+        "start": 0,
+        "end": 10
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "Tamil threat to nuclear plant"
+  },
+  {
+    "id": "syn-0049",
+    "text": "சென்னை துறைமுக அமைப்புகளை முடக்க தயாராகுங்கள்.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "infrastructure_disruption",
+    "entities": [
+      {
+        "type": "location",
+        "value": "சென்னை",
+        "start": 0,
+        "end": 6
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "Tamil infrastructure threat"
+  },
+  {
+    "id": "syn-0051",
+    "text": "DRDO servers ah nalaikku down panna poren da.",
+    "script": "romanized",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "DRDO",
+        "start": 0,
+        "end": 4
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "Tanglish cyberattack claim"
+  },
+  {
+    "id": "syn-0052",
+    "text": "Vizag port la periya problem varum, wait pannunga.",
+    "script": "romanized",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "infrastructure_disruption",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Vizag",
+        "start": 0,
+        "end": 5
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "Tanglish veiled threat"
+  },
+  {
+    "id": "syn-0053",
+    "text": "Targeting the NPCIL control network next. Access confirmed.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "NPCIL",
+        "start": 14,
+        "end": 19
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT: NPCIL absent from gazetteer"
+  },
+  {
+    "id": "syn-0054",
+    "text": "Kudankulam plant systems are our priority objective this month.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "physical_threat",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Kudankulam",
+        "start": 0,
+        "end": 10
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT"
+  },
+  {
+    "id": "syn-0058",
+    "text": "Trombay facility perimeter has weak points near the eastern gate.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "surveillance",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Trombay",
+        "start": 0,
+        "end": 7
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT"
+  },
+  {
+    "id": "syn-0059",
+    "text": "The Ennore port terminal will be disrupted during the strike.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "infrastructure_disruption",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Ennore",
+        "start": 4,
+        "end": 10
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT"
+  },
+  {
+    "id": "syn-0062",
+    "text": "கூடங்குளம் அணுமின் நிலையம் குறித்த தகவல்கள் சேகரிக்கப்பட்டன.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "surveillance",
+    "entities": [
+      {
+        "type": "location",
+        "value": "கூடங்குளம்",
+        "start": 0,
+        "end": 10
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "HELD OUT: Kudankulam in Tamil"
+  },
+  {
+    "id": "syn-0063",
+    "text": "ஸ்ரீஹரிகோட்டா ஏவுதளம் நமது கண்காணிப்பில் உள்ளது.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "surveillance",
+    "entities": [
+      {
+        "type": "location",
+        "value": "ஸ்ரீஹரிகோட்டா",
+        "start": 0,
+        "end": 13
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "HELD OUT: Sriharikota in Tamil"
+  },
+  {
+    "id": "syn-0064",
+    "text": "NPCIL network ah target panna plan pannitom.",
+    "script": "romanized",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "NPCIL",
+        "start": 0,
+        "end": 5
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT, Tanglish"
+  },
+  {
+    "id": "syn-0065",
+    "text": "Visited the Sriharikota visitor centre, the launch viewing was amazing.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Sriharikota",
+        "start": 12,
+        "end": 23
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT adversarial: benign tourism"
+  },
+  {
+    "id": "syn-0066",
+    "text": "HAL is hiring apprentices this year, applications close Friday.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "HAL",
+        "start": 0,
+        "end": 3
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT adversarial: benign recruitment"
+  },
+  {
+    "id": "syn-0069",
+    "text": "கூடங்குளம் பகுதியில் புதிய பள்ளி கட்டப்படுகிறது.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "கூடங்குளம்",
+        "start": 0,
+        "end": 10
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "HELD OUT adversarial: Tamil, school construction"
+  },
+  {
+    "id": "syn-0074",
+    "text": "விசாகப்பட்டினம் துறைமுகம் வழியாக சரக்கு அனுப்பப்படுகிறது.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "விசாகப்பட்டினம்",
+        "start": 0,
+        "end": 15
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "long Tamil gazetteer term, benign shipping"
+  },
+  {
+    "id": "syn-0076",
+    "text": "Ransomware deployed across the victim network, payment demanded.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "tactic",
+        "value": "Ransomware",
+        "start": 0,
+        "end": 10
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "generic threat, no CNI entity"
+  },
+  {
+    "id": "syn-0077",
+    "text": "Emergency broadcast: restricted access protocol activated.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "signal",
+    "intent_label": "security_alert",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "generic alert"
+  },
+  {
+    "id": "syn-0081",
+    "text": "Protest scheduled tomorrow near the city central hub.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "signal",
+    "intent_label": "physical_threat",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "generic; note 'city'/'hub' are NOT entities"
+  }
+]
