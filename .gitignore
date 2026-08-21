@@ -35,3 +35,7 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+
+# ---- Raw capture archive: real traffic, may contain victim PII ----
+data/raw/
+tests/data/to_annotate.json

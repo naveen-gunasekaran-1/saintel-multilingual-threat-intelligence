@@ -37,3 +37,5 @@ results/
 requirements.lock.txt
 docker-compose.yml
 .DS_Store
+
+data/raw/
