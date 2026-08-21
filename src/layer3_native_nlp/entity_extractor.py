@@ -22,7 +22,6 @@ from src.core.config import get_settings
 from src.core.logger import get_logger
 from src.core.schemas import ThreatEntity, ThreatSignal
 from src.layer1_ingestion.normalizer import normalize_threat_text
-from src.layer4_graphrag.neo4j_connector import GraphEntityWriter, Neo4jSessionManager
 
 settings = get_settings()
 logger = get_logger(__name__, level=settings.log_level)
@@ -209,7 +208,27 @@ class EntityExtractor:
         return payload
 
 
-def _consume_signal_topic() -> None:
+def _consume_raw_topic() -> None:
+    """Consume raw messages, extract entities, publish to the entity topic.
+
+    Two defects fixed here:
+
+    1. This loop used to call graph_writer.persist_signal() itself while
+       neo4j_connector's consumer ALSO persisted the same signal off
+       layer3_entities -- every signal was written to Neo4j twice. Persistence
+       now belongs solely to neo4j_connector; this stage only publishes.
+
+    2. The offset was committed unconditionally, even when the downstream
+       write had failed, so a Neo4j or broker outage silently advanced past
+       messages that were never persisted. The commit now happens only after
+       Kafka confirms delivery, giving genuine at-least-once semantics.
+
+    NOTE: this subscribes to the RAW topic, not high_intent_signals. Routing it
+    behind Layer 2 is deliberately deferred -- the triage classifier measures
+    recall 0.250 on the Phase 2 dev split, so putting it in front of this stage
+    would discard roughly three quarters of real threats. See
+    docs/adr-001-rules-vs-finetuning.md.
+    """
     consumer = Consumer(
         {
             'bootstrap.servers': settings.kafka_broker_url,
@@ -223,9 +242,6 @@ def _consume_signal_topic() -> None:
 
     logger.info("Entity extraction consumer started", extra={"topic": settings.kafka_raw_topic})
     extractor = EntityExtractor()
-    graph_writer = GraphEntityWriter(
-        Neo4jSessionManager(settings.neo4j_uri, settings.neo4j_user, settings.neo4j_password)
-    )
 
     try:
         while True:
@@ -242,42 +258,58 @@ def _consume_signal_topic() -> None:
                 payload = json.loads(message.value().decode('utf-8'))
                 raw_text = payload.get('text') or payload.get('content') or payload.get('raw_text') or ''
                 if not raw_text:
+                    consumer.commit(message=message, asynchronous=False)
                     continue
 
-                # 1. Normalize threat text to preserve Unicode integrity natively
                 normalized_text = normalize_threat_text(raw_text)
-
                 source_type = payload.get('source_type', payload.get('platform', 'telegram'))
                 source_id = str(payload.get('source_id', payload.get('id', 'unknown')))
-                
-                # 2. Extract Entities & 3. Refine Entities
+
                 signal = extractor.extract(normalized_text, source_type=source_type, source_id=source_id)
 
-                # 4. Write Native nodes to Neo4j
-                graph_writer.persist_signal(signal)
+                delivery = {"ok": False, "error": None}
 
-                # 5. Commit offset and log
+                def _on_delivery(err, _msg, _d=delivery):
+                    if err is None:
+                        _d["ok"] = True
+                    else:
+                        _d["error"] = str(err)
+
                 producer.produce(
                     settings.kafka_entity_topic,
                     value=json.dumps(signal.model_dump(mode='json')).encode('utf-8'),
+                    callback=_on_delivery,
                 )
-                
-                native_count = sum(1 for e in signal.entities if e.source.startswith("transformers"))
+                producer.flush(10.0)
+
+                if not delivery["ok"]:
+                    # Offset retained: the message is redelivered rather than lost.
+                    logger.error(
+                        "Entity payload not delivered; offset retained for retry",
+                        extra={"signal_id": signal.signal_id, "error": delivery["error"]},
+                    )
+                    continue
+
                 logger.info(
-                    "Threat entity payload emitted to graph",
-                    extra={"topic": settings.kafka_entity_topic, "signal_id": signal.signal_id, "entities_found": len(signal.entities), "native_entities": native_count},
+                    "Threat entity payload published",
+                    extra={
+                        "topic": settings.kafka_entity_topic,
+                        "signal_id": signal.signal_id,
+                        "entities_found": len(signal.entities),
+                        "gazetteer_entities": sum(
+                            1 for e in signal.entities if e.source.startswith("cni-gazetteer")
+                        ),
+                    },
                 )
-                
                 consumer.commit(message=message, asynchronous=False)
             except Exception as exc:  # pragma: no cover - resilience path
                 logger.exception("Entity extraction failed for message", extra={"error": str(exc)})
     except KeyboardInterrupt:
         logger.info("Entity extractor interrupted")
     finally:
-        graph_writer.session_manager.close()
-        producer.flush()
+        producer.flush(10.0)
         consumer.close()
 
 
 if __name__ == '__main__':
-    _consume_signal_topic()
+    _consume_raw_topic()
