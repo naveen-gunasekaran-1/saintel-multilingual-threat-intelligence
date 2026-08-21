@@ -26,6 +26,42 @@ from src.layer1_ingestion.normalizer import normalize_threat_text
 settings = get_settings()
 logger = get_logger(__name__, level=settings.log_level)
 
+# Prefer the fine-tuned CNI model when present (ADR-002). Falls back to base
+# IndicNER, which measures F1 0.186 -- usable only as a degraded mode.
+FINETUNED_MODEL_DIR = ROOT / "data" / "models" / "indicner-cni-ft"
+BASE_NER_MODEL = "ai4bharat/IndicNER"
+
+
+def _resolve_ner_model() -> str:
+    if (FINETUNED_MODEL_DIR / "config.json").exists():
+        return str(FINETUNED_MODEL_DIR)
+    logger.warning(
+        "Fine-tuned CNI model not found; falling back to base IndicNER "
+        "(F1 0.186 vs 0.758). Run scripts/finetune_indicner.py.",
+        extra={"expected_path": str(FINETUNED_MODEL_DIR)},
+    )
+    return BASE_NER_MODEL
+
+
+def _resolve_device() -> int | str:
+    """Pick the best available accelerator for HF pipelines.
+
+    Was hardcoded to -1 (CPU) while the k8s manifests requested
+    nvidia.com/gpu: 1 -- the cluster scheduled and billed a GPU that inference
+    never touched.
+    """
+    try:
+        import torch
+
+        if torch.cuda.is_available():
+            return 0
+        if getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
+            return "mps"
+    except Exception:  # pragma: no cover - torch optional at import time
+        pass
+    return -1
+
+
 _DEFAULT_LABELS = [
     "cyberattack",
     "disinformation",
@@ -55,7 +91,7 @@ from src.layer3_native_nlp.gazetteer import (  # noqa: E402
 class EntityExtractor:
     def __init__(self, model_name: str | None = None, zero_shot_model_name: str | None = None):
         # Changed to IndicNER for South Asian NLP Optimization
-        self.model_name = model_name or "ai4bharat/IndicNER"
+        self.model_name = model_name or _resolve_ner_model()
         self.zero_shot_model_name = zero_shot_model_name or settings.zero_shot_model_name
         self.ner_pipeline = None
         self.zero_shot_pipeline = None
@@ -66,21 +102,24 @@ class EntityExtractor:
             from transformers import pipeline
 
             # Load model directly into pipeline as per best practices
+            device = _resolve_device()
             self.ner_pipeline = pipeline(
                 "ner",
                 model=self.model_name,
                 aggregation_strategy="simple",
                 token=hf_token,
-                device=-1,
+                device=device,
             )
             self.zero_shot_pipeline = pipeline(
                 "zero-shot-classification",
                 model=self.zero_shot_model_name,
-                device=-1,
+                device=device,
             )
             logger.info(
                 "Multilingual NLP models loaded successfully",
-                extra={"ner_model": self.model_name, "zero_shot_model": self.zero_shot_model_name},
+                extra={"ner_model": self.model_name,
+                       "zero_shot_model": self.zero_shot_model_name,
+                       "device": str(device)},
             )
         except Exception as exc:  # pragma: no cover - runtime dependency issue should be handled gracefully
             logger.error(

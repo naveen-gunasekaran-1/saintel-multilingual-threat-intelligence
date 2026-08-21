@@ -24,6 +24,10 @@ __pycache__/
 # ---- Large regenerable artifacts ----
 data/models/
 *.bin
+# ...except the fine-tuned CNI model, which the runtime needs and which is not
+# available from the HF hub. Negation must follow the exclusions above.
+!data/models/indicner-cni-ft/
+!data/models/indicner-cni-ft/**
 
 # ---- Not needed at runtime ----
 docs/
