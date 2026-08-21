@@ -1,16 +1,27 @@
+import sys
+from pathlib import Path
+
 import fasttext
-import os
+
+ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from src.core.config import BASE_DIR
+
 
 def train_model():
-    # Define paths relative to project root
-    dataset_dir = "data/datasets"
-    model_dir = "data/models"
-    
-    os.makedirs(dataset_dir, exist_ok=True)
-    os.makedirs(model_dir, exist_ok=True)
-    
-    data_file = os.path.join(dataset_dir, "training_data.txt")
-    model_file = os.path.join(model_dir, "edge_triage_model.bin")
+    # Anchor to the repo root, not the cwd. Relative paths here previously
+    # produced a second 763 MiB model tree under src/layer2_edge_triage/
+    # whenever this script was run from anywhere but the repo root.
+    dataset_dir = BASE_DIR / "data" / "datasets"
+    model_dir = BASE_DIR / "data" / "models"
+
+    dataset_dir.mkdir(parents=True, exist_ok=True)
+    model_dir.mkdir(parents=True, exist_ok=True)
+
+    data_file = str(dataset_dir / "training_data.txt")
+    model_file = str(model_dir / "edge_triage_model.bin")
     
     # Sample training data for edge triage (Noise vs Signal)
     data = [
