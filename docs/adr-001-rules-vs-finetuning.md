@@ -1,6 +1,6 @@
 # ADR-001: Curated gazetteer over transformer fine-tuning for CNI entity extraction
 
-**Status:** Accepted · **Date:** 2026-08-21 · **Supersedes:** the "zero-translation
+**Status:** SUPERSEDED by ADR-002 (fine-tuning was tested and reversed this) · **Date:** 2026-08-21 · **Supersedes:** the "zero-translation
 native NLP" framing in the original project description
 
 ## Context

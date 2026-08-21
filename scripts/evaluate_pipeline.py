@@ -119,6 +119,19 @@ def make_ablation(**flags):
     return arm
 
 
+FT_MODEL = ROOT / "data" / "models" / "indicner-cni-ft"
+
+
+def arm_finetuned(rec, ctx):
+    return [(t, v) for t, v in ctx["ft"](rec["text"])]
+
+
+def arm_finetuned_hybrid(rec, ctx):
+    raw = [ThreatEntity(entity_type=t, value=v, confidence=c, source="transformers-ner")
+           for t, v, c in ctx["ft_conf"](rec["text"])]
+    return [(e.entity_type, e.value) for e in refine_entities(rec["text"], raw)]
+
+
 ENTITY_ARMS = {
     "gazetteer":  (arm_gazetteer,  False),
     "heuristic":  (arm_heuristic,  False),
@@ -128,19 +141,21 @@ ENTITY_ARMS = {
     "abl_no_fuzzy":     (make_ablation(enable_fuzzy=False), True),
     "abl_no_fragclean": (make_ablation(enable_fragment_cleanup=False), True),
     "abl_no_recovery":  (make_ablation(enable_raw_text_recovery=False), True),
+    "finetuned":        (arm_finetuned, "ft"),
+    "finetuned_hybrid": (arm_finetuned_hybrid, "ft"),
 }
 FAST_ARMS = ["gazetteer", "heuristic"]
 
 
 # ------------------------------------------------------------------ context --
 
-def build_context(need_ner: bool) -> dict:
+def build_context(need_ner: bool, need_ft: bool = False) -> dict:
     ctx = {}
     from src.layer3_native_nlp.entity_extractor import EntityExtractor
     shell = object.__new__(EntityExtractor)
     ctx["heuristic"] = shell._heuristic_entities
 
-    if not need_ner:
+    if not need_ner and not need_ft:
         return ctx
 
     import os, warnings
@@ -172,6 +187,24 @@ def build_context(need_ner: bool) -> dict:
 
     ctx["ner_conf"] = run
     ctx["ner"] = lambda t: [(a, b) for a, b, _ in run(t)]
+
+    if need_ft:
+        if not FT_MODEL.exists():
+            raise SystemExit(f"fine-tuned model missing: {FT_MODEL}\n"
+                             "run scripts/finetune_indicner.py first")
+        ft = pipeline("ner", model=str(FT_MODEL), tokenizer=str(FT_MODEL),
+                      aggregation_strategy="simple", device=-1)
+        ft_cache: dict[str, list] = {}
+
+        def run_ft(text):
+            if text not in ft_cache:
+                ft_cache[text] = [(_map(i), (i.get("word") or "").strip(),
+                                   float(i.get("score", 0.5)))
+                                  for i in ft(text) if (i.get("word") or "").strip()]
+            return ft_cache[text]
+
+        ctx["ft_conf"] = run_ft
+        ctx["ft"] = lambda t: [(a, b) for a, b, _ in run_ft(t)]
     return ctx
 
 
@@ -237,7 +270,10 @@ def main() -> int:
         print(f"unknown arms: {unknown}", file=sys.stderr)
         return 1
 
-    ctx = build_context(need_ner=any(ENTITY_ARMS[n][1] for n in names))
+    ctx = build_context(
+        need_ner=any(ENTITY_ARMS[n][1] is True for n in names),
+        need_ft=any(ENTITY_ARMS[n][1] == "ft" for n in names),
+    )
 
     gold_by_id = {r["id"]: key_set([(e["type"], e["value"]) for e in r["entities"]])
                   for r in records}
@@ -271,7 +307,9 @@ def main() -> int:
     significance = {}
     for a, b in [("gazetteer", "hybrid"), ("gazetteer", "transformer"),
                  ("transformer", "hybrid"), ("hybrid", "abl_no_fuzzy"),
-                 ("hybrid", "abl_no_skeleton")]:
+                 ("hybrid", "abl_no_skeleton"),
+                 ("transformer", "finetuned"), ("gazetteer", "finetuned"),
+                 ("gazetteer", "finetuned_hybrid")]:
         if a in correctness and b in correctness:
             significance[f"{a}_vs_{b}"] = mcnemar(correctness[a], correctness[b])
 
