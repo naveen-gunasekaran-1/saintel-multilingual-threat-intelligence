@@ -3,7 +3,6 @@ from __future__ import annotations
 import json
 import re
 import sys
-from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
 
@@ -38,39 +37,20 @@ _DEFAULT_LABELS = [
     "security alert",
 ]
 
-# Canonical name + entity type for critical-national-infrastructure terms.
-# See EntityExtractor._match_gazetteer_term for how fragmented/corrupted
-# NER output (e.g. "dr", "ava", "செனனை") is resolved back to these values.
-CNI_GAZETTEER: dict[str, tuple[str, str]] = {
-    # Locations
-    "avadi": ("Avadi", "location"),
-    "ஆவடி": ("ஆவடி", "location"),
-    "chennai": ("Chennai", "location"),
-    "சென்னை": ("சென்னை", "location"),
-    "kalpakkam": ("Kalpakkam", "location"),
-    "கல்பாக்கம்": ("கல்பாக்கம்", "location"),
-    "vizag": ("Vizag", "location"),
-    "விசாகப்பட்டினம்": ("விசாகப்பட்டினம்", "location"),
-    # Organizations
-    "drdo": ("DRDO", "organization"),
-    "isro": ("ISRO", "organization"),
-    "bhel": ("BHEL", "organization"),
-}
+# Gazetteer constants and matching logic are defined in gazetteer.py, which is
+# deliberately free of config/Kafka/Neo4j imports so tests and the benchmark
+# harness can use it offline. Re-exported here for backwards compatibility.
+from src.layer3_native_nlp.gazetteer import (  # noqa: E402
+    CNI_GAZETTEER,
+    FRAGMENT_CLEANUP_SOURCES as _FRAGMENT_CLEANUP_SOURCES,
+    FUZZY_MATCH_MIN_LENGTH as _FUZZY_MATCH_MIN_LENGTH,
+    FUZZY_MATCH_THRESHOLD as _FUZZY_MATCH_THRESHOLD,
+    MIN_SUBSTRING_MATCH_LENGTH as _MIN_SUBSTRING_MATCH_LENGTH,
+    match_gazetteer_term,
+    normalize_indic_skeleton,
+    refine_entities,
+)
 
-# South Asian virama/halant marks. The transformer tokenizer's decode step
-# can drop these when reassembling subword fragments (e.g. "சென்னை" loses
-# its pulli and decodes as "செனனை"), so gazetteer matching normalizes both
-# sides down to a virama-free "skeleton" before comparing.
-_INDIC_VIRAMAS = "்्্్"  # Tamil, Devanagari, Bengali, Telugu
-_INDIC_VIRAMA_TRANSLATION = str.maketrans("", "", _INDIC_VIRAMAS)
-
-_FUZZY_MATCH_MIN_LENGTH = 4
-_FUZZY_MATCH_THRESHOLD = 0.85
-_MIN_SUBSTRING_MATCH_LENGTH = 3
-
-# Pre-gazetteer sources eligible for fragment cleanup once a canonical
-# gazetteer entity for the same term is present elsewhere in the signal.
-_FRAGMENT_CLEANUP_SOURCES = {"transformers-ner", "heuristic"}
 
 
 class EntityExtractor:
@@ -197,126 +177,16 @@ class EntityExtractor:
             logger.warning("Zero-shot classification failed", extra={"error": str(exc)})
             return ("unknown", 0.5)
 
+    # Gazetteer logic lives in gazetteer.py so it can be imported without
+    # config/Kafka/Neo4j. These wrappers keep the existing method API.
     def _normalize_indic_skeleton(self, text: str) -> str:
-        """Strip South Asian virama/halant marks and casefold for comparison.
-
-        The transformer tokenizer's decode step can drop a virama when
-        reassembling subword fragments (e.g. "சென்னை" loses its pulli and
-        decodes as "செனனை"), so both sides of a gazetteer comparison are
-        reduced to this virama-free skeleton before checking equality.
-        """
-        return text.translate(_INDIC_VIRAMA_TRANSLATION).lower().strip()
+        return normalize_indic_skeleton(text)
 
     def _match_gazetteer_term(self, value: str) -> tuple[str, str, str] | None:
-        """Match a single entity value against the CNI gazetteer.
-
-        Tries, in order: (1) exact match on the raw value, plus a substring
-        match in either direction — but substring containment only applies
-        when `len(value) >= _MIN_SUBSTRING_MATCH_LENGTH` (3), since a 1-2
-        character fragment (e.g. "dr") is a substring of almost anything and
-        must instead rely on the raw-text recovery pass in `refine_entities`;
-        (2) a virama-insensitive match via `_normalize_indic_skeleton`, which
-        catches diacritic corruption like "செனனை" -> "சென்னை" regardless of
-        length, since it's an exact match once normalized; (3) a fuzzy match
-        via `difflib.SequenceMatcher` for fragments of length >= 4 that are
-        merely similar, not identical. Returns
-        (canonical_value, entity_type, "exact" | "fuzzy"), or None.
-        """
-        value_cf = value.casefold()
-        allow_substring = len(value) >= _MIN_SUBSTRING_MATCH_LENGTH
-
-        for key, (canonical, entity_type) in CNI_GAZETTEER.items():
-            key_cf = key.casefold()
-            if value_cf == key_cf:
-                return canonical, entity_type, "exact"
-            if allow_substring and (value_cf in key_cf or key_cf in value_cf):
-                return canonical, entity_type, "exact"
-
-        value_skeleton = self._normalize_indic_skeleton(value)
-        if value_skeleton:
-            for key, (canonical, entity_type) in CNI_GAZETTEER.items():
-                if value_skeleton == self._normalize_indic_skeleton(key):
-                    return canonical, entity_type, "exact"
-
-        if len(value) >= _FUZZY_MATCH_MIN_LENGTH:
-            for key, (canonical, entity_type) in CNI_GAZETTEER.items():
-                key_skeleton = self._normalize_indic_skeleton(key)
-                ratio = SequenceMatcher(None, value_skeleton, key_skeleton).ratio()
-                if ratio >= _FUZZY_MATCH_THRESHOLD:
-                    return canonical, entity_type, "fuzzy"
-
-        return None
+        return match_gazetteer_term(value)
 
     def refine_entities(self, raw_text: str, entities: list[ThreatEntity]) -> list[ThreatEntity]:
-        """Reconcile NER output against the CNI gazetteer.
-
-        Every extracted entity is checked directly against the gazetteer
-        (exact/substring, then virama-insensitive, then fuzzy), so a
-        fragment or diacritic-corrupted value resolves to its canonical
-        term in place without ever needing to equal a gazetteer key
-        outright. Terms the NER model missed entirely are still recovered
-        from `raw_text` so a mention isn't lost for lack of an extracted
-        entity to reconcile.
-        """
-        for entity in entities:
-            value = entity.value.strip()
-            if not value:
-                continue
-            match = self._match_gazetteer_term(value)
-            if match is None:
-                continue
-            canonical, entity_type, match_kind = match
-            entity.value = canonical
-            entity.entity_type = entity_type
-            entity.source = f"cni-gazetteer-{match_kind}"
-
-        normalized_text = raw_text.lower()
-        present = {(entity.entity_type, entity.value.casefold()) for entity in entities}
-        for key, (canonical, entity_type) in CNI_GAZETTEER.items():
-            term_key = (entity_type, canonical.casefold())
-            if key in normalized_text and term_key not in present:
-                entities.append(
-                    ThreatEntity(
-                        entity_type=entity_type,
-                        value=canonical,
-                        confidence=0.9,
-                        source="cni-gazetteer-exact",
-                    )
-                )
-                present.add(term_key)
-
-        # Collapse duplicate canonical entities produced when multiple NER
-        # fragments (e.g. "dr" and "do") both resolve to the same term.
-        deduped: dict[tuple[str, str], ThreatEntity] = {}
-        for entity in entities:
-            dedupe_key = (entity.entity_type, entity.value.casefold())
-            current = deduped.get(dedupe_key)
-            if current is None or entity.confidence > current.confidence:
-                deduped[dedupe_key] = entity
-        entities = list(deduped.values())
-
-        # Fragment cleanup: a raw NER or heuristic fragment too short to
-        # trigger its own substring match (e.g. "dr", below
-        # _MIN_SUBSTRING_MATCH_LENGTH) can still be an orphaned subword of a
-        # term the gazetteer recovered by other means (raw-text scan, a
-        # sibling fragment's fuzzy match). Once that canonical entity exists,
-        # drop the leftover fragment so it doesn't persist as a separate,
-        # meaningless graph node. Only pre-gazetteer sources are eligible —
-        # canonical gazetteer entities themselves are never touched.
-        canonical_values = {
-            entity.value.casefold() for entity in entities if entity.source.startswith("cni-gazetteer")
-        }
-        cleaned: list[ThreatEntity] = []
-        for entity in entities:
-            if entity.source in _FRAGMENT_CLEANUP_SOURCES:
-                fragment_value = entity.value.strip().casefold()
-                if fragment_value and any(
-                    fragment_value == canonical or fragment_value in canonical
-                    for canonical in canonical_values
-                ):
-                    continue
-            cleaned.append(entity)
-        return cleaned
+        return refine_entities(raw_text, entities)
 
     def extract(self, text: str, *, source_type: str = "telegram", source_id: str = "unknown") -> ThreatSignal:
         entities = self._ner_entities(text)
