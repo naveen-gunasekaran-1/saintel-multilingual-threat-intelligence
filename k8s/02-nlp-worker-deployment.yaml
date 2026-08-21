@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: layer3-indicner-worker
+  namespace: threat-intel
+  labels:
+    app: layer3-indicner-worker
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: layer3-indicner-worker
+  template:
+    metadata:
+      labels:
+        app: layer3-indicner-worker
+    spec:
+      containers:
+        - name: indicner-processor
+          image: your-registry/saintel-layer3:v1.0.0
+          envFrom:
+            - secretRef:
+                name: saintel-core-secrets
+          resources:
+            requests:
+              cpu: "2"
+              memory: "4Gi"
+            limits:
+              nvidia.com/gpu: "1"
+              cpu: "4"
+              memory: "8Gi"
+          volumeMounts:
+            - name: hf-cache
+              mountPath: /root/.cache/huggingface
+      volumes:
+        - name: hf-cache
+          emptyDir: {}

@@ -1,0 +1,37 @@
+# ---- Secrets: never commit ----
+.env
+.env.*
+!.env.example
+*.session
+*.session-journal
+
+# ---- Virtualenv ----
+venv/
+.venv/
+env/
+
+# ---- Python bytecode ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---- Test / tool caches ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- Model binaries (regenerate: python src/layer2_edge_triage/train_triage.py) ----
+*.bin
+data/models/
+
+# ---- Benchmark outputs (Phase 2) ----
+results/
+
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
