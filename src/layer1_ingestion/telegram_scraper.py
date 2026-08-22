@@ -54,7 +54,7 @@ async def scrape_channel(client, channel_username, limit=10):
             logger.info("Scraped Telegram message", extra={"message_id": msg_data["id"], "channel": channel_username})
             producer.produce(
                 KAFKA_TOPIC,
-                value=json.dumps(msg_data).encode('utf-8'),
+                value=json.dumps(msg_data, ensure_ascii=False).encode('utf-8'),
                 callback=delivery_report,
             )
     except Exception as exc:  # pragma: no cover - network-bound path

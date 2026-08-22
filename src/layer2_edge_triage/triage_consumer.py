@@ -116,7 +116,7 @@ def main() -> int:
                 }
                 producer.produce(
                     settings.kafka_signal_topic,
-                    value=json.dumps(payload).encode('utf-8'),
+                    value=json.dumps(payload, ensure_ascii=False).encode('utf-8'),
                     callback=delivery_report,
                 )
                 producer.poll(0)

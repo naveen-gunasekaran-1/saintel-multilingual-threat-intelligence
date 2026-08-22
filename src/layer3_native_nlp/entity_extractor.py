@@ -316,7 +316,7 @@ def _consume_raw_topic() -> None:
 
                 producer.produce(
                     settings.kafka_entity_topic,
-                    value=json.dumps(signal.model_dump(mode='json')).encode('utf-8'),
+                    value=json.dumps(signal.model_dump(mode='json'), ensure_ascii=False).encode('utf-8'),
                     callback=_on_delivery,
                 )
                 producer.flush(10.0)

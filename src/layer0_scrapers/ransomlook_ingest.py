@@ -68,7 +68,7 @@ def scrape_ransomlook():
             # Publish to Kafka
             producer.produce(
                 KAFKA_TOPIC,
-                value=json.dumps(message).encode('utf-8')
+                value=json.dumps(message, ensure_ascii=False).encode('utf-8')
             )
             logger.info(f"Published message for group: {group_name}")
             

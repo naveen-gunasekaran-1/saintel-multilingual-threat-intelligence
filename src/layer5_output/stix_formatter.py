@@ -169,7 +169,11 @@ class STIXBundleFormatter:
 		if bundle is None:
 			return None
 		try:
-			return bundle.serialize(pretty=False)
+			# ensure_ascii=False keeps native script literal in the exported
+			# bundle. Without it stix2 emits \u0b9a.. escapes, which violates
+			# the project's native-UTF-8 directive and makes the flagship CTI
+			# artefact unreadable to a human analyst.
+			return bundle.serialize(pretty=False, ensure_ascii=False)
 		except Exception as exc:
 			logger.exception("STIX bundle serialization failed", extra={"error": str(exc)})
 			return None

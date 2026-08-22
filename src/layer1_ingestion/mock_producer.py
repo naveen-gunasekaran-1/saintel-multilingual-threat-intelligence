@@ -49,7 +49,7 @@ def simulate_scraping():
             msg_data['id'] = i
             producer.produce(
                 topic_name,
-                value=json.dumps(msg_data).encode('utf-8'),
+                value=json.dumps(msg_data, ensure_ascii=False).encode('utf-8'),
                 callback=delivery_report,
             )
             time.sleep(0.2)

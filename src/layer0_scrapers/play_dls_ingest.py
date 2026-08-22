@@ -97,7 +97,7 @@ def scrape_play_dls(total_pages=5):
                 # Publish to Kafka
                 producer.produce(
                     KAFKA_TOPIC,
-                    value=json.dumps(message).encode('utf-8')
+                    value=json.dumps(message, ensure_ascii=False).encode('utf-8')
                 )
                 logger.info(f"Published darkweb threat for victim: {victim_name}")
                 
