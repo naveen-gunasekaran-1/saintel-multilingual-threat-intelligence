@@ -276,7 +276,7 @@ def render_export(signals: list[ThreatSignal]) -> None:
 def main() -> None:
     st.set_page_config(page_title="SAINTEL Analyst Console", page_icon="S", layout="wide")
     st.title("SAINTEL Analyst Console")
-    st.caption("Multilingual OSINT and threat intelligence pipeline")
+    st.caption("South Asian Infrastructure — Native Threat Entity Labelling")
     if settings is None:
         st.error("Configuration is unavailable. Check the required environment variables in .env.")
         st.stop()

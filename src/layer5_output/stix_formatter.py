@@ -47,7 +47,7 @@ class STIXBundleFormatter:
 			producer = Identity(
 				name=self.producer_name,
 				identity_class="organization",
-				description="SAINTEL multilingual OSINT and threat intelligence pipeline.",
+				description="SAINTEL — South Asian Infrastructure, Native Threat Entity Labelling. Extracts CNI entities from code-switched South Asian text.",
 				created=validated_signal.created_at,
 				modified=validated_signal.created_at,
 			)

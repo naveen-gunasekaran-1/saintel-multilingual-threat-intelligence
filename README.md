@@ -1,9 +1,13 @@
 # SAINTEL
 
-**S**outh **A**sian **Int**elligence & Native Threat **E**xtraction **L**ayer — a
-research pipeline for extracting critical-infrastructure threat entities from
-multilingual, code-switched South Asian text without translating it to English
-first.
+**S**outh **A**sian **I**nfrastructure — **N**ative **T**hreat **E**ntity **L**abelling.
+A research pipeline that extracts critical-infrastructure entities from
+code-switched South Asian text without translating it to English first, and a
+deliberate near-homophone of *sentinel*: a watchman set over infrastructure.
+
+Scope note: the four commitments in the name are validated to different
+degrees. *Native* and *entity labelling* are measured here (F1 0.866, and 0.875
+on held-out infrastructure entities). Coverage beyond Tamil is future work.
 
 > **Status: research prototype.** This is an active research codebase, not a
 > deployed system. All evaluation data is **synthetic and authored for
