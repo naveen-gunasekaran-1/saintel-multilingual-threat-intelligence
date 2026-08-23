@@ -19,15 +19,12 @@ psycopg[binary]==3.3.4
 streamlit==1.61.1
 streamlit-agraph==0.0.45   # imported by src/ui_dashboard/app.py
 Telethon==1.44.0           # imported by src/layer1_ingestion/telegram_scraper.py
-requests==2.34.2
+requests[socks]==2.34.2   # [socks] extra -> PySocks, required for Tor
 pytest==9.1.1
 
-# ---- Declared but NOT installed in the reference environment ----
-# src/layer0_scrapers/play_dls_ingest.py imports both and currently fails at
-# import with ModuleNotFoundError. Versions are unpinned because they are
-# untested here; pin them once the scraper is verified to run.
-stem>=1.8.2                # Tor controller
-beautifulsoup4>=4.12.0     # HTML parsing
+# ---- Darkweb collection (verified: Tor proxy + control port + parser) ----
+stem==1.8.2                # Tor controller, NEWNYM circuit rotation
+beautifulsoup4==4.15.0     # leak-site HTML parsing
 
 # ---- Removed ----
 # langgraph / langchain-core: declared previously, imported nowhere in src/,

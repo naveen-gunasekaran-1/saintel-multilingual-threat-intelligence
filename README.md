@@ -96,6 +96,7 @@ streamlit run src/ui_dashboard/app.py              # analyst console
 
 ```
 Layer 0/1  scrapers (Telegram, Tor leak sites, RansomLook) ──> Kafka raw topic
+           Tor path needs a local Tor daemon: SOCKS 9050 + control 9051
                                                             └──> capture sink -> data/raw/*.jsonl
 Layer 2    fastText triage                       [NOT in the data path -- see below]
 Layer 3    NFKC normalise -> fine-tuned IndicNER -> gazetteer repair
