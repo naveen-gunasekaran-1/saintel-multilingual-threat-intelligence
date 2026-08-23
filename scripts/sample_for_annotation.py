@@ -24,33 +24,16 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from src.layer1_ingestion.normalizer import detect_script  # noqa: E402
+
 ARCHIVE = ROOT / "data" / "raw"
 
-# Unicode blocks -> script label used by the eval schema.
-_BLOCKS = {
-    "tamil": (0x0B80, 0x0BFF),
-    "devanagari": (0x0900, 0x097F),
-    "bengali": (0x0980, 0x09FF),
-    "telugu": (0x0C00, 0x0C7F),
-}
 _REDACTIONS = [
     (re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+"), "[EMAIL]"),
     (re.compile(r"https?://\S+"), "[URL]"),
     (re.compile(r"\b(?:\+?\d[\d\s-]{8,}\d)\b"), "[PHONE]"),
     (re.compile(r"\b\d{9,}\b"), "[ID]"),
 ]
-
-
-def detect_script(text: str) -> str:
-    indic = sum(1 for ch in text if any(lo <= ord(ch) <= hi for lo, hi in _BLOCKS.values()))
-    latin = sum(1 for ch in text if "a" <= ch.lower() <= "z")
-    if indic and latin:
-        return "mixed"
-    if indic:
-        for name, (lo, hi) in _BLOCKS.items():
-            if any(lo <= ord(ch) <= hi for ch in text):
-                return f"native_{name}"
-    return "latin"
 
 
 def redact(text: str) -> tuple[str, list[str]]:

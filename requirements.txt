@@ -22,12 +22,16 @@ Telethon==1.44.0           # imported by src/layer1_ingestion/telegram_scraper.p
 requests[socks]==2.34.2   # [socks] extra -> PySocks, required for Tor
 pytest==9.1.1
 
+# ---- Layer 4 multi-agent synthesis (verified: graph compiles + 23 tests) ----
+langgraph==1.2.11          # StateGraph for src/layer4_graphrag/synthesis_agent.py
+# pulls langchain-core 1.6.0 transitively; see requirements.lock.txt
+
 # ---- Darkweb collection (verified: Tor proxy + control port + parser) ----
 stem==1.8.2                # Tor controller, NEWNYM circuit rotation
 beautifulsoup4==4.15.0     # leak-site HTML parsing
 
 # ---- Removed ----
-# langgraph / langchain-core: declared previously, imported nowhere in src/,
-#   and not installed. Re-add in Phase 4 if Layer 4 GraphRAG enters scope.
+# (langgraph was removed in Phase 1 as unused; re-added above in Phase 4,
+#   now that src/layer4_graphrag/synthesis_agent.py actually imports it.)
 # sentencepiece: only needed by xlm-roberta-base (NLP_MODEL_NAME), which is
 #   configured but never used -- entity_extractor.py hardcodes ai4bharat/IndicNER.
