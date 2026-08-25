@@ -119,14 +119,14 @@ def main() -> int:
     from confluent_kafka import Consumer, KafkaException
 
     from src.core.config import get_settings
+    from src.core.messaging import consumer_config
 
     settings = get_settings()
-    consumer = Consumer({
-        "bootstrap.servers": settings.kafka_broker_url,
-        "group.id": "saintel-raw-capture-group",   # independent of other consumers
-        "auto.offset.reset": "earliest",
-        "enable.auto.commit": False,
-    })
+    # group.id is independent of the other consumers so archiving never steals
+    # messages from the processing path.
+    consumer = Consumer(
+        consumer_config("saintel-raw-capture-group", broker=settings.kafka_broker_url)
+    )
     consumer.subscribe([settings.kafka_raw_topic])
 
     seen = load_seen_ids()

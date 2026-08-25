@@ -20,6 +20,7 @@ hf_token = os.getenv("HF_TOKEN")
 
 from src.core.config import get_settings
 from src.core.logger import get_logger
+from src.core.messaging import consumer_config, encode, extract_text, producer_config
 from src.core.schemas import ThreatEntity, ThreatSignal
 from src.layer1_ingestion.normalizer import normalize_threat_text
 
@@ -269,15 +270,10 @@ def _consume_raw_topic() -> None:
     docs/adr-001-rules-vs-finetuning.md.
     """
     consumer = Consumer(
-        {
-            'bootstrap.servers': settings.kafka_broker_url,
-            'group.id': 'saintel-raw-threat-group',
-            'auto.offset.reset': 'earliest',
-            'enable.auto.commit': False,
-        }
+        consumer_config('saintel-raw-threat-group', broker=settings.kafka_broker_url)
     )
     consumer.subscribe([settings.kafka_raw_topic])
-    producer = Producer({'bootstrap.servers': settings.kafka_broker_url})
+    producer = Producer(producer_config(broker=settings.kafka_broker_url))
 
     logger.info("Entity extraction consumer started", extra={"topic": settings.kafka_raw_topic})
     extractor = EntityExtractor()
@@ -295,7 +291,7 @@ def _consume_raw_topic() -> None:
 
             try:
                 payload = json.loads(message.value().decode('utf-8'))
-                raw_text = payload.get('text') or payload.get('content') or payload.get('raw_text') or ''
+                raw_text = extract_text(payload)
                 if not raw_text:
                     consumer.commit(message=message, asynchronous=False)
                     continue
@@ -316,7 +312,7 @@ def _consume_raw_topic() -> None:
 
                 producer.produce(
                     settings.kafka_entity_topic,
-                    value=json.dumps(signal.model_dump(mode='json'), ensure_ascii=False).encode('utf-8'),
+                    value=encode(signal.model_dump(mode='json')),
                     callback=_on_delivery,
                 )
                 producer.flush(10.0)

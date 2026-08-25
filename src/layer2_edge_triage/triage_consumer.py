@@ -19,6 +19,7 @@ if str(ROOT) not in sys.path:
 
 from src.core.config import get_settings
 from src.core.logger import get_logger
+from src.core.messaging import consumer_config, encode, extract_text, producer_config
 
 settings = get_settings()
 logger = get_logger(__name__, level=settings.log_level)
@@ -57,15 +58,18 @@ def classify(model, text: str) -> tuple[str, float]:
 
 
 def main() -> int:
-    conf = {
-        'bootstrap.servers': settings.kafka_broker_url,
-        'group.id': 'saintel-edge-triage-group',
-        'auto.offset.reset': 'earliest',
-    }
-
-    consumer = Consumer(conf)
+    # NOTE: enable_auto_commit=True is this consumer's PRE-EXISTING behaviour --
+    # the original dict simply omitted the key and inherited librdkafka's default.
+    # It is stated explicitly here rather than silently corrected, because
+    # switching it off without adding commit calls would stall the consumer.
+    # Recorded as a finding; changing it is a behavioural fix, not a cleanup.
+    consumer = Consumer(
+        consumer_config('saintel-edge-triage-group',
+                        broker=settings.kafka_broker_url,
+                        enable_auto_commit=True)
+    )
     consumer.subscribe([settings.kafka_raw_topic])
-    producer = Producer({'bootstrap.servers': settings.kafka_broker_url})
+    producer = Producer(producer_config(broker=settings.kafka_broker_url))
 
     try:
         model = load_model()
@@ -89,7 +93,7 @@ def main() -> int:
             try:
                 raw_value = msg.value().decode('utf-8')
                 record = json.loads(raw_value)
-                text = record.get('text', '') or record.get('content', '')
+                text = extract_text(record)
                 if not text:
                     text = raw_value
                 source_id = str(record.get('id', 'unknown'))
@@ -116,7 +120,7 @@ def main() -> int:
                 }
                 producer.produce(
                     settings.kafka_signal_topic,
-                    value=json.dumps(payload, ensure_ascii=False).encode('utf-8'),
+                    value=encode(payload),
                     callback=delivery_report,
                 )
                 producer.poll(0)

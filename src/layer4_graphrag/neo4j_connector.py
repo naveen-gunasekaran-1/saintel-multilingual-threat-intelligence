@@ -16,7 +16,9 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from src.core.config import get_settings
+from src.core.identity import entity_id as _shared_entity_id
 from src.core.logger import get_logger
+from src.core.messaging import consumer_config
 from src.core.schemas import ThreatEntity, ThreatSignal
 
 settings = get_settings()
@@ -33,9 +35,14 @@ RELATIONSHIP_RULES: tuple[tuple[str, str, str], ...] = (
     ("organization", "location", "LOCATED_IN"),
 )
 
+# Guards the one interpolated identifier in the Cypher below.
+_ALLOWED_RELATIONS = frozenset(relation for _, _, relation in RELATIONSHIP_RULES)
+
 
 def _entity_id(entity_type: str, value: str) -> str:
-    return f"{entity_type}:{value.strip().casefold()}"
+    # Delegates to src.core.identity: this rule and synthesis_agent's copy
+    # had to stay byte-identical by hand. Now they cannot drift.
+    return _shared_entity_id(entity_type, value)
 
 
 class Neo4jSessionManager:
@@ -109,71 +116,118 @@ class GraphEntityWriter:
                     time.sleep(2 ** (attempt - 1))
         raise RuntimeError("Neo4j operation failed after retries") from last_error
 
-    @staticmethod
-    def _upsert_signal_transaction(session: Session, signal: ThreatSignal) -> None:
-        session.run(
-            """
-            MERGE (s:ThreatSignal {signal_id: $signal_id})
-            SET s.source_type = $source_type,
-                s.source_id = $source_id,
-                s.raw_text = $raw_text,
-                s.language = $language,
-                s.intent = $intent,
-                s.confidence = $confidence,
-                s.created_at = $created_at
-            """,
-            signal_id=signal.signal_id,
-            source_type=signal.source_type,
-            source_id=signal.source_id,
-            raw_text=signal.raw_text,
-            language=signal.language,
-            intent=signal.intent,
-            confidence=signal.confidence,
-            created_at=signal.created_at.isoformat(),
-        )
+    # Cypher kept at module level so the query plan is cached by the driver
+    # and the shape is reviewable without reading the builder logic.
+    _SIGNAL_CYPHER = """
+        MERGE (s:ThreatSignal {signal_id: $signal_id})
+        SET s.source_type = $source_type,
+            s.source_id    = $source_id,
+            s.raw_text     = $raw_text,
+            s.language     = $language,
+            s.intent       = $intent,
+            s.confidence   = $confidence,
+            s.created_at   = $created_at
+        """
 
+    _ENTITY_CYPHER = """
+        MATCH (s:ThreatSignal {signal_id: $signal_id})
+        UNWIND $rows AS row
+        MERGE (e:Entity {entity_id: row.entity_id})
+        SET e.entity_type = row.entity_type,
+            e.value       = row.value,
+            e.confidence  = row.confidence,
+            e.source      = row.source
+        MERGE (s)-[:CONTAINS_ENTITY]->(e)
+        """
+
+    # `relation` is interpolated, never parameterised: Cypher does not accept a
+    # bound parameter in relationship-type position. It is safe here because the
+    # only values it can take are the four literals in RELATIONSHIP_RULES, which
+    # is a module constant -- never user input. The assertion below enforces that
+    # invariant so a future edit cannot turn this into an injection point.
+    _RELATION_CYPHER = """
+        UNWIND $rows AS row
+        MATCH (source:Entity {{entity_id: row.source_id}})
+        MATCH (target:Entity {{entity_id: row.target_id}})
+        MERGE (source)-[r:{relation}]->(target)
+        SET r.last_seen  = $last_seen,
+            r.confidence = row.confidence,
+            r.signal_id  = $signal_id
+        """
+
+    @classmethod
+    def _build_rows(
+        cls, signal: ThreatSignal
+    ) -> tuple[list[dict], dict[str, list[dict]]]:
+        """Flatten a signal into UNWIND-ready rows. Pure -- no I/O, so testable."""
+        entity_rows = [
+            {
+                "entity_id": _entity_id(entity.entity_type, entity.value),
+                "entity_type": entity.entity_type,
+                "value": entity.value,
+                "confidence": entity.confidence,
+                "source": entity.source,
+            }
+            for entity in signal.entities
+        ]
+
+        by_type: dict[str, list[ThreatEntity]] = {}
         for entity in signal.entities:
-            session.run(
-                """
-                MERGE (e:Entity {entity_id: $entity_id})
-                SET e.entity_type = $entity_type,
-                    e.value = $value,
-                    e.confidence = $confidence,
-                    e.source = $source
-                WITH e
-                MATCH (s:ThreatSignal {signal_id: $signal_id})
-                MERGE (s)-[:CONTAINS_ENTITY]->(e)
-                """,
-                entity_id=_entity_id(entity.entity_type, entity.value),
-                entity_type=entity.entity_type,
-                value=entity.value,
-                confidence=entity.confidence,
-                source=entity.source,
-                signal_id=signal.signal_id,
-            )
+            by_type.setdefault(entity.entity_type, []).append(entity)
 
-        entities_by_type: dict[str, list[ThreatEntity]] = {}
-        for entity in signal.entities:
-            entities_by_type.setdefault(entity.entity_type, []).append(entity)
-
+        relation_rows: dict[str, list[dict]] = {}
         for source_type, target_type, relation in RELATIONSHIP_RULES:
-            for source in entities_by_type.get(source_type, []):
-                for target in entities_by_type.get(target_type, []):
-                    session.run(
-                        f"""
-                        MATCH (source:Entity {{entity_id: $source_id}})
-                        MATCH (target:Entity {{entity_id: $target_id}})
-                        MERGE (source)-[r:{relation}]->(target)
-                        SET r.last_seen = $last_seen,
-                            r.confidence = $confidence,
-                            r.signal_id = $signal_id
-                        """,
-                        source_id=_entity_id(source.entity_type, source.value),
-                        target_id=_entity_id(target.entity_type, target.value),
-                        last_seen=signal.created_at.isoformat(),
-                        confidence=min(source.confidence, target.confidence),
-                        signal_id=signal.signal_id,
-                    )
+            rows = [
+                {
+                    "source_id": _entity_id(source.entity_type, source.value),
+                    "target_id": _entity_id(target.entity_type, target.value),
+                    "confidence": min(source.confidence, target.confidence),
+                }
+                for source in by_type.get(source_type, [])
+                for target in by_type.get(target_type, [])
+            ]
+            if rows:
+                relation_rows.setdefault(relation, []).extend(rows)
+
+        return entity_rows, relation_rows
+
+    @classmethod
+    def _upsert_signal_transaction(cls, session: Session, signal: ThreatSignal) -> None:
+        """Write one signal, its entities and their relationships atomically.
+
+        Previously this issued one autocommit `session.run` per entity and one
+        per entity *pair*, so a 25-entity signal cost 1 + 25 + up to 625 network
+        round trips and could leave a half-written signal behind on failure.
+        It is now three-to-six UNWIND batches inside a single explicit
+        transaction: the same graph, one atomic unit, bounded round trips.
+        """
+        entity_rows, relation_rows = cls._build_rows(signal)
+        created_at = signal.created_at.isoformat()
+
+        def _unit(tx) -> None:
+            tx.run(
+                cls._SIGNAL_CYPHER,
+                signal_id=signal.signal_id,
+                source_type=signal.source_type,
+                source_id=signal.source_id,
+                raw_text=signal.raw_text,
+                language=signal.language,
+                intent=signal.intent,
+                confidence=signal.confidence,
+                created_at=created_at,
+            )
+            if entity_rows:
+                tx.run(cls._ENTITY_CYPHER, signal_id=signal.signal_id, rows=entity_rows)
+            for relation, rows in relation_rows.items():
+                assert relation in _ALLOWED_RELATIONS, f"unknown relation {relation!r}"
+                tx.run(
+                    cls._RELATION_CYPHER.format(relation=relation),
+                    rows=rows,
+                    last_seen=created_at,
+                    signal_id=signal.signal_id,
+                )
+
+        session.execute_write(_unit)
 
     def persist_signal(self, signal: ThreatSignal) -> bool:
         validated_signal = ThreatSignal.model_validate(signal)
@@ -218,12 +272,7 @@ class GraphEntityWriter:
 
 def _consume_entities() -> None:
     consumer = Consumer(
-        {
-            "bootstrap.servers": settings.kafka_broker_url,
-            "group.id": "saintel-graph-persistence-group",
-            "auto.offset.reset": "earliest",
-            "enable.auto.commit": False,
-        }
+        consumer_config("saintel-graph-persistence-group", broker=settings.kafka_broker_url)
     )
     consumer.subscribe([settings.kafka_entity_topic])
     writer = GraphEntityWriter(

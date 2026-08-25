@@ -1,0 +1,1623 @@
+[
+  {
+    "theme": "indic_ner",
+    "title": "Low-Resource Named Entity Recognition via the Pre-Training Model",
+    "authors": [
+      "Chen, Siqi",
+      "Pei, Yijie",
+      "Ke, Zunwang",
+      "Silamu, Wushour"
+    ],
+    "journal": "Symmetry",
+    "issn": [
+      "2073-8994"
+    ],
+    "year": 2021,
+    "doi": "10.3390/sym13050786",
+    "cited_by": 27,
+    "url": "https://doi.org/10.3390/sym13050786"
+  },
+  {
+    "theme": "indic_ner",
+    "title": "ECTTLNER: An Effective Cross-Task Transferring Learning Method for Low-Resource Named Entity Recognition",
+    "authors": [
+      "Xu, Yiwu",
+      "Chen, Yun"
+    ],
+    "journal": "Neural Processing Letters",
+    "issn": [
+      "1573-773X"
+    ],
+    "year": 2025,
+    "doi": "10.1007/s11063-025-11729-x",
+    "cited_by": 1,
+    "url": "https://doi.org/10.1007/s11063-025-11729-x"
+  },
+  {
+    "theme": "indic_ner",
+    "title": "LELNER: A Lightweight and Effective Low-resource Named Entity Recognition model",
+    "authors": [
+      "Zhang, Zhanjun",
+      "Zhang, Haoyu",
+      "Wan, Qian",
+      "Liu, Jie"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2022,
+    "doi": "10.1016/j.knosys.2022.109178",
+    "cited_by": 9,
+    "url": "https://doi.org/10.1016/j.knosys.2022.109178"
+  },
+  {
+    "theme": "indic_ner",
+    "title": "Structured evidence consolidation for reliable low-resource named entity recognition",
+    "authors": [
+      "Song, Yubo",
+      "Shao, Boran",
+      "Guo, Yufan",
+      "Gao, Shang",
+      "Chen, Liquan"
+    ],
+    "journal": "Expert Systems with Applications",
+    "issn": [
+      "0957-4174"
+    ],
+    "year": 2027,
+    "doi": "10.1016/j.eswa.2026.133834",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1016/j.eswa.2026.133834"
+  },
+  {
+    "theme": "indic_ner",
+    "title": "Improving Low-Resource Chinese Named Entity Recognition Using Bidirectional Encoder Representation from Transformers and Lexicon Adapter",
+    "authors": [
+      "Dang, Xiaochao",
+      "Wang, Li",
+      "Dong, Xiaohui",
+      "Li, Fenfang",
+      "Deng, Han"
+    ],
+    "journal": "Applied Sciences",
+    "issn": [
+      "2076-3417"
+    ],
+    "year": 2023,
+    "doi": "10.3390/app131910759",
+    "cited_by": 4,
+    "url": "https://doi.org/10.3390/app131910759"
+  },
+  {
+    "theme": "indic_ner",
+    "title": "Cross-lingual prompt and knowledge enhancement-based named entity recognition for low-resource electronic medical records",
+    "authors": [
+      "Wang, Yurong",
+      "Lin, Min",
+      "Hu, Qitu",
+      "Bai, Shuangcheng",
+      "Li, Yanling",
+      "Bao, Longjie"
+    ],
+    "journal": "Neurocomputing",
+    "issn": [
+      "0925-2312"
+    ],
+    "year": 2025,
+    "doi": "10.1016/j.neucom.2025.130357",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1016/j.neucom.2025.130357"
+  },
+  {
+    "theme": "indic_ner",
+    "title": "Context-Aware Hybrid Neural Models for Low-Resource Bodo Language Named Entity Recognition",
+    "authors": [
+      "Gayary, Jinia Angeline",
+      "Sarma, Shikhar Kumar",
+      "Sarma, Hiren Kumar Deva",
+      "Talukdar, Kuwali",
+      "Kashyap, Kishore",
+      "Deka, Vaskar"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2026,
+    "doi": "10.1109/access.2026.3699039",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/access.2026.3699039"
+  },
+  {
+    "theme": "codemix_ner",
+    "title": "CodeNER: Code Prompting for Named Entity Recognition",
+    "authors": [
+      "Han, Sungwoo",
+      "Kim, Hyeyeon",
+      "Kwon, Jingun",
+      "Kamigaito, Hidetaka",
+      "Okumura, Manabu"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2026,
+    "doi": "10.1109/access.2026.3697139",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/access.2026.3697139"
+  },
+  {
+    "theme": "codemix_ner",
+    "title": "Python source code vulnerability detection with named entity recognition",
+    "authors": [
+      "Ehrenberg, Melanie",
+      "Sarkani, Shahram",
+      "Mazzuchi, Thomas A."
+    ],
+    "journal": "Computers &amp; Security",
+    "issn": [
+      "0167-4048"
+    ],
+    "year": 2024,
+    "doi": "10.1016/j.cose.2024.103802",
+    "cited_by": 16,
+    "url": "https://doi.org/10.1016/j.cose.2024.103802"
+  },
+  {
+    "theme": "codemix_ner",
+    "title": "Improving Named Entity Recognition for Social Media with Data Augmentation",
+    "authors": [
+      "Liu, Wenzhong",
+      "Cui, Xiaohui"
+    ],
+    "journal": "Applied Sciences",
+    "issn": [
+      "2076-3417"
+    ],
+    "year": 2023,
+    "doi": "10.3390/app13095360",
+    "cited_by": 15,
+    "url": "https://doi.org/10.3390/app13095360"
+  },
+  {
+    "theme": "codemix_ner",
+    "title": "Named-Entity Recognition Using Automatic Construction of Training Data From Social Media Messaging Apps",
+    "authors": [
+      "Lee, Seungwook",
+      "Ko, Youngjoong"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2020,
+    "doi": "10.1109/access.2020.3043261",
+    "cited_by": 5,
+    "url": "https://doi.org/10.1109/access.2020.3043261"
+  },
+  {
+    "theme": "tokenization",
+    "title": "QazNLP: Constraint-Aware Multi-Task Sequence Labeling for Morphologically Rich Low-Resource Languages",
+    "authors": [
+      "Aitim, Aigerim"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2026,
+    "doi": "10.1109/access.2026.3691193",
+    "cited_by": 2,
+    "url": "https://doi.org/10.1109/access.2026.3691193"
+  },
+  {
+    "theme": "tokenization",
+    "title": "The importance of morphology-aware subword tokenization for NLP tasks in Slovak language modeling",
+    "authors": [
+      "Držík, Dávid",
+      "Kapusta, Jozef"
+    ],
+    "journal": "Expert Systems with Applications",
+    "issn": [
+      "0957-4174"
+    ],
+    "year": 2026,
+    "doi": "10.1016/j.eswa.2026.131492",
+    "cited_by": 1,
+    "url": "https://doi.org/10.1016/j.eswa.2026.131492"
+  },
+  {
+    "theme": "tokenization",
+    "title": "Improving sentiment analysis performance on morphologically rich languages: Language and domain independent approach",
+    "authors": [
+      "Kincl, Tomáš",
+      "Novák, Michal",
+      "Přibil, Jiří"
+    ],
+    "journal": "Computer Speech &amp; Language",
+    "issn": [
+      "0885-2308"
+    ],
+    "year": 2019,
+    "doi": "10.1016/j.csl.2019.01.001",
+    "cited_by": 12,
+    "url": "https://doi.org/10.1016/j.csl.2019.01.001"
+  },
+  {
+    "theme": "tokenization",
+    "title": "Improved Unsupervised Neural Machine Translation with Semantically Weighted Back Translation for Morphologically Rich and Low Resource Languages",
+    "authors": [
+      "Chauhan, Shweta",
+      "Saxena, Shefali",
+      "Daniel, Philemon"
+    ],
+    "journal": "Neural Processing Letters",
+    "issn": [
+      "1370-4621",
+      "1573-773X"
+    ],
+    "year": 2022,
+    "doi": "10.1007/s11063-021-10702-8",
+    "cited_by": 16,
+    "url": "https://doi.org/10.1007/s11063-021-10702-8"
+  },
+  {
+    "theme": "tokenization",
+    "title": "Turkish Subword Segmentation: A Unified Intrinsic-Extrinsic Analysis",
+    "authors": [
+      "Gunes, Uraz Kagan",
+      "Yildiz, Olcay Taner",
+      "Karadeniz, Ilknur"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2026,
+    "doi": "10.1109/access.2026.3725837",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/access.2026.3725837"
+  },
+  {
+    "theme": "tokenization",
+    "title": "Multilingual and unsupervised subword modeling for zero-resource languages",
+    "authors": [
+      "Hermann, Enno",
+      "Kamper, Herman",
+      "Goldwater, Sharon"
+    ],
+    "journal": "Computer Speech &amp; Language",
+    "issn": [
+      "0885-2308"
+    ],
+    "year": 2021,
+    "doi": "10.1016/j.csl.2020.101098",
+    "cited_by": 10,
+    "url": "https://doi.org/10.1016/j.csl.2020.101098"
+  },
+  {
+    "theme": "tokenization",
+    "title": "A Compression-Based Multiple Subword Segmentation for Neural Machine Translation",
+    "authors": [
+      "Nonaka, Keita",
+      "Yamanouchi, Kazutaka",
+      "I, Tomohiro",
+      "Okita, Tsuyoshi",
+      "Shimada, Kazutaka",
+      "Sakamoto, Hiroshi"
+    ],
+    "journal": "Electronics",
+    "issn": [
+      "2079-9292"
+    ],
+    "year": 2022,
+    "doi": "10.3390/electronics11071014",
+    "cited_by": 9,
+    "url": "https://doi.org/10.3390/electronics11071014"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Large language model augmented framework with domain-specific knowledge integration for medical named entity recognition",
+    "authors": [
+      "Zou, Haochen",
+      "Wang, Yongli"
+    ],
+    "journal": "Neural Networks",
+    "issn": [
+      "0893-6080"
+    ],
+    "year": 2026,
+    "doi": "10.1016/j.neunet.2026.109178",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1016/j.neunet.2026.109178"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Enhancing named entity recognition with external knowledge from large language model",
+    "authors": [
+      "Li, Qi",
+      "Xie, Tingyu",
+      "Zhang, Jian",
+      "Ma, Ke",
+      "Su, Jiayuan",
+      "Yang, Kaixiang"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2025,
+    "doi": "10.1016/j.knosys.2025.113471",
+    "cited_by": 18,
+    "url": "https://doi.org/10.1016/j.knosys.2025.113471"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "A novel feature integration and entity boundary detection for named entity recognition in cybersecurity",
+    "authors": [
+      "Wang, Xiaodi",
+      "Liu, Jiayong"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2023,
+    "doi": "10.1016/j.knosys.2022.110114",
+    "cited_by": 40,
+    "url": "https://doi.org/10.1016/j.knosys.2022.110114"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Augmented Disentanglement and Aggregation for Nested Named Entity Recognition",
+    "authors": [
+      "Zhang, Jinjin",
+      "Zhang, Kun",
+      "Zhong, Chengliang",
+      "A, Ruhan"
+    ],
+    "journal": "Electronics",
+    "issn": [
+      "2079-9292"
+    ],
+    "year": 2026,
+    "doi": "10.3390/electronics15132840",
+    "cited_by": 0,
+    "url": "https://doi.org/10.3390/electronics15132840"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Grounded multimodal named entity recognition via large multimodal models",
+    "authors": [
+      "Situ, Runwei",
+      "Cai, Yi"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2026,
+    "doi": "10.1016/j.knosys.2026.116015",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1016/j.knosys.2026.116015"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Borrowing wisdom from world: modeling rich external knowledge for Chinese named entity recognition",
+    "authors": [
+      "Nie, Yu",
+      "Zhang, Yilai",
+      "Peng, Yongkang",
+      "Yang, Lisha"
+    ],
+    "journal": "Neural Computing and Applications",
+    "issn": [
+      "0941-0643",
+      "1433-3058"
+    ],
+    "year": 2022,
+    "doi": "10.1007/s00521-021-06680-6",
+    "cited_by": 9,
+    "url": "https://doi.org/10.1007/s00521-021-06680-6"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Improving E-commerce search queries using transformer-based named entity recognition",
+    "authors": [
+      "Saraçlar, Beyzanur",
+      "Agaoglu, Mustafa"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2026,
+    "doi": "10.1016/j.knosys.2026.116213",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1016/j.knosys.2026.116213"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Few-shot nested named entity recognition",
+    "authors": [
+      "Ming, Hong",
+      "Yang, Jiaoyun",
+      "Gui, Fang",
+      "Jiang, Lili",
+      "An, Ning"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2024,
+    "doi": "10.1016/j.knosys.2024.111688",
+    "cited_by": 17,
+    "url": "https://doi.org/10.1016/j.knosys.2024.111688"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Duplicate Bug Report detection using Named Entity Recognition",
+    "authors": [
+      "Zheng, Wei",
+      "Li, Yunfan",
+      "Wu, Xiaoxue",
+      "Cheng, Jingyuan"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2024,
+    "doi": "10.1016/j.knosys.2023.111258",
+    "cited_by": 7,
+    "url": "https://doi.org/10.1016/j.knosys.2023.111258"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Lexicon enhanced Chinese named entity recognition with pointer network",
+    "authors": [
+      "Guo, Qian",
+      "Guo, Yi"
+    ],
+    "journal": "Neural Computing and Applications",
+    "issn": [
+      "0941-0643",
+      "1433-3058"
+    ],
+    "year": 2022,
+    "doi": "10.1007/s00521-022-07287-1",
+    "cited_by": 21,
+    "url": "https://doi.org/10.1007/s00521-022-07287-1"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Enhancing Clinical Named Entity Recognition via Fine-Tuned BERT and Dictionary-Infused Retrieval-Augmented Generation",
+    "authors": [
+      "Sreenivas, Soumya Challaru",
+      "Chowdhury, Saqib",
+      "Masum, Mohammad"
+    ],
+    "journal": "Electronics",
+    "issn": [
+      "2079-9292"
+    ],
+    "year": 2025,
+    "doi": "10.3390/electronics14183676",
+    "cited_by": 1,
+    "url": "https://doi.org/10.3390/electronics14183676"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "ALDANER: Active Learning based Data Augmentation for Named Entity Recognition",
+    "authors": [
+      "Moscato, Vincenzo",
+      "Postiglione, Marco",
+      "Sperlì, Giancarlo",
+      "Vignali, Andrea"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2024,
+    "doi": "10.1016/j.knosys.2024.112682",
+    "cited_by": 9,
+    "url": "https://doi.org/10.1016/j.knosys.2024.112682"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "LLM-Augmented Prototype Representation for Few-Shot Named-Entity Recognition",
+    "authors": [
+      "Buaphet, Weerayut",
+      "Limkonchotiwat, Peerat",
+      "Rutherford, Attapol T.",
+      "Udomcharoenchaikit, Can",
+      "Nutanong, Sarana"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2025,
+    "doi": "10.1109/access.2025.3631652",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/access.2025.3631652"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Local Metric NER: A new paradigm for named entity recognition from a multi-label perspective",
+    "authors": [
+      "Hua, Zaifeng",
+      "Chen, Yifei"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2024,
+    "doi": "10.1016/j.knosys.2024.112686",
+    "cited_by": 4,
+    "url": "https://doi.org/10.1016/j.knosys.2024.112686"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "ASTRAL: Adversarial Trained LSTM-CNN for Named Entity Recognition",
+    "authors": [
+      "Wang, Jiuniu",
+      "Xu, Wenjia",
+      "Fu, Xingyu",
+      "Xu, Guangluan",
+      "Wu, Yirong"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2020,
+    "doi": "10.1016/j.knosys.2020.105842",
+    "cited_by": 58,
+    "url": "https://doi.org/10.1016/j.knosys.2020.105842"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Improved Named Entity Recognition in real-world applications for legal documents",
+    "authors": [
+      "Moreno-Acevedo, Santiago A.",
+      "Orozco-Arroyave, Juan Rafael"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2026,
+    "doi": "10.1016/j.knosys.2026.116877",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1016/j.knosys.2026.116877"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "CyberLLaMA: A fine-tuned large language model for cybersecurity named entity recognition",
+    "authors": [
+      "Zhang, Hao",
+      "Wu, Tingmin",
+      "Zhu, Tianqing",
+      "Wen, Sheng",
+      "Xiang, Yang"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2025,
+    "doi": "10.1016/j.knosys.2025.114183",
+    "cited_by": 4,
+    "url": "https://doi.org/10.1016/j.knosys.2025.114183"
+  },
+  {
+    "theme": "gazetteer",
+    "title": "Uncertainty-Aware Contrastive Learning for semi-supervised named entity recognition",
+    "authors": [
+      "Yang, Kang",
+      "Yang, Zhiwei",
+      "Zhao, Songwei",
+      "Yang, Zhejian",
+      "Zhang, Sinuo",
+      "Chen, Hechang"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2024,
+    "doi": "10.1016/j.knosys.2024.111762",
+    "cited_by": 13,
+    "url": "https://doi.org/10.1016/j.knosys.2024.111762"
+  },
+  {
+    "theme": "cti_nlp",
+    "title": "Natural Language Processing (NLP)-Based Frameworks for Cyber Threat Intelligence and Early Prediction of Cyberattacks in Industry 4.0: A Systematic Literature Review",
+    "authors": [
+      "Albarrak, Majed",
+      "Salonitis, Konstantinos",
+      "Jagtap, Sandeep"
+    ],
+    "journal": "Applied Sciences",
+    "issn": [
+      "2076-3417"
+    ],
+    "year": 2026,
+    "doi": "10.3390/app16020619",
+    "cited_by": 8,
+    "url": "https://doi.org/10.3390/app16020619"
+  },
+  {
+    "theme": "cti_nlp",
+    "title": "Automated Emerging Cyber Threat Identification and Profiling Based on Natural Language Processing",
+    "authors": [
+      "Marinho, Renato",
+      "Holanda, Raimir"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2023,
+    "doi": "10.1109/access.2023.3260020",
+    "cited_by": 47,
+    "url": "https://doi.org/10.1109/access.2023.3260020"
+  },
+  {
+    "theme": "cti_nlp",
+    "title": "Towards an AI-Enhanced Cyber Threat Intelligence Processing Pipeline",
+    "authors": [
+      "Alevizos, Lampis",
+      "Dekker, Martijn"
+    ],
+    "journal": "Electronics",
+    "issn": [
+      "2079-9292"
+    ],
+    "year": 2024,
+    "doi": "10.3390/electronics13112021",
+    "cited_by": 41,
+    "url": "https://doi.org/10.3390/electronics13112021"
+  },
+  {
+    "theme": "cti_nlp",
+    "title": "Vulcan: Automatic extraction and analysis of cyber threat intelligence from unstructured text",
+    "authors": [
+      "Jo, Hyeonseong",
+      "Lee, Yongjae",
+      "Shin, Seungwon"
+    ],
+    "journal": "Computers &amp; Security",
+    "issn": [
+      "0167-4048"
+    ],
+    "year": 2022,
+    "doi": "10.1016/j.cose.2022.102763",
+    "cited_by": 79,
+    "url": "https://doi.org/10.1016/j.cose.2022.102763"
+  },
+  {
+    "theme": "cti_nlp",
+    "title": "Automated Cyber Threat Intelligence Extraction from Distributed Honeypots: A Hybrid Machine Learning Approach",
+    "authors": [
+      "AlJuhaiman, Hessa Abdulaziz",
+      "Emad-ul-Haq, Qazi",
+      "Kim, Kyounggon",
+      "Lee, Seokhee"
+    ],
+    "journal": "Electronics",
+    "issn": [
+      "2079-9292"
+    ],
+    "year": 2026,
+    "doi": "10.3390/electronics15132900",
+    "cited_by": 0,
+    "url": "https://doi.org/10.3390/electronics15132900"
+  },
+  {
+    "theme": "cti_nlp",
+    "title": "A Novel Approach for Cyber Threat Analysis Systems Using BERT Model from Cyber Threat Intelligence Data",
+    "authors": [
+      "Demirol, Doygun",
+      "Das, Resul",
+      "Hanbay, Davut"
+    ],
+    "journal": "Symmetry",
+    "issn": [
+      "2073-8994"
+    ],
+    "year": 2025,
+    "doi": "10.3390/sym17040587",
+    "cited_by": 13,
+    "url": "https://doi.org/10.3390/sym17040587"
+  },
+  {
+    "theme": "cti_nlp",
+    "title": "Multi-Step LLM Pipeline for Enhancing TTP Extraction in Cyber Threat Intelligence",
+    "authors": [
+      "Rok Kim, Hyoung",
+      "Lee, Donghyeon",
+      "Lee, Insup",
+      "Lee, Soohan",
+      "Lee, Sangjin"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2025,
+    "doi": "10.1109/access.2025.3622350",
+    "cited_by": 1,
+    "url": "https://doi.org/10.1109/access.2025.3622350"
+  },
+  {
+    "theme": "cti_nlp",
+    "title": "Cyber threat assessment and management for securing healthcare ecosystems using natural language processing",
+    "authors": [
+      "Silvestri, Stefano",
+      "Islam, Shareful",
+      "Amelin, Dmitry",
+      "Weiler, Gabriele",
+      "Papastergiou, Spyridon",
+      "Ciampi, Mario"
+    ],
+    "journal": "International Journal of Information Security",
+    "issn": [
+      "1615-5262",
+      "1615-5270"
+    ],
+    "year": 2023,
+    "doi": "10.1007/s10207-023-00769-w",
+    "cited_by": 42,
+    "url": "https://doi.org/10.1007/s10207-023-00769-w"
+  },
+  {
+    "theme": "cti_nlp",
+    "title": "Joint Extraction of Cyber Threat Intelligence Entity Relationships Based on a Parallel Ensemble Prediction Model",
+    "authors": [
+      "Wang, Huan",
+      "Zhang, Shenao",
+      "Wang, Zhe",
+      "Sun, Jing",
+      "Liu, Qingzheng"
+    ],
+    "journal": "Sensors",
+    "issn": [
+      "1424-8220"
+    ],
+    "year": 2025,
+    "doi": "10.3390/s25165193",
+    "cited_by": 2,
+    "url": "https://doi.org/10.3390/s25165193"
+  },
+  {
+    "theme": "cti_nlp",
+    "title": "KnowCTI: Knowledge-based cyber threat intelligence entity and relation extraction",
+    "authors": [
+      "Wang, Gaosheng",
+      "Liu, Peipei",
+      "Huang, Jintao",
+      "Bin, Haoyu",
+      "Wang, Xi",
+      "Zhu, Hongsong"
+    ],
+    "journal": "Computers &amp; Security",
+    "issn": [
+      "0167-4048"
+    ],
+    "year": 2024,
+    "doi": "10.1016/j.cose.2024.103824",
+    "cited_by": 45,
+    "url": "https://doi.org/10.1016/j.cose.2024.103824"
+  },
+  {
+    "theme": "darkweb",
+    "title": "MAD-CTI: Cyber Threat Intelligence Analysis of the Dark Web Using a Multi-Agent Framework",
+    "authors": [
+      "Shah, Sayuj",
+      "Madisetti, Vijay K."
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2025,
+    "doi": "10.1109/access.2025.3547172",
+    "cited_by": 12,
+    "url": "https://doi.org/10.1109/access.2025.3547172"
+  },
+  {
+    "theme": "darkweb",
+    "title": "Navigating the Shadows: Manual and Semi-Automated Evaluation of the Dark Web for Cyber Threat Intelligence",
+    "authors": [
+      "Kühn, Philipp",
+      "Wittorf, Kyra",
+      "Reuter, Christian"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2024,
+    "doi": "10.1109/access.2024.3448247",
+    "cited_by": 19,
+    "url": "https://doi.org/10.1109/access.2024.3448247"
+  },
+  {
+    "theme": "darkweb",
+    "title": "NLP in cybersecurity: Advances, applications, and future directions for threat analysis and dark web intelligence",
+    "authors": [
+      "Alsirhani, Amjad",
+      "Ali, Sijjad",
+      "Humayun, Mamoona",
+      "Rehman, Shafique U.",
+      "Alzahrani, Mona Saleh"
+    ],
+    "journal": "Neurocomputing",
+    "issn": [
+      "0925-2312"
+    ],
+    "year": 2026,
+    "doi": "10.1016/j.neucom.2026.134365",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1016/j.neucom.2026.134365"
+  },
+  {
+    "theme": "darkweb",
+    "title": "An Unsupervised Model for Identifying and Characterizing Dark Web Forums",
+    "authors": [
+      "Nazah, Saiba",
+      "Huda, Shamsul",
+      "Abawajy, Jemal H.",
+      "Hassan, Mohammad Mehedi"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2021,
+    "doi": "10.1109/access.2021.3103319",
+    "cited_by": 25,
+    "url": "https://doi.org/10.1109/access.2021.3103319"
+  },
+  {
+    "theme": "darkweb",
+    "title": "What’s Going On in Dark Web Question and Answer Forums: Topic Diversity and Linguistic Characteristics",
+    "authors": [
+      "De-Marcos, Luis",
+      "Domínguez-Díaz, Adrián",
+      "Stapic, Zlatko"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2025,
+    "doi": "10.1109/access.2025.3597975",
+    "cited_by": 5,
+    "url": "https://doi.org/10.1109/access.2025.3597975"
+  },
+  {
+    "theme": "darkweb",
+    "title": "LLM-Based Topic Modeling for Dark Web Q&amp;A Forums: A Comparative Analysis With Traditional Methods",
+    "authors": [
+      "de-Marcos, Luis",
+      "Domínguez-Díaz, Adrián"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2025,
+    "doi": "10.1109/access.2025.3560543",
+    "cited_by": 11,
+    "url": "https://doi.org/10.1109/access.2025.3560543"
+  },
+  {
+    "theme": "cni_threat",
+    "title": "Adaptive machine learning based cyber threat intelligence in industrial control systems: A systematic literature review",
+    "authors": [
+      "Nasir, Nabeel",
+      "Lutui, Raymond",
+      "Sarkar, Nurul I.",
+      "Vaipulu, Taniela"
+    ],
+    "journal": "International Journal of Critical Infrastructure Protection",
+    "issn": [
+      "1874-5482"
+    ],
+    "year": 2026,
+    "doi": "10.1016/j.ijcip.2026.100874",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1016/j.ijcip.2026.100874"
+  },
+  {
+    "theme": "cni_threat",
+    "title": "Cyber-threat landscape of border control infrastructures",
+    "authors": [
+      "Chatzis, Petros",
+      "Stavrou, Eliana"
+    ],
+    "journal": "International Journal of Critical Infrastructure Protection",
+    "issn": [
+      "1874-5482"
+    ],
+    "year": 2022,
+    "doi": "10.1016/j.ijcip.2021.100503",
+    "cited_by": 10,
+    "url": "https://doi.org/10.1016/j.ijcip.2021.100503"
+  },
+  {
+    "theme": "cni_threat",
+    "title": "AI-enhanced intrusion detection in smart renewable energy grids: A novel industry 4.0 cyber threat management approach",
+    "authors": [
+      "Islam, Umar",
+      "Ullah, Hanif",
+      "Khan, Naveed",
+      "Saleem, Kashif",
+      "Ahmad, Iftikhar"
+    ],
+    "journal": "International Journal of Critical Infrastructure Protection",
+    "issn": [
+      "1874-5482"
+    ],
+    "year": 2025,
+    "doi": "10.1016/j.ijcip.2025.100769",
+    "cited_by": 33,
+    "url": "https://doi.org/10.1016/j.ijcip.2025.100769"
+  },
+  {
+    "theme": "cni_threat",
+    "title": "Deep learning-based authentication for insider threat detection in critical infrastructure",
+    "authors": [
+      "Budžys, Arnoldas",
+      "Kurasova, Olga",
+      "Medvedev, Viktor"
+    ],
+    "journal": "Artificial Intelligence Review",
+    "issn": [
+      "1573-7462"
+    ],
+    "year": 2024,
+    "doi": "10.1007/s10462-024-10893-1",
+    "cited_by": 31,
+    "url": "https://doi.org/10.1007/s10462-024-10893-1"
+  },
+  {
+    "theme": "cni_threat",
+    "title": "Cyber-attacks detection in industrial systems using artificial intelligence-driven methods",
+    "authors": [
+      "Wang, Wu",
+      "Harrou, Fouzi",
+      "Bouyeddou, Benamar",
+      "Senouci, Sidi-Mohammed",
+      "Sun, Ying"
+    ],
+    "journal": "International Journal of Critical Infrastructure Protection",
+    "issn": [
+      "1874-5482"
+    ],
+    "year": 2022,
+    "doi": "10.1016/j.ijcip.2022.100542",
+    "cited_by": 65,
+    "url": "https://doi.org/10.1016/j.ijcip.2022.100542"
+  },
+  {
+    "theme": "cni_threat",
+    "title": "AI Enabled Threat Detection: Leveraging Artificial Intelligence for Advanced Security and Cyber Threat Mitigation",
+    "authors": [
+      "Dhanushkodi, Kavitha",
+      "Thejas, S."
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2024,
+    "doi": "10.1109/access.2024.3493957",
+    "cited_by": 82,
+    "url": "https://doi.org/10.1109/access.2024.3493957"
+  },
+  {
+    "theme": "threat_graph",
+    "title": "Open-CyKG: An Open Cyber Threat Intelligence Knowledge Graph",
+    "authors": [
+      "Sarhan, Injy",
+      "Spruit, Marco"
+    ],
+    "journal": "Knowledge-Based Systems",
+    "issn": [
+      "0950-7051"
+    ],
+    "year": 2021,
+    "doi": "10.1016/j.knosys.2021.107524",
+    "cited_by": 103,
+    "url": "https://doi.org/10.1016/j.knosys.2021.107524"
+  },
+  {
+    "theme": "threat_graph",
+    "title": "TI-NERmergerV2: Automating the integration of threat intelligence NER datasets via STIX standard",
+    "authors": [
+      "Mouiche, Inoussa",
+      "Saad, Sherif"
+    ],
+    "journal": "Computers &amp; Security",
+    "issn": [
+      "0167-4048"
+    ],
+    "year": 2026,
+    "doi": "10.1016/j.cose.2026.104838",
+    "cited_by": 1,
+    "url": "https://doi.org/10.1016/j.cose.2026.104838"
+  },
+  {
+    "theme": "threat_graph",
+    "title": "RotAtt: Noise-Tolerant Fusion for Quality Assessment of Ontology-Driven Knowledge Graphs in Multi-Source Cyber Threat Intelligence",
+    "authors": [
+      "Haile, Alemayehu Tilahun",
+      "Abebe, Surafel Lemma",
+      "Melaku, Henock Mulugeta"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2026,
+    "doi": "10.1109/access.2026.3708201",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/access.2026.3708201"
+  },
+  {
+    "theme": "threat_graph",
+    "title": "LLM-TIKG: Threat intelligence knowledge graph construction utilizing large language model",
+    "authors": [
+      "Hu, Yuelin",
+      "Zou, Futai",
+      "Han, Jiajia",
+      "Sun, Xin",
+      "Wang, Yilei"
+    ],
+    "journal": "Computers &amp; Security",
+    "issn": [
+      "0167-4048"
+    ],
+    "year": 2024,
+    "doi": "10.1016/j.cose.2024.103999",
+    "cited_by": 122,
+    "url": "https://doi.org/10.1016/j.cose.2024.103999"
+  },
+  {
+    "theme": "threat_graph",
+    "title": "Incorporating Cyber Threat Intelligence into Complex Cyber-Physical Systems: A STIX Model for Active Buildings",
+    "authors": [
+      "Czekster, Ricardo M.",
+      "Metere, Roberto",
+      "Morisset, Charles"
+    ],
+    "journal": "Applied Sciences",
+    "issn": [
+      "2076-3417"
+    ],
+    "year": 2022,
+    "doi": "10.3390/app12105005",
+    "cited_by": 16,
+    "url": "https://doi.org/10.3390/app12105005"
+  },
+  {
+    "theme": "threat_graph",
+    "title": "K-CTIAA: Automatic Analysis of Cyber Threat Intelligence Based on a Knowledge Graph",
+    "authors": [
+      "Li, Zong-Xun",
+      "Li, Yu-Jun",
+      "Liu, Yi-Wei",
+      "Liu, Cheng",
+      "Zhou, Nan-Xin"
+    ],
+    "journal": "Symmetry",
+    "issn": [
+      "2073-8994"
+    ],
+    "year": 2023,
+    "doi": "10.3390/sym15020337",
+    "cited_by": 21,
+    "url": "https://doi.org/10.3390/sym15020337"
+  },
+  {
+    "theme": "threat_graph",
+    "title": "ICSThreatQA: A knowledge-graph enhanced question answering model for industrial control system threat intelligence",
+    "authors": [
+      "Rani, Ruby",
+      "Kumar, Mahender",
+      "Epiphaniou, Gregory",
+      "Maple, Carsten"
+    ],
+    "journal": "Expert Systems with Applications",
+    "issn": [
+      "0957-4174"
+    ],
+    "year": 2026,
+    "doi": "10.1016/j.eswa.2025.130180",
+    "cited_by": 8,
+    "url": "https://doi.org/10.1016/j.eswa.2025.130180"
+  },
+  {
+    "theme": "threat_graph",
+    "title": "BlockIntelChain: a blockchain-based cyber threat intelligence sharing architecture",
+    "authors": [
+      "Tolah, Alaa"
+    ],
+    "journal": "Scientific Reports",
+    "issn": [
+      "2045-2322"
+    ],
+    "year": 2025,
+    "doi": "10.1038/s41598-025-29152-6",
+    "cited_by": 3,
+    "url": "https://doi.org/10.1038/s41598-025-29152-6"
+  },
+  {
+    "theme": "crosslingual",
+    "title": "Cross-Lingual Summarization for Low-Resource Languages Using Multilingual Retrieval-Based In-Context Learning",
+    "authors": [
+      "Park, Gyutae",
+      "Park, Jeonghyun",
+      "Lee, Hwanhee"
+    ],
+    "journal": "Applied Sciences",
+    "issn": [
+      "2076-3417"
+    ],
+    "year": 2025,
+    "doi": "10.3390/app15147800",
+    "cited_by": 7,
+    "url": "https://doi.org/10.3390/app15147800"
+  },
+  {
+    "theme": "crosslingual",
+    "title": "Cross-Lingual Transfer Learning for Arabic Task-Oriented Dialogue Systems Using Multilingual Transformer Model mT5",
+    "authors": [
+      "Fuad, Ahlam",
+      "Al-Yahya, Maha"
+    ],
+    "journal": "Mathematics",
+    "issn": [
+      "2227-7390"
+    ],
+    "year": 2022,
+    "doi": "10.3390/math10050746",
+    "cited_by": 14,
+    "url": "https://doi.org/10.3390/math10050746"
+  },
+  {
+    "theme": "crosslingual",
+    "title": "Efficient LLM Adaptation to Low-Resource Languages via Cross-Lingual Semantic Anchoring",
+    "authors": [
+      "Shukhratov, Bekhzod",
+      "Baydadaev, Shokhrukh",
+      "Kwon, Jang Woo"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2026,
+    "doi": "10.1109/access.2026.3679427",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/access.2026.3679427"
+  },
+  {
+    "theme": "crosslingual",
+    "title": "Hierarchical Transfer Learning for Multilingual, Multi-Speaker, and Style Transfer DNN-Based TTS on Low-Resource Languages",
+    "authors": [
+      "Azizah, Kurniawati",
+      "Adriani, Mirna",
+      "Jatmiko, Wisnu"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2020,
+    "doi": "10.1109/access.2020.3027619",
+    "cited_by": 26,
+    "url": "https://doi.org/10.1109/access.2020.3027619"
+  },
+  {
+    "theme": "crosslingual",
+    "title": "Leveraging Multilingual Transformer for Multiclass Sentiment Analysis in Code-Mixed Data of Low-Resource Languages",
+    "authors": [
+      "Nazir, Muhammad Kashif",
+      "Faisal, Cm Nadeem",
+      "Habib, Muhammad Asif",
+      "Ahmad, Haseeb"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2025,
+    "doi": "10.1109/access.2025.3527710",
+    "cited_by": 30,
+    "url": "https://doi.org/10.1109/access.2025.3527710"
+  },
+  {
+    "theme": "crosslingual",
+    "title": "A domain-specific cross-lingual semantic alignment learning model for low-resource languages",
+    "authors": [
+      "Wang, Yurong",
+      "Lin, Min",
+      "Hu, Qitu",
+      "Bai, Shuangcheng",
+      "Li, Yanling",
+      "Bao, Longjie"
+    ],
+    "journal": "Neural Networks",
+    "issn": [
+      "0893-6080"
+    ],
+    "year": 2026,
+    "doi": "10.1016/j.neunet.2025.108114",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1016/j.neunet.2025.108114"
+  },
+  {
+    "theme": "crosslingual",
+    "title": "Multi-level multilingual semantic alignment for zero-shot cross-lingual transfer learning",
+    "authors": [
+      "Gui, Anchun",
+      "Xiao, Han"
+    ],
+    "journal": "Neural Networks",
+    "issn": [
+      "0893-6080"
+    ],
+    "year": 2024,
+    "doi": "10.1016/j.neunet.2024.106217",
+    "cited_by": 9,
+    "url": "https://doi.org/10.1016/j.neunet.2024.106217"
+  },
+  {
+    "theme": "crosslingual",
+    "title": "Cross-lingual transfer learning for fake news detection: leveraging high-resource language for low-resource adaptation",
+    "authors": [
+      "Thakur, Garima",
+      "Srivastava, Jyoti",
+      "Tyagi, Aryan",
+      "Kanushriya",
+      "Kaur, Jasmeet"
+    ],
+    "journal": "Neural Computing and Applications",
+    "issn": [
+      "0941-0643",
+      "1433-3058"
+    ],
+    "year": 2026,
+    "doi": "10.1007/s00521-026-12430-3",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1007/s00521-026-12430-3"
+  },
+  {
+    "theme": "crosslingual",
+    "title": "Enhancing speaker identification in low-resource multilingual languages using hybrid MFCC-Chroma STFT and transformer encoder",
+    "authors": [
+      "Vajrobol, Vajratiya",
+      "Aggarwal, Nitisha",
+      "Saxena, Geetika Jain",
+      "Singh, Sanjeev",
+      "Pundir, Amit"
+    ],
+    "journal": "Multimedia Tools and Applications",
+    "issn": [
+      "1573-7721"
+    ],
+    "year": 2025,
+    "doi": "10.1007/s11042-025-20885-0",
+    "cited_by": 2,
+    "url": "https://doi.org/10.1007/s11042-025-20885-0"
+  },
+  {
+    "theme": "crosslingual",
+    "title": "Transfer Learning, Style Control, and Speaker Reconstruction Loss for Zero-Shot Multilingual Multi-Speaker Text-to-Speech on Low-Resource Languages",
+    "authors": [
+      "Azizah, Kurniawati",
+      "Jatmiko, Wisnu"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2022,
+    "doi": "10.1109/access.2022.3141200",
+    "cited_by": 14,
+    "url": "https://doi.org/10.1109/access.2022.3141200"
+  },
+  {
+    "theme": "unicode_norm",
+    "title": "Improving the Time Efficiency of a Script Identification Algorithm Using a Unicode-Based Regular Expression Matching Strategy",
+    "authors": [
+      "Qasim, Mamtimin",
+      "Silamu, Wushour",
+      "Aizezi, Yasen"
+    ],
+    "journal": "Applied Sciences",
+    "issn": [
+      "2076-3417"
+    ],
+    "year": 2026,
+    "doi": "10.3390/app16041714",
+    "cited_by": 0,
+    "url": "https://doi.org/10.3390/app16041714"
+  },
+  {
+    "theme": "unicode_norm",
+    "title": "A Novel Multi-scale Deep Neural Framework for Script Invariant Text Detection",
+    "authors": [
+      "Khan, Tauseef",
+      "Mollah, Ayatullah Faruk"
+    ],
+    "journal": "Neural Processing Letters",
+    "issn": [
+      "1370-4621",
+      "1573-773X"
+    ],
+    "year": 2022,
+    "doi": "10.1007/s11063-021-10686-5",
+    "cited_by": 6,
+    "url": "https://doi.org/10.1007/s11063-021-10686-5"
+  },
+  {
+    "theme": "unicode_norm",
+    "title": "Enhancement of Text Analysis Using Context-Aware Normalization of Social Media Informal Text",
+    "authors": [
+      "Khan, Jebran",
+      "Lee, Sungchang"
+    ],
+    "journal": "Applied Sciences",
+    "issn": [
+      "2076-3417"
+    ],
+    "year": 2021,
+    "doi": "10.3390/app11178172",
+    "cited_by": 15,
+    "url": "https://doi.org/10.3390/app11178172"
+  },
+  {
+    "theme": "unicode_norm",
+    "title": "Efficient security and capacity techniques for Arabic text steganography via engaging Unicode standard encoding",
+    "authors": [
+      "Alanazi, Norah",
+      "Khan, Esam",
+      "Gutub, Adnan"
+    ],
+    "journal": "Multimedia Tools and Applications",
+    "issn": [
+      "1380-7501",
+      "1573-7721"
+    ],
+    "year": 2020,
+    "doi": "10.1007/s11042-020-09667-y",
+    "cited_by": 36,
+    "url": "https://doi.org/10.1007/s11042-020-09667-y"
+  },
+  {
+    "theme": "annotation",
+    "title": "ANEC: An Amharic Named Entity Corpus and Transformer Based Recognizer",
+    "authors": [
+      "Jibril, Ebrahim Chekol",
+      "Tantug, A. Cuneyd"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2023,
+    "doi": "10.1109/access.2023.3243468",
+    "cited_by": 8,
+    "url": "https://doi.org/10.1109/access.2023.3243468"
+  },
+  {
+    "theme": "annotation",
+    "title": "Assessing Inter-Annotator Agreement for Medical Image Segmentation",
+    "authors": [
+      "Yang, Feng",
+      "Zamzmi, Ghada",
+      "Angara, Sandeep",
+      "Rajaraman, Sivaramakrishnan",
+      "Aquilina, André",
+      "Xue, Zhiyun"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2023,
+    "doi": "10.1109/access.2023.3249759",
+    "cited_by": 86,
+    "url": "https://doi.org/10.1109/access.2023.3249759"
+  },
+  {
+    "theme": "annotation",
+    "title": "Construction of a Geological Fault Corpus and Named Entity Recognition",
+    "authors": [
+      "Wang, Huainuo",
+      "Niu, Ruiqing",
+      "Han, Yongyao",
+      "Deng, Qinglu"
+    ],
+    "journal": "Applied Sciences",
+    "issn": [
+      "2076-3417"
+    ],
+    "year": 2025,
+    "doi": "10.3390/app15052465",
+    "cited_by": 2,
+    "url": "https://doi.org/10.3390/app15052465"
+  },
+  {
+    "theme": "annotation",
+    "title": "Learning Document-Level Label Propagation and Instance Selection by Deep Q-Network for Interactive Named Entity Annotation",
+    "authors": [
+      "Lu, Tingming",
+      "Gui, Yaocheng",
+      "Gao, Zhiqiang"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2021,
+    "doi": "10.1109/access.2021.3064054",
+    "cited_by": 2,
+    "url": "https://doi.org/10.1109/access.2021.3064054"
+  },
+  {
+    "theme": "annotation",
+    "title": "Investigating annotation noise for named entity recognition",
+    "authors": [
+      "Zhu, Yu",
+      "Ye, Yingchun",
+      "Li, Mengyang",
+      "Zhang, Ji",
+      "Wu, Ou"
+    ],
+    "journal": "Neural Computing and Applications",
+    "issn": [
+      "0941-0643",
+      "1433-3058"
+    ],
+    "year": 2022,
+    "doi": "10.1007/s00521-022-07733-0",
+    "cited_by": 8,
+    "url": "https://doi.org/10.1007/s00521-022-07733-0"
+  },
+  {
+    "theme": "social_threat",
+    "title": "A Feature-driven Method for Automating the Assessment of OSINT Cyber Threat Sources",
+    "authors": [
+      "Tundis, Andrea",
+      "Ruppert, Samuel",
+      "Mühlhäuser, Max"
+    ],
+    "journal": "Computers &amp; Security",
+    "issn": [
+      "0167-4048"
+    ],
+    "year": 2022,
+    "doi": "10.1016/j.cose.2021.102576",
+    "cited_by": 24,
+    "url": "https://doi.org/10.1016/j.cose.2021.102576"
+  },
+  {
+    "theme": "social_threat",
+    "title": "Robust Botnet DGA Detection: Blending XAI and OSINT for Cyber Threat Intelligence Sharing",
+    "authors": [
+      "Suryotrisongko, Hatma",
+      "Musashi, Yasuo",
+      "Tsuneda, Akio",
+      "Sugitani, Kenichi"
+    ],
+    "journal": "IEEE Access",
+    "issn": [
+      "2169-3536"
+    ],
+    "year": 2022,
+    "doi": "10.1109/access.2022.3162588",
+    "cited_by": 86,
+    "url": "https://doi.org/10.1109/access.2022.3162588"
+  },
+  {
+    "theme": "social_threat",
+    "title": "ETIP: An Enriched Threat Intelligence Platform for improving OSINT correlation, analysis, visualization and sharing capabilities",
+    "authors": [
+      "González-Granadillo, Gustavo",
+      "Faiella, Mario",
+      "Medeiros, Ibéria",
+      "Azevedo, Rui",
+      "González-Zarzosa, Susana"
+    ],
+    "journal": "Journal of Information Security and Applications",
+    "issn": [
+      "2214-2126"
+    ],
+    "year": 2021,
+    "doi": "10.1016/j.jisa.2020.102715",
+    "cited_by": 26,
+    "url": "https://doi.org/10.1016/j.jisa.2020.102715"
+  },
+  {
+    "theme": "social_threat",
+    "title": "Cyber-security: Identity deception detection on social media platforms",
+    "authors": [
+      "van der Walt, Estee",
+      "Eloff, J.H.P.",
+      "Grobler, Jacomine"
+    ],
+    "journal": "Computers &amp; Security",
+    "issn": [
+      "0167-4048"
+    ],
+    "year": 2018,
+    "doi": "10.1016/j.cose.2018.05.015",
+    "cited_by": 46,
+    "url": "https://doi.org/10.1016/j.cose.2018.05.015"
+  },
+  {
+    "theme": "social_threat",
+    "title": "Assessing Text Classification Methods for Cyberbullying Detection on Social Media Platforms",
+    "authors": [
+      "Philipo, Adamu Gaston",
+      "Sebastian Sarwatt, Doreen",
+      "Ding, Jianguo",
+      "Daneshmand, Mahmoud",
+      "Ning, Huansheng"
+    ],
+    "journal": "IEEE Transactions on Information Forensics and Security",
+    "issn": [
+      "1556-6013",
+      "1556-6021"
+    ],
+    "year": 2025,
+    "doi": "10.1109/tifs.2025.3588728",
+    "cited_by": 19,
+    "url": "https://doi.org/10.1109/tifs.2025.3588728"
+  },
+  {
+    "theme": "social_threat",
+    "title": "Threat classification model for security information event management focusing on model efficiency",
+    "authors": [
+      "Kim, Jae-yeol",
+      "Kwon, Hyuk-Yoon"
+    ],
+    "journal": "Computers &amp; Security",
+    "issn": [
+      "0167-4048"
+    ],
+    "year": 2022,
+    "doi": "10.1016/j.cose.2022.102789",
+    "cited_by": 29,
+    "url": "https://doi.org/10.1016/j.cose.2022.102789"
+  },
+  {
+    "theme": "multiling_cti",
+    "title": "A Comparative Analysis of Cyber-Threat Intelligence Sources, Formats and Languages",
+    "authors": [
+      "Ramsdale, Andrew",
+      "Shiaeles, Stavros",
+      "Kolokotronis, Nicholas"
+    ],
+    "journal": "Electronics",
+    "issn": [
+      "2079-9292"
+    ],
+    "year": 2020,
+    "doi": "10.3390/electronics9050824",
+    "cited_by": 87,
+    "url": "https://doi.org/10.3390/electronics9050824"
+  }
+]

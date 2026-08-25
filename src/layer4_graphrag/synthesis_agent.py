@@ -43,6 +43,7 @@ from typing import Any
 
 from langgraph.graph import END, START, StateGraph
 
+from src.core.identity import entity_id as _shared_entity_id
 from src.core.schemas import (
     GraphContext,
     GraphNeighbour,
@@ -99,8 +100,9 @@ LIMIT $limit
 
 
 def _entity_id(entity_type: str, value: str) -> str:
-    """Mirror of neo4j_connector._entity_id — must stay byte-identical to it."""
-    return f"{entity_type}:{value.strip().casefold()}"
+    """Graph key. Shared with neo4j_connector via src.core.identity, which is
+    what guarantees the seed ids built here match the ids written there."""
+    return _shared_entity_id(entity_type, value)
 
 
 def gazetteer_only_extractor(text: str) -> tuple[list[ThreatEntity], str, float]:

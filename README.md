@@ -61,7 +61,7 @@ Decisions and their evidence: [ADR-001](docs/adr-001-rules-vs-finetuning.md)
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env          # then fill in real values
-pytest tests/ -q              # 73 assertions, no infrastructure needed
+pytest tests/ -q              # 150 assertions, no infrastructure needed
 ```
 
 Reproduce the results end to end:
@@ -100,7 +100,7 @@ Layer 0/1  scrapers (Telegram, Tor leak sites, RansomLook) ──> Kafka raw top
                                                             └──> capture sink -> data/raw/*.jsonl
 Layer 2    fastText triage                       [NOT in the data path -- see below]
 Layer 3    NFKC normalise -> fine-tuned IndicNER -> gazetteer repair
-Layer 4    Neo4j threat graph
+Layer 4    Neo4j threat graph  +  LangGraph synthesis  [see ADR-003: not wired]
 Layer 5    STIX 2.1 export  +  Streamlit console
 ```
 
@@ -127,10 +127,16 @@ Read these before treating any number above as meaningful.
 6. **`tactic` entities are unlearnable** with IndicNER's LOC/ORG/PER head.
 7. Entity scoring is value-level, not span-level — the pipeline discards
    character offsets. Gold data stores them and will upgrade for free.
-8. **No real harvested corpus exists yet.** A capture sink now archives raw
-   traffic (`src/layer1_ingestion/capture_sink.py`), but it has not yet been
-   run against live sources, so every number above still rests on synthetic
-   data. This is the single blocking item for publication.
+8. **The real corpus collected so far contains no CNI entities.** 433 live
+   Telegram records were collected on 2026-08-25 and produced **zero**
+   CNI-relevant mentions — the yield was Tamil political news. On that data the
+   pipeline emitted **21.8% structurally malformed entities** and **96% of
+   Tamil-script entities carried no virama at all**. Every number in the results
+   table above still rests on synthetic data, and the real-data run confirms
+   0.866 is an upper bound. See `docs/collection_protocol.md` §5.
+9. **Layer 4 has two implementations and neither is wired to the other.**
+   See `docs/adr-003-langgraph-layer4.md`. Any "multi-agent" claim describes an
+   implemented but unwired component.
 
 ## Ethics and data handling
 
