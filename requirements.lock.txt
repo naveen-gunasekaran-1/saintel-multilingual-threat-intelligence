@@ -24,6 +24,7 @@ idna==3.18
 iniconfig==2.3.0
 itsdangerous==2.2.0
 Jinja2==3.1.6
+joblib==1.5.3
 jsonpatch==1.33
 jsonpointer==3.1.1
 jsonschema==4.26.0
@@ -77,6 +78,8 @@ rich==15.0.0
 rpds-py==2026.6.3
 rsa==4.9.1
 safetensors==0.8.0
+scikit-learn==1.9.0
+scipy==1.17.1
 shellingham==1.5.4
 simplejson==4.1.1
 six==1.17.0
@@ -91,6 +94,7 @@ streamlit-agraph==0.0.45
 sympy==1.14.0
 Telethon==1.44.0
 tenacity==9.1.4
+threadpoolctl==3.6.0
 tokenizers==0.22.2
 toml==0.10.2
 torch==2.13.0

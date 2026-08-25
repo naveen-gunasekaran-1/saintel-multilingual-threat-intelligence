@@ -35,3 +35,4 @@ beautifulsoup4==4.15.0     # leak-site HTML parsing
 #   now that src/layer4_graphrag/synthesis_agent.py actually imports it.)
 # sentencepiece: only needed by xlm-roberta-base (NLP_MODEL_NAME), which is
 #   configured but never used -- entity_extractor.py hardcodes ai4bharat/IndicNER.
+scikit-learn==1.9.0                # sklearn.feature_extraction/linear_model -- Layer 2 triage model comparison (docs/model_comparison.md)
