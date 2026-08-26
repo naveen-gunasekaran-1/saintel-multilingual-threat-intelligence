@@ -88,7 +88,7 @@ or `heuristic`. Ablation and error analysis depend on it.
 | Module | Responsibility |
 |---|---|
 | `gazetteer.py` | **dependency-free** repair logic. Imports only schemas, so it loads with no `.env` and no infrastructure — this is what makes offline benchmarking possible. |
-| `entity_extractor.py` | fine-tuned IndicNER + zero-shot intent + Kafka consumer |
+| `entity_extractor.py` | fine-tuned XLM-R-base (ADR-004) + zero-shot intent + Kafka consumer |
 
 `refine_entities()` runs four tiers. Measured contribution (dev split, n=44):
 
@@ -135,11 +135,11 @@ distribution flattens toward uniform. Its output is not a prediction.
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env          # fill in real values
-pytest tests/ -q              # 150 assertions, no infrastructure needed
+pytest tests/ -q              # 153 assertions, no infrastructure needed
 
 python scripts/build_eval_seed.py
 python scripts/build_finetune_corpus.py
-python scripts/finetune_indicner.py         # ~10 min on Apple MPS
+python scripts/finetune_model.py --base xlm-roberta-base --slug xlmr  # ~13 min on Apple MPS
 python scripts/evaluate_pipeline.py --split test --arms all
 ```
 
@@ -175,11 +175,19 @@ were fixed during the code-quality pass.
    full infrastructure config.
 7. **20 files hand-roll a `sys.path` bootstrap** — the fix is packaging.
 
+**Fixed, not carried:** `_ner_entities()` raised on an empty-string entity
+value (some tokenizers' `aggregation_strategy="simple"` can yield a span that
+strips to empty), and the surrounding exception handler discarded every other
+entity already found in that record — not just the empty one. Found on the
+real 433-record Telegram archive after ADR-004 (93/433 records affected).
+Fixed by skipping the empty value instead of constructing it; regression test
+in `tests/test_entity_extractor.py`.
+
 ---
 
 ## 8. Testing
 
-150 assertions across 8 modules, all offline, no infrastructure required.
+153 assertions across 9 modules, all offline, no infrastructure required.
 
 | Module | Covers |
 |---|---|

@@ -6,8 +6,8 @@ code-switched South Asian text without translating it to English first, and a
 deliberate near-homophone of *sentinel*: a watchman set over infrastructure.
 
 Scope note: the four commitments in the name are validated to different
-degrees. *Native* and *entity labelling* are measured here (F1 0.866, and 0.875
-on held-out infrastructure entities). Coverage beyond Tamil is future work.
+degrees. *Native* and *entity labelling* are measured here (F1 0.889 overall,
+0.800 on held-out infrastructure entities). Coverage beyond Tamil is future work.
 
 > **Status: research prototype.** This is an active research codebase, not a
 > deployed system. All evaluation data is **synthetic and authored for
@@ -33,7 +33,8 @@ Multilingual NER tokenizers fragment mixed-script entities. `DRDO` inside Tamil
 prose becomes `dr` + `##do`; `சென்னை` loses its virama and decodes as `செனனை`.
 Off-the-shelf `ai4bharat/IndicNER` scores **F1 0.186** on this task, and is
 *confidently* wrong — it tagged the two-character fragment `dr` as an
-organization at 0.911 confidence.
+organization at 0.911 confidence. This motivated the project; it is not a
+claim about the production model, which is XLM-RoBERTa (below).
 
 ## Results
 
@@ -44,16 +45,25 @@ table scores 0 there by construction — that column is the generalisation test.
 | Arm | P | R | F1 | held_out F1 | native_tamil F1 |
 |---|---|---|---|---|---|
 | gazetteer only | 1.000 | 0.667 | 0.800 | 0.000 | 1.000 |
-| IndicNER (base) | 0.151 | 0.242 | 0.186 | 0.210 | 0.000 |
-| fine-tuned | 0.758 | 0.758 | 0.758 | 0.875 | 0.333 |
-| **fine-tuned + gazetteer** | 0.853 | 0.879 | **0.866** | **0.875** | **0.923** |
+| IndicNER (base, unfine-tuned) | 0.151 | 0.242 | 0.186 | 0.210 | 0.000 |
+| **fine-tuned XLM-R-base** | 0.933 | 0.849 | **0.889** | 0.800 | 0.923 |
+| fine-tuned XLM-R + gazetteer | 0.933 | 0.849 | **0.889** | 0.800 | 0.923 |
 
-The two components are complementary: the fine-tuned model generalises to
-entities it never saw (0.875 where the gazetteer is structurally 0.000), while
-the gazetteer carries native Tamil (1.000) where the model collapses (0.333).
+The gazetteer row is listed for completeness and is **byte-identical** to the
+model alone on this test split: XLM-R's own tokenizer already preserves the
+Tamil script correctly, so the repair stage finds nothing left to fix here
+(it does add a small amount on the dev split — see ADR-004). This differs
+from the IndicNER-based pairing evaluated in ADR-002, where the gazetteer
+recovered a real collapse (native_tamil 0.333 → 0.923). Both models are kept
+comparable in [docs/model_comparison.md](docs/model_comparison.md): IndicNER
+scores higher on `held_out` (0.875 vs 0.800), which is arguably the more
+important number for this project's generalisation claim, while XLM-R scores
+higher overall, runs 2× faster, and needs no gated Hugging Face token.
 
 Decisions and their evidence: [ADR-001](docs/adr-001-rules-vs-finetuning.md)
-(superseded) → [ADR-002](docs/adr-002-finetuned-hybrid.md).
+(superseded) → [ADR-002](docs/adr-002-finetuned-hybrid.md) (superseded) →
+[ADR-004](docs/adr-004-xlmr-production-model.md). Full five-model comparison:
+[docs/model_comparison.md](docs/model_comparison.md).
 
 ## Quickstart
 
@@ -61,7 +71,7 @@ Decisions and their evidence: [ADR-001](docs/adr-001-rules-vs-finetuning.md)
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env          # then fill in real values
-pytest tests/ -q              # 150 assertions, no infrastructure needed
+pytest tests/ -q              # 153 assertions, no infrastructure needed
 ```
 
 Reproduce the results end to end:
@@ -69,7 +79,7 @@ Reproduce the results end to end:
 ```bash
 python scripts/build_eval_seed.py         # evaluation set
 python scripts/build_finetune_corpus.py   # training corpus (leakage-checked)
-python scripts/finetune_indicner.py       # ~10 min on Apple MPS
+python scripts/finetune_model.py --base xlm-roberta-base --slug xlmr  # ~13 min on Apple MPS
 python scripts/evaluate_pipeline.py --split test --arms all
 ```
 
@@ -99,7 +109,7 @@ Layer 0/1  scrapers (Telegram, Tor leak sites, RansomLook) ──> Kafka raw top
            Tor path needs a local Tor daemon: SOCKS 9050 + control 9051
                                                             └──> capture sink -> data/raw/*.jsonl
 Layer 2    fastText triage                       [NOT in the data path -- see below]
-Layer 3    NFKC normalise -> fine-tuned IndicNER -> gazetteer repair
+Layer 3    NFKC normalise -> fine-tuned XLM-R-base -> gazetteer repair
 Layer 4    Neo4j threat graph  +  LangGraph synthesis  [see ADR-003: not wired]
 Layer 5    STIX 2.1 export  +  Streamlit console
 ```
@@ -111,11 +121,11 @@ Read these before treating any number above as meaningful.
 1. **Training and evaluation data share authorship and sentence templates.**
    Generalisation is demonstrated over *entity identity*, not over *linguistic
    register*. Real hacktivist text — slang, misspellings, irregular syntax — is
-   not represented. **0.866 is an upper bound, not a field estimate.**
+   not represented. **0.889 is an upper bound, not a field estimate.**
 2. **Tamil is unverified.** Records carry `tamil_verified: false` pending review
    by a fluent reader.
 3. **The overall advantage is not statistically significant.** gazetteer vs
-   fine-tuned+gazetteer: McNemar b=3, c=5, p>0.05 at n=37. The *held_out*
+   fine-tuned+gazetteer: McNemar b=1, c=4, p>0.05 at n=37. The *held_out*
    difference is categorical and needs no test; the overall margin does not
    survive one.
 4. **The triage classifier is unusable.** Trained on 14 hand-written examples,
@@ -124,16 +134,21 @@ Read these before treating any number above as meaningful.
 5. **The intent classifier is invalid for this task.** `bart-large-mnli` is
    English-only; on Tamil its label distribution flattens toward uniform. It is
    guessing.
-6. **`tactic` entities are unlearnable** with IndicNER's LOC/ORG/PER head.
+6. **`tactic` entities are unlearnable** with the LOC/ORG/PER head shape used by every model compared here (ADR-004 changed the encoder, not the label set).
 7. Entity scoring is value-level, not span-level — the pipeline discards
    character offsets. Gold data stores them and will upgrade for free.
 8. **The real corpus collected so far contains no CNI entities.** 433 live
    Telegram records were collected on 2026-08-25 and produced **zero**
-   CNI-relevant mentions — the yield was Tamil political news. On that data the
-   pipeline emitted **21.8% structurally malformed entities** and **96% of
-   Tamil-script entities carried no virama at all**. Every number in the results
-   table above still rests on synthetic data, and the real-data run confirms
-   0.866 is an upper bound. See `docs/collection_protocol.md` §5.
+   CNI-relevant mentions under both the IndicNER and XLM-R extractors — the
+   yield was Tamil political news, and better extraction quality does not
+   manufacture signal the corpus doesn't have. Extraction quality itself
+   improved substantially after ADR-004: structurally malformed entities
+   21.8% → **12.1%**, subword-fragment (`##`) entities 9.7% → **0%**
+   (structurally eliminated — SentencePiece has no WordPiece continuation
+   marker), Tamil entities missing a virama 96% → **24%** — still broken a
+   quarter of the time on real text, not solved. Every number in the results
+   table above still rests on synthetic data. See `docs/collection_protocol.md`
+   §5 and §9.
 9. **Layer 4 has two implementations and neither is wired to the other.**
    See `docs/adr-003-langgraph-layer4.md`. Any "multi-agent" claim describes an
    implemented but unwired component.

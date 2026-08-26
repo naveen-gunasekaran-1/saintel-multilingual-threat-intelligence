@@ -2,6 +2,32 @@
 
 Research prototype. Versions mark meaningful states of the work, not releases.
 
+## [Unreleased] — 2026-08-26 — Production model: XLM-R replaces IndicNER
+
+### Changed
+- **Production entity extractor switched from IndicNER to fine-tuned
+  XLM-R-base** (`docs/adr-004-xlmr-production-model.md`, supersedes ADR-002).
+  Overall F1 0.866 → 0.889 (not statistically significant, McNemar p>0.05);
+  `held_out` F1 0.875 → 0.800 (a real cost, stated plainly — this is the
+  metric the project's generalisation claim rests on). Gains: no gated HF
+  token dependency, 2× faster inference, and — confirmed on the real
+  433-record archive — subword fragmentation (`##`) eliminated structurally
+  and Tamil virama loss down from 96% to 24%.
+- `entity_extractor.py`, `scripts/evaluate_pipeline.py` now point at
+  `data/models/xlmr-cni-ft`. `scripts/finetune_indicner.py` is kept, unchanged
+  — it still reproduces the superseded ADR-002 numbers this ADR cites.
+- README, `docs/project_documentation.md`, `docs/collection_protocol.md`,
+  `docs/model_comparison.md` updated to match; historical ADR text and the
+  original model-comparison table are left as originally written rather than
+  edited to match the new state.
+
+### Fixed
+- `_ner_entities()` raised on an empty-string entity value (some tokenizers'
+  `aggregation_strategy="simple"` can yield a span that strips to empty); the
+  surrounding exception handler discarded every other entity already found in
+  that record, not just the empty one. Found on the real archive — 93/433
+  records affected pre-fix. Regression test: `tests/test_entity_extractor.py`.
+
 ## [Unreleased] — 2026-08-25
 
 ### Added

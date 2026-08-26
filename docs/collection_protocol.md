@@ -122,3 +122,41 @@ Not yet performed. When it is:
 - [ ] Retention period agreed and recorded above
 - [ ] Second annotator identified, κ budgeted
 - [ ] Corpus containing actual CNI entity mentions (§5 shows the current one does not)
+
+## 9. Re-run addendum — 2026-08-26, XLM-R production model
+
+ADR-004 switched the production extractor from IndicNER to fine-tuned
+XLM-R-base. The Run 1 archive (§5, same 433 records, unchanged) was
+re-processed through `scripts/run_batch_pipeline.py` under the new model to
+check whether the extraction-quality problem was model-specific.
+
+A real bug surfaced and was fixed during this re-run: `_ner_entities()`
+raised on an empty-string entity value from XLM-R's tokenizer aggregation,
+which the surrounding exception handler caught by discarding **every** entity
+already found in that record, not just the empty one. 93 of 433 records were
+affected before the fix (`src/layer3_native_nlp/entity_extractor.py`,
+regression-tested in `tests/test_entity_extractor.py`). Numbers below are
+post-fix.
+
+| Metric | IndicNER (Run 1) | XLM-R (this run) |
+|---|---|---|
+| Structurally junk entities | 21.8% | **12.1%** |
+| Entities with `##` subword marker | 9.7% | **0.0%** |
+| Tamil entities missing a virama | 96% | **24%** |
+| CNI-relevant mentions | 0 | 0 (unchanged) |
+
+**Extraction quality improved substantially** — consistent with
+`docs/model_comparison.md` §4's finding that XLM-R's tokenizer preserves
+Tamil combining marks IndicNER's drops. `##` fragmentation is eliminated
+structurally: SentencePiece does not use WordPiece's continuation marker, so
+that failure mode cannot recur under this encoder.
+
+**CNI yield is unchanged at zero, confirmed with a corrected check.** An
+initial substring regex reported 6 "CNI-relevant" hits; manual inspection
+found both were false positives from unanchored substring matching
+(`barclays` contains `barc`; `vishal` ends in `hal` — neither is a genuine
+BARC or HAL mention). A word-boundary regex found zero. **This is the
+important result of this addendum: better extraction quality does not create
+signal that is not in the corpus.** The blocking item in §8 is unchanged —
+the collected text is Tamil political and general news, and no model choice
+fixes a source-selection problem.

@@ -13,9 +13,19 @@ python scripts/compare_triage_models.py    # triage comparison
 
 Raw output: `results/model_comparison/comparison.json`, `triage_comparison.json`.
 
+> **Status update, 2026-08-26:** the comparison below fed directly into a
+> decision to *switch* production models. [ADR-004](adr-004-xlmr-production-model.md)
+> replaced IndicNER with fine-tuned XLM-R-base, on the strength of the
+> `held_out` result documented here plus two further considerations recorded
+> in that ADR: no gated Hugging Face dependency, and an unplanned tokenizer
+> finding in Part 1 §4 below. The table and analysis in Part 1 are left as
+> originally written — they are the evidence the decision was made against,
+> not a claim about current production state. Where this document and
+> ADR-004 disagree on which model is "chosen," ADR-004 is authoritative.
+
 ---
 
-## Part 1 — Entity extraction (Layer 3): why IndicNER?
+## Part 1 — Entity extraction (Layer 3): IndicNER vs four alternatives
 
 ### Method
 

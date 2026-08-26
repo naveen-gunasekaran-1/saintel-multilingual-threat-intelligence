@@ -27,10 +27,11 @@ from src.layer1_ingestion.normalizer import normalize_threat_text
 settings = get_settings()
 logger = get_logger(__name__, level=settings.log_level)
 
-# Prefer the fine-tuned CNI model when present (ADR-002). Falls back to base
-# IndicNER, which measures F1 0.186 -- usable only as a degraded mode.
-FINETUNED_MODEL_DIR = ROOT / "data" / "models" / "indicner-cni-ft"
-BASE_NER_MODEL = "ai4bharat/IndicNER"
+# Prefer the fine-tuned CNI model when present (ADR-004, superseding ADR-002).
+# Falls back to base xlm-roberta-base, which is unfine-tuned and untested as a
+# standalone extractor -- treat the fallback path as degraded, same as before.
+FINETUNED_MODEL_DIR = ROOT / "data" / "models" / "xlmr-cni-ft"
+BASE_NER_MODEL = "xlm-roberta-base"
 
 
 def _resolve_ner_model() -> str:
@@ -190,10 +191,22 @@ class EntityExtractor:
                 elif item.get("entity_group", "").lower() in {"tactic", "technique"}:
                     entity_type = "tactic"
 
+                value = item.get("word", "").strip()
+                if not value:
+                    # Some tokenizers' aggregation_strategy="simple" can yield a
+                    # span that strips to empty (whitespace/punctuation-only
+                    # SentencePiece merges). Skipping it is not a design choice:
+                    # letting it through raised inside ThreatEntity's
+                    # min_length=1 validator, which the broad except below
+                    # caught -- discarding every OTHER entity already found in
+                    # this record, not just the empty one. Confirmed on the
+                    # real 433-record Telegram archive (2026-08-26).
+                    continue
+
                 entities.append(
                     ThreatEntity(
                         entity_type=entity_type,
-                        value=item.get("word", "").strip(),
+                        value=value,
                         confidence=float(item.get("score", 0.5)),
                         source="transformers-ner",
                     )

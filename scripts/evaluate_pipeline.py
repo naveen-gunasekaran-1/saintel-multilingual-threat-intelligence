@@ -119,7 +119,7 @@ def make_ablation(**flags):
     return arm
 
 
-FT_MODEL = ROOT / "data" / "models" / "indicner-cni-ft"
+FT_MODEL = ROOT / "data" / "models" / "xlmr-cni-ft"  # ADR-004
 
 
 def arm_finetuned(rec, ctx):
@@ -191,7 +191,7 @@ def build_context(need_ner: bool, need_ft: bool = False) -> dict:
     if need_ft:
         if not FT_MODEL.exists():
             raise SystemExit(f"fine-tuned model missing: {FT_MODEL}\n"
-                             "run scripts/finetune_indicner.py first")
+                             "run: python scripts/finetune_model.py --base xlm-roberta-base --slug xlmr")
         ft = pipeline("ner", model=str(FT_MODEL), tokenizer=str(FT_MODEL),
                       aggregation_strategy="simple", device=-1)
         ft_cache: dict[str, list] = {}
