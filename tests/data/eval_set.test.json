@@ -1,0 +1,745 @@
+[
+  {
+    "id": "syn-0003",
+    "text": "Anyone know a good biryani place near Avadi?",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Avadi",
+        "start": 38,
+        "end": 43
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial: gazetteer location, food chat"
+  },
+  {
+    "id": "syn-0004",
+    "text": "Traffic near Avadi railway station is terrible today.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Avadi",
+        "start": 13,
+        "end": 18
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial"
+  },
+  {
+    "id": "syn-0005",
+    "text": "ISRO successfully launched another communication satellite today.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "ISRO",
+        "start": 0,
+        "end": 4
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial: public news about CNI org"
+  },
+  {
+    "id": "syn-0008",
+    "text": "Applying for a graduate trainee role at DRDO this year.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "DRDO",
+        "start": 40,
+        "end": 44
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial: job seeking"
+  },
+  {
+    "id": "syn-0009",
+    "text": "BHEL reported strong quarterly earnings according to the business press.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "BHEL",
+        "start": 0,
+        "end": 4
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial: financial news"
+  },
+  {
+    "id": "syn-0010",
+    "text": "Took the train from Vizag to Chennai, beautiful coastal route.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Vizag",
+        "start": 20,
+        "end": 25
+      },
+      {
+        "type": "location",
+        "value": "Chennai",
+        "start": 29,
+        "end": 36
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial: two gazetteer locations, travel"
+  },
+  {
+    "id": "syn-0015",
+    "text": "சென்னை மெட்ரோ ரயில் சேவை நாளை தாமதமாகும்.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "சென்னை",
+        "start": 0,
+        "end": 6
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "adversarial: Tamil, transit notice"
+  },
+  {
+    "id": "syn-0016",
+    "text": "கல்பாக்கம் பகுதியில் மீன்பிடி தொழில் நன்றாக உள்ளது.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "கல்பாக்கம்",
+        "start": 0,
+        "end": 10
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "adversarial: Tamil, fishing industry"
+  },
+  {
+    "id": "syn-0019",
+    "text": "ISRO oda new mission romba interesting ah irukku.",
+    "script": "romanized",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "ISRO",
+        "start": 0,
+        "end": 4
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "adversarial: Tanglish, space enthusiasm"
+  },
+  {
+    "id": "syn-0025",
+    "text": "Our strategy is to target the younger demographic this quarter.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "adversarial: 'target' business sense"
+  },
+  {
+    "id": "syn-0026",
+    "text": "The power went out in our building again, third time this week.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "adversarial: outage, but domestic"
+  },
+  {
+    "id": "syn-0027",
+    "text": "Network is down at the office, IT says it's a router problem.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "adversarial: 'network down' benign IT"
+  },
+  {
+    "id": "syn-0030",
+    "text": "Buy cheap crypto tokens now 100x gains guaranteed!",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "spam"
+  },
+  {
+    "id": "syn-0031",
+    "text": "Click here to win free prizes, limited time offer.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "spam"
+  },
+  {
+    "id": "syn-0034",
+    "text": "Vanakkam nanba, eppadi irukinga? Saapteengala?",
+    "script": "romanized",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "plain benign Tanglish greeting"
+  },
+  {
+    "id": "syn-0035",
+    "text": "Naan kadai ku poren, kaaikari vaanga.",
+    "script": "romanized",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "plain benign Tanglish"
+  },
+  {
+    "id": "syn-0036",
+    "text": "Ami bazar e jacchi sabji kinte.",
+    "script": "romanized",
+    "language": "bn",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "plain benign Bengali"
+  },
+  {
+    "id": "syn-0037",
+    "text": "The match was rained out, rescheduled for next Sunday.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "plain benign"
+  },
+  {
+    "id": "syn-0041",
+    "text": "Our team has gained access to internal ISRO systems.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "ISRO",
+        "start": 39,
+        "end": 43
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "breach claim"
+  },
+  {
+    "id": "syn-0042",
+    "text": "Reconnaissance complete on the Avadi facility perimeter.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "surveillance",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Avadi",
+        "start": 31,
+        "end": 36
+      },
+      {
+        "type": "tactic",
+        "value": "Reconnaissance",
+        "start": 0,
+        "end": 14
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "surveillance of CNI site"
+  },
+  {
+    "id": "syn-0043",
+    "text": "Comrades, the Kalpakkam site is the next target. Coordinates shared.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "physical_threat",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Kalpakkam",
+        "start": 14,
+        "end": 23
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "physical threat to nuclear site"
+  },
+  {
+    "id": "syn-0050",
+    "text": "ஆவடி ஆயுத தொழிற்சாலை பற்றிய தகவல் சேகரிக்கப்பட்டது.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "surveillance",
+    "entities": [
+      {
+        "type": "location",
+        "value": "ஆவடி",
+        "start": 0,
+        "end": 4
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "Tamil surveillance of ordnance factory"
+  },
+  {
+    "id": "syn-0055",
+    "text": "We have mapped the Sriharikota launch complex approaches.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "surveillance",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Sriharikota",
+        "start": 19,
+        "end": 30
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT"
+  },
+  {
+    "id": "syn-0056",
+    "text": "HAL production line schedules have been exfiltrated successfully.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "HAL",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "type": "tactic",
+        "value": "exfiltrated",
+        "start": 40,
+        "end": 51
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT"
+  },
+  {
+    "id": "syn-0057",
+    "text": "BARC internal documents will be released next week.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "BARC",
+        "start": 0,
+        "end": 4
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT"
+  },
+  {
+    "id": "syn-0060",
+    "text": "Tarapur station staff credentials have been harvested.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "social_engineering",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Tarapur",
+        "start": 0,
+        "end": 7
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT"
+  },
+  {
+    "id": "syn-0061",
+    "text": "Manali refinery pipeline routes are documented and shared.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "signal",
+    "intent_label": "infrastructure_disruption",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Manali refinery",
+        "start": 0,
+        "end": 15
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT"
+  },
+  {
+    "id": "syn-0067",
+    "text": "Took a day trip to Ennore beach, very quiet compared to Marina.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Ennore",
+        "start": 19,
+        "end": 25
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT adversarial: benign travel"
+  },
+  {
+    "id": "syn-0068",
+    "text": "BARC published a paper on isotope research last month.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "held_out",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "BARC",
+        "start": 0,
+        "end": 4
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "HELD OUT adversarial: benign science news"
+  },
+  {
+    "id": "syn-0070",
+    "text": "DRDO மற்றும் ISRO அமைப்புகள் இலக்கு வைக்கப்படும்.",
+    "script": "mixed",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "cyberattack",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "DRDO",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "type": "organization",
+        "value": "ISRO",
+        "start": 13,
+        "end": 17
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "two Latin orgs inside Tamil; both fragment"
+  },
+  {
+    "id": "syn-0071",
+    "text": "BHEL ஊழியர்களின் கடவுச்சொற்கள் கிடைத்துவிட்டன.",
+    "script": "mixed",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "social_engineering",
+    "entities": [
+      {
+        "type": "organization",
+        "value": "BHEL",
+        "start": 0,
+        "end": 4
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "mixed script credential claim"
+  },
+  {
+    "id": "syn-0072",
+    "text": "Vizag மற்றும் Chennai துறைமுகங்கள் நமது கவனத்தில்.",
+    "script": "mixed",
+    "language": "code_switched",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "surveillance",
+    "entities": [
+      {
+        "type": "location",
+        "value": "Vizag",
+        "start": 0,
+        "end": 5
+      },
+      {
+        "type": "location",
+        "value": "Chennai",
+        "start": 14,
+        "end": 21
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "two Latin locations inside Tamil"
+  },
+  {
+    "id": "syn-0073",
+    "text": "சென்னை நகரில் இன்று விழா நடைபெறுகிறது.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "noise",
+    "intent_label": "benign",
+    "entities": [
+      {
+        "type": "location",
+        "value": "சென்னை",
+        "start": 0,
+        "end": 6
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "virama-bearing term, benign context"
+  },
+  {
+    "id": "syn-0075",
+    "text": "ஆவடி மற்றும் கல்பாக்கம் இரண்டும் நமது பட்டியலில் உள்ளன.",
+    "script": "native_tamil",
+    "language": "ta",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "in_gazetteer",
+    "triage_label": "signal",
+    "intent_label": "physical_threat",
+    "entities": [
+      {
+        "type": "location",
+        "value": "ஆவடி",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "type": "location",
+        "value": "கல்பாக்கம்",
+        "start": 13,
+        "end": 23
+      }
+    ],
+    "tamil_verified": false,
+    "notes": "two Tamil gazetteer locations, threat"
+  },
+  {
+    "id": "syn-0078",
+    "text": "Unverified reports of infrastructure disruption in sector 4.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "signal",
+    "intent_label": "infrastructure_disruption",
+    "entities": [],
+    "tamil_verified": null,
+    "notes": "generic, from original training data"
+  },
+  {
+    "id": "syn-0079",
+    "text": "Threat actor communications intercepted on node B.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "signal",
+    "intent_label": "security_alert",
+    "entities": [
+      {
+        "type": "actor",
+        "value": "Threat actor",
+        "start": 0,
+        "end": 12
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "generic"
+  },
+  {
+    "id": "syn-0080",
+    "text": "Credential harvesting campaign is now active against the finance team.",
+    "script": "latin",
+    "language": "en",
+    "source": "synthetic",
+    "provenance": "authored-adversarial",
+    "gazetteer_slice": "none",
+    "triage_label": "signal",
+    "intent_label": "social_engineering",
+    "entities": [
+      {
+        "type": "tactic",
+        "value": "Credential harvesting",
+        "start": 0,
+        "end": 21
+      }
+    ],
+    "tamil_verified": null,
+    "notes": "generic"
+  }
+]

@@ -1,0 +1,41 @@
+# Docker does NOT honour .gitignore. Without this file, `COPY src/ ./src/`
+# bakes src/layer1_ingestion/*.session -- a live Telegram auth_key -- into
+# every image pushed to a registry.
+
+# ---- Secrets ----
+.env
+.env.*
+*.session
+*.session-journal
+
+# ---- VCS / envs ----
+.git/
+.gitignore
+venv/
+.venv/
+
+# ---- Caches ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Large regenerable artifacts ----
+data/models/
+*.bin
+# ...except the fine-tuned CNI model, which the runtime needs and which is not
+# available from the HF hub. Negation must follow the exclusions above.
+!data/models/indicner-cni-ft/
+!data/models/indicner-cni-ft/**
+
+# ---- Not needed at runtime ----
+docs/
+k8s/
+tests/
+results/
+requirements.lock.txt
+docker-compose.yml
+.DS_Store
+
+data/raw/

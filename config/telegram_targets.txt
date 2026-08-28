@@ -1,0 +1,14 @@
+# Benign Regional News Feeds (False Positive Control)
+PolimerNewsOfficial
+puthiyathalaimuraitv
+ThanthiTVOfficial
+News18TamilNadu
+
+# Public CTI & Cyber Threat Feeds
+falconfeedsio
+daily_dark_web
+darkwebinformer
+
+# Example Threat Actors (Check for active variants via OSINT)
+mysteriousteambd_real
+dragonforceio

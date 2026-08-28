@@ -1,0 +1,38 @@
+# SAINTEL dependencies.
+#
+# The VERIFIED block is pinned to the exact versions of the reference
+# environment that benchmark results are produced on. Do not float these:
+# reported numbers are only reproducible against these versions.
+# Full transitive snapshot: requirements.lock.txt
+
+# ---- Core: verified installed and exercised ----
+python-dotenv==1.2.2
+pydantic==2.13.4
+numpy==1.26.4              # <2 required by fasttext
+fasttext==0.9.3
+torch==2.13.0
+transformers==5.15.0
+neo4j==6.2.0
+confluent-kafka==2.15.0
+stix2==3.0.2
+psycopg[binary]==3.3.4
+streamlit==1.61.1
+streamlit-agraph==0.0.45   # imported by src/ui_dashboard/app.py
+Telethon==1.44.0           # imported by src/layer1_ingestion/telegram_scraper.py
+requests[socks]==2.34.2   # [socks] extra -> PySocks, required for Tor
+pytest==9.1.1
+
+# ---- Layer 4 multi-agent synthesis (verified: graph compiles + 23 tests) ----
+langgraph==1.2.11          # StateGraph for src/layer4_graphrag/synthesis_agent.py
+# pulls langchain-core 1.6.0 transitively; see requirements.lock.txt
+
+# ---- Darkweb collection (verified: Tor proxy + control port + parser) ----
+stem==1.8.2                # Tor controller, NEWNYM circuit rotation
+beautifulsoup4==4.15.0     # leak-site HTML parsing
+
+# ---- Removed ----
+# (langgraph was removed in Phase 1 as unused; re-added above in Phase 4,
+#   now that src/layer4_graphrag/synthesis_agent.py actually imports it.)
+# sentencepiece: only needed by xlm-roberta-base (NLP_MODEL_NAME), which is
+#   configured but never used -- entity_extractor.py hardcodes ai4bharat/IndicNER.
+scikit-learn==1.9.0                # sklearn.feature_extraction/linear_model -- Layer 2 triage model comparison (docs/model_comparison.md)

@@ -1,0 +1,400 @@
+{"text": "Update: ஆவடி மற்றும் DRDO இரண்டும் நமது பட்டியலில் உள்ளன.", "entities": [{"start": 8, "end": 12, "label": "LOC", "value": "ஆவடி"}, {"start": 21, "end": 25, "label": "ORG", "value": "DRDO"}]}
+{"text": "FYI - நாளை ISRO சர்வர்களை முடக்குவோம்.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "ISRO"}]}
+{"text": "Breaking: நமது இலக்கு Kalpakkam. DRDO சர்வர்களை தாக்க வேண்டும். Share widely.", "entities": [{"start": 22, "end": 31, "label": "LOC", "value": "Kalpakkam"}, {"start": 33, "end": 37, "label": "ORG", "value": "DRDO"}]}
+{"text": "கவனிக்க: Our team has gained access to internal DRDO systems.", "entities": [{"start": 48, "end": 52, "label": "ORG", "value": "DRDO"}]}
+{"text": "Breaking: நாளை DRDO அமைப்புகளை முடக்குவோம். தகவல் பகிரவும்.", "entities": [{"start": 15, "end": 19, "label": "ORG", "value": "DRDO"}]}
+{"text": "FYI - நமது இலக்கு விசாகப்பட்டினம். ISRO சர்வர்களை தாக்க வேண்டும். Please confirm.", "entities": [{"start": 18, "end": 33, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 35, "end": 39, "label": "ORG", "value": "ISRO"}]}
+{"text": "Alert: கல்பாக்கம் பகுதியை குறிவைக்க திட்டம் உள்ளது.", "entities": [{"start": 7, "end": 17, "label": "LOC", "value": "கல்பாக்கம்"}]}
+{"text": "தகவல்: DRDO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. உறுதி செய்யவும்.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "DRDO"}]}
+{"text": "நண்பர்களே, Credentials for ISRO employees have been harvested.", "entities": [{"start": 27, "end": 31, "label": "ORG", "value": "ISRO"}]}
+{"text": "ISRO ஊழியர்களின் கடவுச்சொற்கள் கிடைத்துவிட்டன. More to follow.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "ISRO"}]}
+{"text": "Guys, BHEL நிறுவனம் புதிய திட்டத்தை அறிவித்தது. பின்னர் தொடர்வோம்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "BHEL"}]}
+{"text": "Operations against Erode begin at dawn. பின்னர் தொடர்வோம்.", "entities": [{"start": 19, "end": 24, "label": "LOC", "value": "Erode"}]}
+{"text": "Note: We will shut down the BHEL servers tomorrow. தகவல் பகிரவும்.", "entities": [{"start": 28, "end": 32, "label": "ORG", "value": "BHEL"}]}
+{"text": "Breaking: DRDO announced a new scholarship programme today. Share widely.", "entities": [{"start": 10, "end": 14, "label": "ORG", "value": "DRDO"}]}
+{"text": "Operations against Coimbatore begin at dawn. Share widely.", "entities": [{"start": 19, "end": 29, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "Breaking: Traffic near Salem station was heavy this morning. தகவல் பகிரவும்.", "entities": [{"start": 23, "end": 28, "label": "LOC", "value": "Salem"}]}
+{"text": "Guys, Traffic near Chennai station was heavy this morning.", "entities": [{"start": 19, "end": 26, "label": "LOC", "value": "Chennai"}]}
+{"text": "Team, நமது இலக்கு சென்னை. BHEL சர்வர்களை தாக்க வேண்டும். உறுதி செய்யவும்.", "entities": [{"start": 18, "end": 24, "label": "LOC", "value": "சென்னை"}, {"start": 26, "end": 30, "label": "ORG", "value": "BHEL"}]}
+{"text": "Team, BHEL இன்று ஒரு அறிவிப்பு வெளியிட்டது. Details in the next message.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "BHEL"}]}
+{"text": "தகவல்: BHEL oda new project romba interesting ah irukku. உறுதி செய்யவும்.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "BHEL"}]}
+{"text": "FYI - Anyone know a good restaurant near Madurai?", "entities": [{"start": 41, "end": 48, "label": "LOC", "value": "Madurai"}]}
+{"text": "தகவல்: The weather in Salem has been pleasant this month. Details in the next message.", "entities": [{"start": 22, "end": 27, "label": "LOC", "value": "Salem"}]}
+{"text": "My cousin works at Infosys in the research division. More to follow.", "entities": [{"start": 19, "end": 26, "label": "ORG", "value": "Infosys"}]}
+{"text": "Guys, ஆவடி la irukura BHEL office ah check pannunga. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 10, "label": "LOC", "value": "ஆவடி"}, {"start": 22, "end": 26, "label": "ORG", "value": "BHEL"}]}
+{"text": "Update: Travelling to Madurai next week for a family wedding. Share widely.", "entities": [{"start": 22, "end": 29, "label": "LOC", "value": "Madurai"}]}
+{"text": "Team, நமது இலக்கு Chennai. ISRO சர்வர்களை தாக்க வேண்டும்.", "entities": [{"start": 18, "end": 25, "label": "LOC", "value": "Chennai"}, {"start": 27, "end": 31, "label": "ORG", "value": "ISRO"}]}
+{"text": "Guys, Avadi la irukura DRDO office ah check pannunga. Stay alert.", "entities": [{"start": 6, "end": 11, "label": "LOC", "value": "Avadi"}, {"start": 23, "end": 27, "label": "ORG", "value": "DRDO"}]}
+{"text": "Guys, Traffic near Chennai station was heavy this morning. தகவல் பகிரவும்.", "entities": [{"start": 19, "end": 26, "label": "LOC", "value": "Chennai"}]}
+{"text": "நண்பர்களே, Chennai மற்றும் DRDO நமது கவனத்தில் உள்ளன. Details in the next message.", "entities": [{"start": 11, "end": 18, "label": "LOC", "value": "Chennai"}, {"start": 27, "end": 31, "label": "ORG", "value": "DRDO"}]}
+{"text": "Note: ஆவடி மற்றும் DRDO இரண்டும் நமது பட்டியலில் உள்ளன.", "entities": [{"start": 6, "end": 10, "label": "LOC", "value": "ஆவடி"}, {"start": 19, "end": 23, "label": "ORG", "value": "DRDO"}]}
+{"text": "Breaking: Took the train from Trichy yesterday evening. தகவல் பகிரவும்.", "entities": [{"start": 30, "end": 36, "label": "LOC", "value": "Trichy"}]}
+{"text": "Guys, நாளை DRDO அமைப்புகளை முடக்குவோம். தகவல் பகிரவும்.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}]}
+{"text": "Breaking: Travelling to Vizag next week for a family wedding. தகவல் பகிரவும்.", "entities": [{"start": 24, "end": 29, "label": "LOC", "value": "Vizag"}]}
+{"text": "Update: Travelling to Salem next week for a family wedding. Share widely.", "entities": [{"start": 22, "end": 27, "label": "LOC", "value": "Salem"}]}
+{"text": "Alert: சென்னை மற்றும் BHEL இரண்டும் நமது பட்டியலில் உள்ளன. Please confirm.", "entities": [{"start": 7, "end": 13, "label": "LOC", "value": "சென்னை"}, {"start": 22, "end": 26, "label": "ORG", "value": "BHEL"}]}
+{"text": "நமது இலக்கு விசாகப்பட்டினம். ISRO சர்வர்களை தாக்க வேண்டும். Details in the next message.", "entities": [{"start": 12, "end": 27, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 29, "end": 33, "label": "ORG", "value": "ISRO"}]}
+{"text": "Took the train from Erode yesterday evening. தகவல் பகிரவும்.", "entities": [{"start": 20, "end": 25, "label": "LOC", "value": "Erode"}]}
+{"text": "கவனிக்க: Operations against Trichy begin at dawn. Share widely.", "entities": [{"start": 28, "end": 34, "label": "LOC", "value": "Trichy"}]}
+{"text": "Guys, Traffic near Madurai station was heavy this morning.", "entities": [{"start": 19, "end": 26, "label": "LOC", "value": "Madurai"}]}
+{"text": "Note: DRDO oda new project romba interesting ah irukku. Stay alert.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}]}
+{"text": "நமது இலக்கு விசாகப்பட்டினம். BHEL சர்வர்களை தாக்க வேண்டும். Details in the next message.", "entities": [{"start": 12, "end": 27, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 29, "end": 33, "label": "ORG", "value": "BHEL"}]}
+{"text": "Breaking: Took the train from Madurai yesterday evening. தகவல் பகிரவும்.", "entities": [{"start": 30, "end": 37, "label": "LOC", "value": "Madurai"}]}
+{"text": "கவனிக்க: Our team has gained access to internal BHEL systems.", "entities": [{"start": 48, "end": 52, "label": "ORG", "value": "BHEL"}]}
+{"text": "நண்பர்களே, நமது இலக்கு சென்னை. ISRO சர்வர்களை தாக்க வேண்டும். உறுதி செய்யவும்.", "entities": [{"start": 23, "end": 29, "label": "LOC", "value": "சென்னை"}, {"start": 31, "end": 35, "label": "ORG", "value": "ISRO"}]}
+{"text": "தகவல்: DRDO இன்று ஒரு அறிவிப்பு வெளியிட்டது. More to follow.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "DRDO"}]}
+{"text": "Team, My cousin works at ISRO in the research division. More to follow.", "entities": [{"start": 25, "end": 29, "label": "ORG", "value": "ISRO"}]}
+{"text": "BHEL internal documents will be released next week. உறுதி செய்யவும்.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "BHEL"}]}
+{"text": "கவனிக்க: BHEL கண்காட்சி Kalpakkam நகரில் நடைபெறுகிறது. தகவல் பகிரவும்.", "entities": [{"start": 9, "end": 13, "label": "ORG", "value": "BHEL"}, {"start": 24, "end": 33, "label": "LOC", "value": "Kalpakkam"}]}
+{"text": "Team, ISRO கண்காட்சி Chennai நகரில் நடைபெறுகிறது. Please confirm.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}, {"start": 21, "end": 28, "label": "LOC", "value": "Chennai"}]}
+{"text": "தகவல்: Avadi la oru nalla hotel recommend pannunga. Details in the next message.", "entities": [{"start": 7, "end": 12, "label": "LOC", "value": "Avadi"}]}
+{"text": "தகவல்: ISRO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Please confirm.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "ISRO"}]}
+{"text": "Alert: Coordinated attack planned against BHEL infrastructure. Please confirm.", "entities": [{"start": 42, "end": 46, "label": "ORG", "value": "BHEL"}]}
+{"text": "Infosys reported strong quarterly results. Details in the next message.", "entities": [{"start": 0, "end": 7, "label": "ORG", "value": "Infosys"}]}
+{"text": "தகவல்: DRDO reported strong quarterly results. உறுதி செய்யவும்.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "DRDO"}]}
+{"text": "கல்பாக்கம் la irukura DRDO office ah check pannunga.", "entities": [{"start": 0, "end": 10, "label": "LOC", "value": "கல்பாக்கம்"}, {"start": 22, "end": 26, "label": "ORG", "value": "DRDO"}]}
+{"text": "Vizag la irukura BHEL office ah check pannunga.", "entities": [{"start": 0, "end": 5, "label": "LOC", "value": "Vizag"}, {"start": 17, "end": 21, "label": "ORG", "value": "BHEL"}]}
+{"text": "Alert: BHEL oda new project romba interesting ah irukku.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "BHEL"}]}
+{"text": "FYI - நாளை ISRO அமைப்புகளை முடக்குவோம். More to follow.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "ISRO"}]}
+{"text": "Note: DRDO கண்காட்சி Avadi நகரில் நடைபெறுகிறது. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}, {"start": 21, "end": 26, "label": "LOC", "value": "Avadi"}]}
+{"text": "Team, நமது இலக்கு சென்னை. BHEL சர்வர்களை தாக்க வேண்டும். Details in the next message.", "entities": [{"start": 18, "end": 24, "label": "LOC", "value": "சென்னை"}, {"start": 26, "end": 30, "label": "ORG", "value": "BHEL"}]}
+{"text": "My cousin works at BHEL in the research division. Details in the next message.", "entities": [{"start": 19, "end": 23, "label": "ORG", "value": "BHEL"}]}
+{"text": "நண்பர்களே, Anyone know a good restaurant near Salem? Details in the next message.", "entities": [{"start": 46, "end": 51, "label": "LOC", "value": "Salem"}]}
+{"text": "நண்பர்களே, Phishing campaign against DRDO staff is now live. Please confirm.", "entities": [{"start": 37, "end": 41, "label": "ORG", "value": "DRDO"}]}
+{"text": "The weather in Madurai has been pleasant this month.", "entities": [{"start": 15, "end": 22, "label": "LOC", "value": "Madurai"}]}
+{"text": "நண்பர்களே, ISRO servers ah nalaikku down panna poren. More to follow.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "ISRO"}]}
+{"text": "The weather in Trichy has been pleasant this month. More to follow.", "entities": [{"start": 15, "end": 21, "label": "LOC", "value": "Trichy"}]}
+{"text": "Breaking: ISRO கண்காட்சி Kalpakkam நகரில் நடைபெறுகிறது. Share widely.", "entities": [{"start": 10, "end": 14, "label": "ORG", "value": "ISRO"}, {"start": 25, "end": 34, "label": "LOC", "value": "Kalpakkam"}]}
+{"text": "Guys, கோயம்புத்தூர் அருகில் நல்ல உணவகம் உள்ளது. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 19, "label": "LOC", "value": "கோயம்புத்தூர்"}]}
+{"text": "தகவல்: விசாகப்பட்டினம் மற்றும் ISRO நமது கவனத்தில் உள்ளன. More to follow.", "entities": [{"start": 7, "end": 22, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 31, "end": 35, "label": "ORG", "value": "ISRO"}]}
+{"text": "ஆவடி பகுதியை குறிவைக்க திட்டம் உள்ளது. Details in the next message.", "entities": [{"start": 0, "end": 4, "label": "LOC", "value": "ஆவடி"}]}
+{"text": "நண்பர்களே, DRDO ஊழியர்களின் கடவுச்சொற்கள் கிடைத்துவிட்டன. More to follow.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}]}
+{"text": "Update: ஆவடி மற்றும் DRDO இரண்டும் நமது பட்டியலில் உள்ளன. Stay alert.", "entities": [{"start": 8, "end": 12, "label": "LOC", "value": "ஆவடி"}, {"start": 21, "end": 25, "label": "ORG", "value": "DRDO"}]}
+{"text": "Breaking: DRDO oda new project romba interesting ah irukku. தகவல் பகிரவும்.", "entities": [{"start": 10, "end": 14, "label": "ORG", "value": "DRDO"}]}
+{"text": "Note: Travelling to Trichy next week for a family wedding. தகவல் பகிரவும்.", "entities": [{"start": 20, "end": 26, "label": "LOC", "value": "Trichy"}]}
+{"text": "கவனிக்க: Traffic near Erode station was heavy this morning.", "entities": [{"start": 22, "end": 27, "label": "LOC", "value": "Erode"}]}
+{"text": "Note: Took the train from Madurai yesterday evening. தகவல் பகிரவும்.", "entities": [{"start": 26, "end": 33, "label": "LOC", "value": "Madurai"}]}
+{"text": "Team, நமது இலக்கு Chennai. DRDO சர்வர்களை தாக்க வேண்டும். Please confirm.", "entities": [{"start": 18, "end": 25, "label": "LOC", "value": "Chennai"}, {"start": 27, "end": 31, "label": "ORG", "value": "DRDO"}]}
+{"text": "The weather in Salem has been pleasant this month. உறுதி செய்யவும்.", "entities": [{"start": 15, "end": 20, "label": "LOC", "value": "Salem"}]}
+{"text": "Alert: Applying for a graduate role at DRDO this year. More to follow.", "entities": [{"start": 39, "end": 43, "label": "ORG", "value": "DRDO"}]}
+{"text": "கவனிக்க: நாளை ISRO சர்வர்களை முடக்குவோம். Stay alert.", "entities": [{"start": 14, "end": 18, "label": "ORG", "value": "ISRO"}]}
+{"text": "Breaking: Travelling to Erode next week for a family wedding.", "entities": [{"start": 24, "end": 29, "label": "LOC", "value": "Erode"}]}
+{"text": "நண்பர்களே, Chennai மற்றும் BHEL நமது கவனத்தில் உள்ளன. உறுதி செய்யவும்.", "entities": [{"start": 11, "end": 18, "label": "LOC", "value": "Chennai"}, {"start": 27, "end": 31, "label": "ORG", "value": "BHEL"}]}
+{"text": "Breaking: நாளை DRDO சர்வர்களை முடக்குவோம். Stay alert.", "entities": [{"start": 15, "end": 19, "label": "ORG", "value": "DRDO"}]}
+{"text": "FYI - DRDO reported strong quarterly results.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}]}
+{"text": "நண்பர்களே, BHEL servers ah nalaikku down panna poren.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "BHEL"}]}
+{"text": "Note: We have mapped the Salem approaches and gate positions.", "entities": [{"start": 25, "end": 30, "label": "LOC", "value": "Salem"}]}
+{"text": "Breaking: DRDO servers ah nalaikku down panna poren. பின்னர் தொடர்வோம்.", "entities": [{"start": 10, "end": 14, "label": "ORG", "value": "DRDO"}]}
+{"text": "தகவல்: நமது இலக்கு Vizag. ISRO சர்வர்களை தாக்க வேண்டும். Details in the next message.", "entities": [{"start": 19, "end": 24, "label": "LOC", "value": "Vizag"}, {"start": 26, "end": 30, "label": "ORG", "value": "ISRO"}]}
+{"text": "கவனிக்க: கல்பாக்கம் மற்றும் ISRO நமது கவனத்தில் உள்ளன. Stay alert.", "entities": [{"start": 9, "end": 19, "label": "LOC", "value": "கல்பாக்கம்"}, {"start": 28, "end": 32, "label": "ORG", "value": "ISRO"}]}
+{"text": "Note: BHEL நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Stay alert.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "BHEL"}]}
+{"text": "கவனிக்க: Operations against Erode begin at dawn. தகவல் பகிரவும்.", "entities": [{"start": 28, "end": 33, "label": "LOC", "value": "Erode"}]}
+{"text": "Note: The Trichy site is our next target. Coordinates shared. Share widely.", "entities": [{"start": 10, "end": 16, "label": "LOC", "value": "Trichy"}]}
+{"text": "Update: Visited Erode over the weekend, lovely beach there. Stay alert.", "entities": [{"start": 16, "end": 21, "label": "LOC", "value": "Erode"}]}
+{"text": "Note: Visited Trichy over the weekend, lovely beach there. Share widely.", "entities": [{"start": 14, "end": 20, "label": "LOC", "value": "Trichy"}]}
+{"text": "நமது இலக்கு விசாகப்பட்டினம். ISRO சர்வர்களை தாக்க வேண்டும். உறுதி செய்யவும்.", "entities": [{"start": 12, "end": 27, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 29, "end": 33, "label": "ORG", "value": "ISRO"}]}
+{"text": "நண்பர்களே, ISRO ஊழியர்களின் கடவுச்சொற்கள் கிடைத்துவிட்டன. More to follow.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "ISRO"}]}
+{"text": "FYI - The weather in Trichy has been pleasant this month. More to follow.", "entities": [{"start": 21, "end": 27, "label": "LOC", "value": "Trichy"}]}
+{"text": "கவனிக்க: கல்பாக்கம் la irukura DRDO office ah check pannunga. பின்னர் தொடர்வோம்.", "entities": [{"start": 9, "end": 19, "label": "LOC", "value": "கல்பாக்கம்"}, {"start": 31, "end": 35, "label": "ORG", "value": "DRDO"}]}
+{"text": "கவனிக்க: Took the train from Erode yesterday evening. தகவல் பகிரவும்.", "entities": [{"start": 29, "end": 34, "label": "LOC", "value": "Erode"}]}
+{"text": "நண்பர்களே, Chennai la irukura ISRO office ah check pannunga.", "entities": [{"start": 11, "end": 18, "label": "LOC", "value": "Chennai"}, {"start": 30, "end": 34, "label": "ORG", "value": "ISRO"}]}
+{"text": "Alert: நாளை DRDO சர்வர்களை முடக்குவோம். More to follow.", "entities": [{"start": 12, "end": 16, "label": "ORG", "value": "DRDO"}]}
+{"text": "தகவல்: ISRO internal documents will be released next week. More to follow.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "ISRO"}]}
+{"text": "நண்பர்களே, Applying for a graduate role at ISRO this year. உறுதி செய்யவும்.", "entities": [{"start": 43, "end": 47, "label": "ORG", "value": "ISRO"}]}
+{"text": "Note: ISRO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Stay alert.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}]}
+{"text": "Team, நமது இலக்கு சென்னை. DRDO சர்வர்களை தாக்க வேண்டும். Details in the next message.", "entities": [{"start": 18, "end": 24, "label": "LOC", "value": "சென்னை"}, {"start": 26, "end": 30, "label": "ORG", "value": "DRDO"}]}
+{"text": "Team, My cousin works at BHEL in the research division. More to follow.", "entities": [{"start": 25, "end": 29, "label": "ORG", "value": "BHEL"}]}
+{"text": "நமது இலக்கு Kalpakkam. DRDO சர்வர்களை தாக்க வேண்டும். பின்னர் தொடர்வோம்.", "entities": [{"start": 12, "end": 21, "label": "LOC", "value": "Kalpakkam"}, {"start": 23, "end": 27, "label": "ORG", "value": "DRDO"}]}
+{"text": "Update: சென்னை பகுதியை குறிவைக்க திட்டம் உள்ளது. Share widely.", "entities": [{"start": 8, "end": 14, "label": "LOC", "value": "சென்னை"}]}
+{"text": "கவனிக்க: Naan Vizag ku poren next week. தகவல் பகிரவும்.", "entities": [{"start": 14, "end": 19, "label": "LOC", "value": "Vizag"}]}
+{"text": "Team, நமது இலக்கு Chennai. BHEL சர்வர்களை தாக்க வேண்டும். Details in the next message.", "entities": [{"start": 18, "end": 25, "label": "LOC", "value": "Chennai"}, {"start": 27, "end": 31, "label": "ORG", "value": "BHEL"}]}
+{"text": "Team, Coordinated attack planned against BHEL infrastructure. Please confirm.", "entities": [{"start": 41, "end": 45, "label": "ORG", "value": "BHEL"}]}
+{"text": "Reconnaissance complete on the Avadi facility perimeter. Details in the next message.", "entities": [{"start": 31, "end": 36, "label": "LOC", "value": "Avadi"}]}
+{"text": "ISRO servers ah nalaikku down panna poren. More to follow.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "ISRO"}]}
+{"text": "Team, DRDO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Details in the next message.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}]}
+{"text": "Alert: Chennai la irukura ISRO office ah check pannunga. உறுதி செய்யவும்.", "entities": [{"start": 7, "end": 14, "label": "LOC", "value": "Chennai"}, {"start": 26, "end": 30, "label": "ORG", "value": "ISRO"}]}
+{"text": "Breaking: Travelling to Coimbatore next week for a family wedding. Stay alert.", "entities": [{"start": 24, "end": 34, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "Update: Visited Madurai over the weekend, lovely beach there. Share widely.", "entities": [{"start": 16, "end": 23, "label": "LOC", "value": "Madurai"}]}
+{"text": "Breaking: Took the train from Salem yesterday evening. Stay alert.", "entities": [{"start": 30, "end": 35, "label": "LOC", "value": "Salem"}]}
+{"text": "Team, சென்னை மற்றும் BHEL நமது கவனத்தில் உள்ளன. உறுதி செய்யவும்.", "entities": [{"start": 6, "end": 12, "label": "LOC", "value": "சென்னை"}, {"start": 21, "end": 25, "label": "ORG", "value": "BHEL"}]}
+{"text": "நண்பர்களே, DRDO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Please confirm.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}]}
+{"text": "Team, Anyone know a good restaurant near Erode? உறுதி செய்யவும்.", "entities": [{"start": 41, "end": 46, "label": "LOC", "value": "Erode"}]}
+{"text": "கவனிக்க: Our team has gained access to internal ISRO systems.", "entities": [{"start": 48, "end": 52, "label": "ORG", "value": "ISRO"}]}
+{"text": "நண்பர்களே, DRDO கண்காட்சி சென்னை நகரில் நடைபெறுகிறது.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}, {"start": 26, "end": 32, "label": "LOC", "value": "சென்னை"}]}
+{"text": "Breaking: BHEL servers ah nalaikku down panna poren. தகவல் பகிரவும்.", "entities": [{"start": 10, "end": 14, "label": "ORG", "value": "BHEL"}]}
+{"text": "Guys, ISRO நிறுவனம் புதிய திட்டத்தை அறிவித்தது. Share widely.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}]}
+{"text": "Guys, ISRO oda new project romba interesting ah irukku.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}]}
+{"text": "Alert: ISRO கண்காட்சி சென்னை நகரில் நடைபெறுகிறது. உறுதி செய்யவும்.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "ISRO"}, {"start": 22, "end": 28, "label": "LOC", "value": "சென்னை"}]}
+{"text": "Update: Salem and Wipro are both on the list. Share widely.", "entities": [{"start": 8, "end": 13, "label": "LOC", "value": "Salem"}, {"start": 18, "end": 23, "label": "ORG", "value": "Wipro"}]}
+{"text": "Guys, DRDO announced a new scholarship programme today.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}]}
+{"text": "ISRO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. தகவல் பகிரவும்.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "ISRO"}]}
+{"text": "Alert: ISRO கண்காட்சி சென்னை நகரில் நடைபெறுகிறது. Please confirm.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "ISRO"}, {"start": 22, "end": 28, "label": "LOC", "value": "சென்னை"}]}
+{"text": "Update: BHEL நிறுவனம் புதிய திட்டத்தை அறிவித்தது. Share widely.", "entities": [{"start": 8, "end": 12, "label": "ORG", "value": "BHEL"}]}
+{"text": "Breaking: Visited Madurai over the weekend, lovely beach there.", "entities": [{"start": 18, "end": 25, "label": "LOC", "value": "Madurai"}]}
+{"text": "Breaking: Our team has gained access to internal DRDO systems. பின்னர் தொடர்வோம்.", "entities": [{"start": 49, "end": 53, "label": "ORG", "value": "DRDO"}]}
+{"text": "Guys, We will shut down the BHEL servers tomorrow. Share widely.", "entities": [{"start": 28, "end": 32, "label": "ORG", "value": "BHEL"}]}
+{"text": "Note: The Madurai site is our next target. Coordinates shared. பின்னர் தொடர்வோம்.", "entities": [{"start": 10, "end": 17, "label": "LOC", "value": "Madurai"}]}
+{"text": "FYI - Vizag மற்றும் BHEL நமது கவனத்தில் உள்ளன. உறுதி செய்யவும்.", "entities": [{"start": 6, "end": 11, "label": "LOC", "value": "Vizag"}, {"start": 20, "end": 24, "label": "ORG", "value": "BHEL"}]}
+{"text": "நண்பர்களே, Credentials for BHEL employees have been harvested. Please confirm.", "entities": [{"start": 27, "end": 31, "label": "ORG", "value": "BHEL"}]}
+{"text": "Update: BHEL கண்காட்சி ஆவடி நகரில் நடைபெறுகிறது. Stay alert.", "entities": [{"start": 8, "end": 12, "label": "ORG", "value": "BHEL"}, {"start": 23, "end": 27, "label": "LOC", "value": "ஆவடி"}]}
+{"text": "Note: ISRO oda new project romba interesting ah irukku. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}]}
+{"text": "தகவல்: ISRO கண்காட்சி Vizag நகரில் நடைபெறுகிறது.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "ISRO"}, {"start": 22, "end": 27, "label": "LOC", "value": "Vizag"}]}
+{"text": "Alert: The weather in Trichy has been pleasant this month.", "entities": [{"start": 22, "end": 28, "label": "LOC", "value": "Trichy"}]}
+{"text": "தகவல்: BHEL reported strong quarterly results.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "BHEL"}]}
+{"text": "Guys, The Trichy site is our next target. Coordinates shared. பின்னர் தொடர்வோம்.", "entities": [{"start": 10, "end": 16, "label": "LOC", "value": "Trichy"}]}
+{"text": "கவனிக்க: Took the train from Salem yesterday evening. தகவல் பகிரவும்.", "entities": [{"start": 29, "end": 34, "label": "LOC", "value": "Salem"}]}
+{"text": "FYI - Vizag மற்றும் DRDO நமது கவனத்தில் உள்ளன. More to follow.", "entities": [{"start": 6, "end": 11, "label": "LOC", "value": "Vizag"}, {"start": 20, "end": 24, "label": "ORG", "value": "DRDO"}]}
+{"text": "Alert: Phishing campaign against BHEL staff is now live. Details in the next message.", "entities": [{"start": 33, "end": 37, "label": "ORG", "value": "BHEL"}]}
+{"text": "தகவல்: Anyone know a good restaurant near Salem?", "entities": [{"start": 42, "end": 47, "label": "LOC", "value": "Salem"}]}
+{"text": "Team, The weather in Salem has been pleasant this month. உறுதி செய்யவும்.", "entities": [{"start": 21, "end": 26, "label": "LOC", "value": "Salem"}]}
+{"text": "தகவல்: BHEL நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. More to follow.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "BHEL"}]}
+{"text": "Update: ஆவடி மற்றும் BHEL இரண்டும் நமது பட்டியலில் உள்ளன. தகவல் பகிரவும்.", "entities": [{"start": 8, "end": 12, "label": "LOC", "value": "ஆவடி"}, {"start": 21, "end": 25, "label": "ORG", "value": "BHEL"}]}
+{"text": "கவனிக்க: DRDO announced a new scholarship programme today. Share widely.", "entities": [{"start": 9, "end": 13, "label": "ORG", "value": "DRDO"}]}
+{"text": "Team, Chennai la irukura BHEL office ah check pannunga.", "entities": [{"start": 6, "end": 13, "label": "LOC", "value": "Chennai"}, {"start": 25, "end": 29, "label": "ORG", "value": "BHEL"}]}
+{"text": "நண்பர்களே, Reliance reported strong quarterly results. More to follow.", "entities": [{"start": 11, "end": 19, "label": "ORG", "value": "Reliance"}]}
+{"text": "Update: Avadi la irukura DRDO office ah check pannunga. தகவல் பகிரவும்.", "entities": [{"start": 8, "end": 13, "label": "LOC", "value": "Avadi"}, {"start": 25, "end": 29, "label": "ORG", "value": "DRDO"}]}
+{"text": "Took the train from Salem yesterday evening. Share widely.", "entities": [{"start": 20, "end": 25, "label": "LOC", "value": "Salem"}]}
+{"text": "Guys, ISRO ஊழியர்களின் கடவுச்சொற்கள் கிடைத்துவிட்டன. பின்னர் தொடர்வோம்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}]}
+{"text": "FYI - BHEL கண்காட்சி விசாகப்பட்டினம் நகரில் நடைபெறுகிறது.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "BHEL"}, {"start": 21, "end": 36, "label": "LOC", "value": "விசாகப்பட்டினம்"}]}
+{"text": "FYI - DRDO oda new project romba interesting ah irukku. உறுதி செய்யவும்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}]}
+{"text": "FYI - ISRO oda new project romba interesting ah irukku. More to follow.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}]}
+{"text": "Alert: DRDO இன்று ஒரு அறிவிப்பு வெளியிட்டது.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "DRDO"}]}
+{"text": "கவனிக்க: Took the train from Erode yesterday evening. பின்னர் தொடர்வோம்.", "entities": [{"start": 29, "end": 34, "label": "LOC", "value": "Erode"}]}
+{"text": "Note: Traffic near Coimbatore station was heavy this morning. பின்னர் தொடர்வோம்.", "entities": [{"start": 19, "end": 29, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "ISRO announced a new scholarship programme today. பின்னர் தொடர்வோம்.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "ISRO"}]}
+{"text": "FYI - Vizag la irukura ISRO office ah check pannunga. Please confirm.", "entities": [{"start": 6, "end": 11, "label": "LOC", "value": "Vizag"}, {"start": 23, "end": 27, "label": "ORG", "value": "ISRO"}]}
+{"text": "Kalpakkam la irukura BHEL office ah check pannunga. பின்னர் தொடர்வோம்.", "entities": [{"start": 0, "end": 9, "label": "LOC", "value": "Kalpakkam"}, {"start": 21, "end": 25, "label": "ORG", "value": "BHEL"}]}
+{"text": "Update: Chennai la periya problem varum, wait pannunga. தகவல் பகிரவும்.", "entities": [{"start": 8, "end": 15, "label": "LOC", "value": "Chennai"}]}
+{"text": "Operations against Coimbatore begin at dawn. Stay alert.", "entities": [{"start": 19, "end": 29, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "விசாகப்பட்டினம் மற்றும் BHEL நமது கவனத்தில் உள்ளன.", "entities": [{"start": 0, "end": 15, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 24, "end": 28, "label": "ORG", "value": "BHEL"}]}
+{"text": "Alert: The weather in Erode has been pleasant this month. உறுதி செய்யவும்.", "entities": [{"start": 22, "end": 27, "label": "LOC", "value": "Erode"}]}
+{"text": "Alert: ISRO ஊழியர்களின் கடவுச்சொற்கள் கிடைத்துவிட்டன. Please confirm.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "ISRO"}]}
+{"text": "Breaking: கல்பாக்கம் la irukura DRDO office ah check pannunga. Stay alert.", "entities": [{"start": 10, "end": 20, "label": "LOC", "value": "கல்பாக்கம்"}, {"start": 32, "end": 36, "label": "ORG", "value": "DRDO"}]}
+{"text": "FYI - விசாகப்பட்டினம் la irukura DRDO office ah check pannunga. உறுதி செய்யவும்.", "entities": [{"start": 6, "end": 21, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 33, "end": 37, "label": "ORG", "value": "DRDO"}]}
+{"text": "Team, DRDO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. உறுதி செய்யவும்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}]}
+{"text": "Team, சேலம் பகுதியில் புதிய பள்ளி கட்டப்படுகிறது. Details in the next message.", "entities": [{"start": 6, "end": 11, "label": "LOC", "value": "சேலம்"}]}
+{"text": "கவனிக்க: ISRO கண்காட்சி கல்பாக்கம் நகரில் நடைபெறுகிறது.", "entities": [{"start": 9, "end": 13, "label": "ORG", "value": "ISRO"}, {"start": 24, "end": 34, "label": "LOC", "value": "கல்பாக்கம்"}]}
+{"text": "Team, DRDO கண்காட்சி Chennai நகரில் நடைபெறுகிறது. உறுதி செய்யவும்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}, {"start": 21, "end": 28, "label": "LOC", "value": "Chennai"}]}
+{"text": "Guys, Traffic near Erode station was heavy this morning. Stay alert.", "entities": [{"start": 19, "end": 24, "label": "LOC", "value": "Erode"}]}
+{"text": "தகவல்: நமது இலக்கு விசாகப்பட்டினம். BHEL சர்வர்களை தாக்க வேண்டும். Details in the next message.", "entities": [{"start": 19, "end": 34, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 36, "end": 40, "label": "ORG", "value": "BHEL"}]}
+{"text": "Team, DRDO reported strong quarterly results. Please confirm.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}]}
+{"text": "Team, DRDO servers ah nalaikku down panna poren. More to follow.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}]}
+{"text": "நண்பர்களே, நாளை DRDO சர்வர்களை முடக்குவோம். More to follow.", "entities": [{"start": 16, "end": 20, "label": "ORG", "value": "DRDO"}]}
+{"text": "Visited Coimbatore over the weekend, lovely beach there. தகவல் பகிரவும்.", "entities": [{"start": 8, "end": 18, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "நண்பர்களே, BHEL reported strong quarterly results. உறுதி செய்யவும்.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "BHEL"}]}
+{"text": "Kalpakkam மற்றும் DRDO நமது கவனத்தில் உள்ளன. Stay alert.", "entities": [{"start": 0, "end": 9, "label": "LOC", "value": "Kalpakkam"}, {"start": 18, "end": 22, "label": "ORG", "value": "DRDO"}]}
+{"text": "Guys, ISRO servers ah nalaikku down panna poren. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}]}
+{"text": "Note: நாளை BHEL சர்வர்களை முடக்குவோம். Share widely.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "BHEL"}]}
+{"text": "Note: ஆவடி la irukura DRDO office ah check pannunga. Share widely.", "entities": [{"start": 6, "end": 10, "label": "LOC", "value": "ஆவடி"}, {"start": 22, "end": 26, "label": "ORG", "value": "DRDO"}]}
+{"text": "Note: BHEL நிறுவனம் புதிய திட்டத்தை அறிவித்தது. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "BHEL"}]}
+{"text": "Alert: BHEL oda new project romba interesting ah irukku. Please confirm.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "BHEL"}]}
+{"text": "FYI - Reconnaissance complete on the Coimbatore facility perimeter. உறுதி செய்யவும்.", "entities": [{"start": 37, "end": 47, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "BHEL reported strong quarterly results. Please confirm.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "BHEL"}]}
+{"text": "தகவல்: DRDO reported strong quarterly results. Please confirm.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "DRDO"}]}
+{"text": "Note: Avadi மற்றும் ISRO நமது கவனத்தில் உள்ளன. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 11, "label": "LOC", "value": "Avadi"}, {"start": 20, "end": 24, "label": "ORG", "value": "ISRO"}]}
+{"text": "Alert: சென்னை la irukura ISRO office ah check pannunga. உறுதி செய்யவும்.", "entities": [{"start": 7, "end": 13, "label": "LOC", "value": "சென்னை"}, {"start": 25, "end": 29, "label": "ORG", "value": "ISRO"}]}
+{"text": "Alert: நாளை BHEL அமைப்புகளை முடக்குவோம். Details in the next message.", "entities": [{"start": 12, "end": 16, "label": "ORG", "value": "BHEL"}]}
+{"text": "Guys, ISRO oda new project romba interesting ah irukku. Stay alert.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}]}
+{"text": "Team, சென்னை la irukura ISRO office ah check pannunga. More to follow.", "entities": [{"start": 6, "end": 12, "label": "LOC", "value": "சென்னை"}, {"start": 24, "end": 28, "label": "ORG", "value": "ISRO"}]}
+{"text": "Guys, ஆவடி la irukura ISRO office ah check pannunga.", "entities": [{"start": 6, "end": 10, "label": "LOC", "value": "ஆவடி"}, {"start": 22, "end": 26, "label": "ORG", "value": "ISRO"}]}
+{"text": "Breaking: Travelling to Madurai next week for a family wedding. தகவல் பகிரவும்.", "entities": [{"start": 24, "end": 31, "label": "LOC", "value": "Madurai"}]}
+{"text": "Guys, Travelling to Coimbatore next week for a family wedding. தகவல் பகிரவும்.", "entities": [{"start": 20, "end": 30, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "Guys, நாளை DRDO சர்வர்களை முடக்குவோம். பின்னர் தொடர்வோம்.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}]}
+{"text": "Alert: BHEL கண்காட்சி Chennai நகரில் நடைபெறுகிறது. Please confirm.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "BHEL"}, {"start": 22, "end": 29, "label": "LOC", "value": "Chennai"}]}
+{"text": "ISRO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Stay alert.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "ISRO"}]}
+{"text": "Alert: BHEL கண்காட்சி சென்னை நகரில் நடைபெறுகிறது. More to follow.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "BHEL"}, {"start": 22, "end": 28, "label": "LOC", "value": "சென்னை"}]}
+{"text": "நண்பர்களே, சென்னை மற்றும் ISRO நமது கவனத்தில் உள்ளன. Details in the next message.", "entities": [{"start": 11, "end": 17, "label": "LOC", "value": "சென்னை"}, {"start": 26, "end": 30, "label": "ORG", "value": "ISRO"}]}
+{"text": "FYI - The weather in Avadi has been pleasant this month. More to follow.", "entities": [{"start": 21, "end": 26, "label": "LOC", "value": "Avadi"}]}
+{"text": "FYI - ஆவடி துறைமுகத்தை முடக்க தயாராகுங்கள். Details in the next message.", "entities": [{"start": 6, "end": 10, "label": "LOC", "value": "ஆவடி"}]}
+{"text": "Vizag la irukura ISRO office ah check pannunga. Details in the next message.", "entities": [{"start": 0, "end": 5, "label": "LOC", "value": "Vizag"}, {"start": 17, "end": 21, "label": "ORG", "value": "ISRO"}]}
+{"text": "தகவல்: The weather in Erode has been pleasant this month. Details in the next message.", "entities": [{"start": 22, "end": 27, "label": "LOC", "value": "Erode"}]}
+{"text": "Breaking: நமது இலக்கு Kalpakkam. DRDO சர்வர்களை தாக்க வேண்டும். Stay alert.", "entities": [{"start": 22, "end": 31, "label": "LOC", "value": "Kalpakkam"}, {"start": 33, "end": 37, "label": "ORG", "value": "DRDO"}]}
+{"text": "Vizag la irukura BHEL office ah check pannunga. More to follow.", "entities": [{"start": 0, "end": 5, "label": "LOC", "value": "Vizag"}, {"start": 17, "end": 21, "label": "ORG", "value": "BHEL"}]}
+{"text": "Note: ஆவடி மற்றும் BHEL நமது கவனத்தில் உள்ளன. Share widely.", "entities": [{"start": 6, "end": 10, "label": "LOC", "value": "ஆவடி"}, {"start": 19, "end": 23, "label": "ORG", "value": "BHEL"}]}
+{"text": "நாளை ISRO சர்வர்களை முடக்குவோம். Stay alert.", "entities": [{"start": 5, "end": 9, "label": "ORG", "value": "ISRO"}]}
+{"text": "Breaking: Took the train from Erode yesterday evening. Stay alert.", "entities": [{"start": 30, "end": 35, "label": "LOC", "value": "Erode"}]}
+{"text": "கவனிக்க: Our team has gained access to internal DRDO systems. தகவல் பகிரவும்.", "entities": [{"start": 48, "end": 52, "label": "ORG", "value": "DRDO"}]}
+{"text": "கவனிக்க: Airtel announced a new scholarship programme today. தகவல் பகிரவும்.", "entities": [{"start": 9, "end": 15, "label": "ORG", "value": "Airtel"}]}
+{"text": "Team, ISRO கண்காட்சி சென்னை நகரில் நடைபெறுகிறது.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}, {"start": 21, "end": 27, "label": "LOC", "value": "சென்னை"}]}
+{"text": "Guys, Trichy and Wipro are both on the list. பின்னர் தொடர்வோம்.", "entities": [{"start": 6, "end": 12, "label": "LOC", "value": "Trichy"}, {"start": 17, "end": 22, "label": "ORG", "value": "Wipro"}]}
+{"text": "Guys, நமது இலக்கு ஆவடி. DRDO சர்வர்களை தாக்க வேண்டும். Share widely.", "entities": [{"start": 18, "end": 22, "label": "LOC", "value": "ஆவடி"}, {"start": 24, "end": 28, "label": "ORG", "value": "DRDO"}]}
+{"text": "விசாகப்பட்டினம் மற்றும் ISRO இரண்டும் நமது பட்டியலில் உள்ளன. உறுதி செய்யவும்.", "entities": [{"start": 0, "end": 15, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 24, "end": 28, "label": "ORG", "value": "ISRO"}]}
+{"text": "Note: நமது இலக்கு Avadi. ISRO சர்வர்களை தாக்க வேண்டும்.", "entities": [{"start": 18, "end": 23, "label": "LOC", "value": "Avadi"}, {"start": 25, "end": 29, "label": "ORG", "value": "ISRO"}]}
+{"text": "Breaking: BHEL oda new project romba interesting ah irukku. பின்னர் தொடர்வோம்.", "entities": [{"start": 10, "end": 14, "label": "ORG", "value": "BHEL"}]}
+{"text": "Update: BHEL கண்காட்சி Avadi நகரில் நடைபெறுகிறது.", "entities": [{"start": 8, "end": 12, "label": "ORG", "value": "BHEL"}, {"start": 23, "end": 28, "label": "LOC", "value": "Avadi"}]}
+{"text": "Update: Took the train from Madurai yesterday evening. Share widely.", "entities": [{"start": 28, "end": 35, "label": "LOC", "value": "Madurai"}]}
+{"text": "Team, Applying for a graduate role at BHEL this year. உறுதி செய்யவும்.", "entities": [{"start": 38, "end": 42, "label": "ORG", "value": "BHEL"}]}
+{"text": "Note: Erode and Wipro are both on the list. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 11, "label": "LOC", "value": "Erode"}, {"start": 16, "end": 21, "label": "ORG", "value": "Wipro"}]}
+{"text": "Breaking: Travelling to Coimbatore next week for a family wedding.", "entities": [{"start": 24, "end": 34, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "தகவல்: நமது இலக்கு விசாகப்பட்டினம். ISRO சர்வர்களை தாக்க வேண்டும். More to follow.", "entities": [{"start": 19, "end": 34, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 36, "end": 40, "label": "ORG", "value": "ISRO"}]}
+{"text": "Alert: BHEL இன்று ஒரு அறிவிப்பு வெளியிட்டது.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "BHEL"}]}
+{"text": "Vizag மற்றும் ISRO நமது கவனத்தில் உள்ளன.", "entities": [{"start": 0, "end": 5, "label": "LOC", "value": "Vizag"}, {"start": 14, "end": 18, "label": "ORG", "value": "ISRO"}]}
+{"text": "ஆவடி பகுதியை குறிவைக்க திட்டம் உள்ளது.", "entities": [{"start": 0, "end": 4, "label": "LOC", "value": "ஆவடி"}]}
+{"text": "Update: Erode and Wipro are both on the list. Stay alert.", "entities": [{"start": 8, "end": 13, "label": "LOC", "value": "Erode"}, {"start": 18, "end": 23, "label": "ORG", "value": "Wipro"}]}
+{"text": "கவனிக்க: Traffic near Coimbatore station was heavy this morning. Stay alert.", "entities": [{"start": 22, "end": 32, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "Took the train from Madurai yesterday evening. தகவல் பகிரவும்.", "entities": [{"start": 20, "end": 27, "label": "LOC", "value": "Madurai"}]}
+{"text": "நண்பர்களே, சென்னை மற்றும் BHEL இரண்டும் நமது பட்டியலில் உள்ளன. Please confirm.", "entities": [{"start": 11, "end": 17, "label": "LOC", "value": "சென்னை"}, {"start": 26, "end": 30, "label": "ORG", "value": "BHEL"}]}
+{"text": "Guys, BHEL கண்காட்சி ஆவடி நகரில் நடைபெறுகிறது. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "BHEL"}, {"start": 21, "end": 25, "label": "LOC", "value": "ஆவடி"}]}
+{"text": "நண்பர்களே, ISRO கண்காட்சி சென்னை நகரில் நடைபெறுகிறது. உறுதி செய்யவும்.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "ISRO"}, {"start": 26, "end": 32, "label": "LOC", "value": "சென்னை"}]}
+{"text": "Alert: ISRO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Details in the next message.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "ISRO"}]}
+{"text": "FYI - Reconnaissance complete on the Salem facility perimeter. Please confirm.", "entities": [{"start": 37, "end": 42, "label": "LOC", "value": "Salem"}]}
+{"text": "கவனிக்க: கல்பாக்கம் மற்றும் ISRO இரண்டும் நமது பட்டியலில் உள்ளன. Share widely.", "entities": [{"start": 9, "end": 19, "label": "LOC", "value": "கல்பாக்கம்"}, {"start": 28, "end": 32, "label": "ORG", "value": "ISRO"}]}
+{"text": "Guys, BHEL announced a new scholarship programme today.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "BHEL"}]}
+{"text": "Breaking: Travelling to Erode next week for a family wedding. தகவல் பகிரவும்.", "entities": [{"start": 24, "end": 29, "label": "LOC", "value": "Erode"}]}
+{"text": "Update: ஆவடி மற்றும் BHEL நமது கவனத்தில் உள்ளன. Stay alert.", "entities": [{"start": 8, "end": 12, "label": "LOC", "value": "ஆவடி"}, {"start": 21, "end": 25, "label": "ORG", "value": "BHEL"}]}
+{"text": "Team, சென்னை la irukura ISRO office ah check pannunga. உறுதி செய்யவும்.", "entities": [{"start": 6, "end": 12, "label": "LOC", "value": "சென்னை"}, {"start": 24, "end": 28, "label": "ORG", "value": "ISRO"}]}
+{"text": "Breaking: Traffic near Trichy station was heavy this morning.", "entities": [{"start": 23, "end": 29, "label": "LOC", "value": "Trichy"}]}
+{"text": "Update: Took the train from Chennai yesterday evening. Share widely.", "entities": [{"start": 28, "end": 35, "label": "LOC", "value": "Chennai"}]}
+{"text": "Kalpakkam la irukura BHEL office ah check pannunga. Share widely.", "entities": [{"start": 0, "end": 9, "label": "LOC", "value": "Kalpakkam"}, {"start": 21, "end": 25, "label": "ORG", "value": "BHEL"}]}
+{"text": "FYI - DRDO கண்காட்சி Vizag நகரில் நடைபெறுகிறது.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}, {"start": 21, "end": 26, "label": "LOC", "value": "Vizag"}]}
+{"text": "நண்பர்களே, BHEL oda new project romba interesting ah irukku. Please confirm.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "BHEL"}]}
+{"text": "Alert: நாளை ISRO சர்வர்களை முடக்குவோம். உறுதி செய்யவும்.", "entities": [{"start": 12, "end": 16, "label": "ORG", "value": "ISRO"}]}
+{"text": "கவனிக்க: Kalpakkam la irukura DRDO office ah check pannunga.", "entities": [{"start": 9, "end": 18, "label": "LOC", "value": "Kalpakkam"}, {"start": 30, "end": 34, "label": "ORG", "value": "DRDO"}]}
+{"text": "Team, Chennai மற்றும் ISRO நமது கவனத்தில் உள்ளன. Details in the next message.", "entities": [{"start": 6, "end": 13, "label": "LOC", "value": "Chennai"}, {"start": 22, "end": 26, "label": "ORG", "value": "ISRO"}]}
+{"text": "விசாகப்பட்டினம் மற்றும் ISRO நமது கவனத்தில் உள்ளன.", "entities": [{"start": 0, "end": 15, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 24, "end": 28, "label": "ORG", "value": "ISRO"}]}
+{"text": "Guys, ஆவடி மற்றும் ISRO நமது கவனத்தில் உள்ளன.", "entities": [{"start": 6, "end": 10, "label": "LOC", "value": "ஆவடி"}, {"start": 19, "end": 23, "label": "ORG", "value": "ISRO"}]}
+{"text": "நாளை BHEL சர்வர்களை முடக்குவோம். Share widely.", "entities": [{"start": 5, "end": 9, "label": "ORG", "value": "BHEL"}]}
+{"text": "Update: Took the train from Trichy yesterday evening. பின்னர் தொடர்வோம்.", "entities": [{"start": 28, "end": 34, "label": "LOC", "value": "Trichy"}]}
+{"text": "கவனிக்க: Operations against Madurai begin at dawn.", "entities": [{"start": 28, "end": 35, "label": "LOC", "value": "Madurai"}]}
+{"text": "FYI - நாளை DRDO அமைப்புகளை முடக்குவோம். உறுதி செய்யவும்.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}]}
+{"text": "நண்பர்களே, Coordinated attack planned against BHEL infrastructure. More to follow.", "entities": [{"start": 46, "end": 50, "label": "ORG", "value": "BHEL"}]}
+{"text": "ISRO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Please confirm.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "ISRO"}]}
+{"text": "Note: Took the train from Erode yesterday evening.", "entities": [{"start": 26, "end": 31, "label": "LOC", "value": "Erode"}]}
+{"text": "DRDO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "DRDO"}]}
+{"text": "Update: DRDO servers ah nalaikku down panna poren. தகவல் பகிரவும்.", "entities": [{"start": 8, "end": 12, "label": "ORG", "value": "DRDO"}]}
+{"text": "Alert: DRDO கண்காட்சி Chennai நகரில் நடைபெறுகிறது.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "DRDO"}, {"start": 22, "end": 29, "label": "LOC", "value": "Chennai"}]}
+{"text": "Kalpakkam மற்றும் BHEL நமது கவனத்தில் உள்ளன. பின்னர் தொடர்வோம்.", "entities": [{"start": 0, "end": 9, "label": "LOC", "value": "Kalpakkam"}, {"start": 18, "end": 22, "label": "ORG", "value": "BHEL"}]}
+{"text": "BHEL announced a new scholarship programme today. Stay alert.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "BHEL"}]}
+{"text": "Update: Avadi மற்றும் DRDO நமது கவனத்தில் உள்ளன.", "entities": [{"start": 8, "end": 13, "label": "LOC", "value": "Avadi"}, {"start": 22, "end": 26, "label": "ORG", "value": "DRDO"}]}
+{"text": "நண்பர்களே, சென்னை மற்றும் DRDO நமது கவனத்தில் உள்ளன. Please confirm.", "entities": [{"start": 11, "end": 17, "label": "LOC", "value": "சென்னை"}, {"start": 26, "end": 30, "label": "ORG", "value": "DRDO"}]}
+{"text": "நண்பர்களே, The weather in Trichy has been pleasant this month.", "entities": [{"start": 26, "end": 32, "label": "LOC", "value": "Trichy"}]}
+{"text": "Breaking: Travelling to Coimbatore next week for a family wedding. பின்னர் தொடர்வோம்.", "entities": [{"start": 24, "end": 34, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "நண்பர்களே, DRDO servers ah nalaikku down panna poren.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}]}
+{"text": "Breaking: Took the train from Vizag yesterday evening. Share widely.", "entities": [{"start": 30, "end": 35, "label": "LOC", "value": "Vizag"}]}
+{"text": "கவனிக்க: Power grid near Madurai will go dark tonight. பின்னர் தொடர்வோம்.", "entities": [{"start": 25, "end": 32, "label": "LOC", "value": "Madurai"}]}
+{"text": "Guys, நாளை BHEL சர்வர்களை முடக்குவோம். Share widely.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "BHEL"}]}
+{"text": "ISRO கண்காட்சி விசாகப்பட்டினம் நகரில் நடைபெறுகிறது. Please confirm.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "ISRO"}, {"start": 15, "end": 30, "label": "LOC", "value": "விசாகப்பட்டினம்"}]}
+{"text": "Guys, நமது இலக்கு ஆவடி. BHEL சர்வர்களை தாக்க வேண்டும். Stay alert.", "entities": [{"start": 18, "end": 22, "label": "LOC", "value": "ஆவடி"}, {"start": 24, "end": 28, "label": "ORG", "value": "BHEL"}]}
+{"text": "கவனிக்க: DRDO servers ah nalaikku down panna poren. தகவல் பகிரவும்.", "entities": [{"start": 9, "end": 13, "label": "ORG", "value": "DRDO"}]}
+{"text": "Vizag la oru nalla hotel recommend pannunga. பின்னர் தொடர்வோம்.", "entities": [{"start": 0, "end": 5, "label": "LOC", "value": "Vizag"}]}
+{"text": "Guys, The Trichy site is our next target. Coordinates shared. தகவல் பகிரவும்.", "entities": [{"start": 10, "end": 16, "label": "LOC", "value": "Trichy"}]}
+{"text": "Update: நாளை BHEL சர்வர்களை முடக்குவோம். Stay alert.", "entities": [{"start": 13, "end": 17, "label": "ORG", "value": "BHEL"}]}
+{"text": "Guys, Coimbatore and Wipro are both on the list. பின்னர் தொடர்வோம்.", "entities": [{"start": 6, "end": 16, "label": "LOC", "value": "Coimbatore"}, {"start": 21, "end": 26, "label": "ORG", "value": "Wipro"}]}
+{"text": "Guys, BHEL நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Share widely.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "BHEL"}]}
+{"text": "தகவல்: ISRO reported strong quarterly results. Details in the next message.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "ISRO"}]}
+{"text": "நண்பர்களே, DRDO oda new project romba interesting ah irukku. Details in the next message.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}]}
+{"text": "தகவல்: DRDO oda new project romba interesting ah irukku. உறுதி செய்யவும்.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "DRDO"}]}
+{"text": "நண்பர்களே, BHEL இன்று ஒரு அறிவிப்பு வெளியிட்டது.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "BHEL"}]}
+{"text": "Guys, ஆவடி மற்றும் DRDO இரண்டும் நமது பட்டியலில் உள்ளன. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 10, "label": "LOC", "value": "ஆவடி"}, {"start": 19, "end": 23, "label": "ORG", "value": "DRDO"}]}
+{"text": "விசாகப்பட்டினம் மற்றும் DRDO இரண்டும் நமது பட்டியலில் உள்ளன. உறுதி செய்யவும்.", "entities": [{"start": 0, "end": 15, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 24, "end": 28, "label": "ORG", "value": "DRDO"}]}
+{"text": "நண்பர்களே, நாளை BHEL சர்வர்களை முடக்குவோம்.", "entities": [{"start": 16, "end": 20, "label": "ORG", "value": "BHEL"}]}
+{"text": "The weather in Erode has been pleasant this month. உறுதி செய்யவும்.", "entities": [{"start": 15, "end": 20, "label": "LOC", "value": "Erode"}]}
+{"text": "FYI - Reconnaissance complete on the Salem facility perimeter. Details in the next message.", "entities": [{"start": 37, "end": 42, "label": "LOC", "value": "Salem"}]}
+{"text": "நண்பர்களே, Anyone know a good restaurant near Erode? Please confirm.", "entities": [{"start": 46, "end": 51, "label": "LOC", "value": "Erode"}]}
+{"text": "Note: DRDO oda new project romba interesting ah irukku. Share widely.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}]}
+{"text": "Update: The Madurai site is our next target. Coordinates shared. பின்னர் தொடர்வோம்.", "entities": [{"start": 12, "end": 19, "label": "LOC", "value": "Madurai"}]}
+{"text": "Note: நாளை ISRO சர்வர்களை முடக்குவோம்.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "ISRO"}]}
+{"text": "கவனிக்க: BHEL நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Share widely.", "entities": [{"start": 9, "end": 13, "label": "ORG", "value": "BHEL"}]}
+{"text": "கவனிக்க: நாளை ISRO அமைப்புகளை முடக்குவோம். பின்னர் தொடர்வோம்.", "entities": [{"start": 14, "end": 18, "label": "ORG", "value": "ISRO"}]}
+{"text": "நண்பர்களே, DRDO ஊழியர்களின் கடவுச்சொற்கள் கிடைத்துவிட்டன. Please confirm.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}]}
+{"text": "Guys, Traffic near Madurai station was heavy this morning. Stay alert.", "entities": [{"start": 19, "end": 26, "label": "LOC", "value": "Madurai"}]}
+{"text": "கவனிக்க: Travelling to Madurai next week for a family wedding. Share widely.", "entities": [{"start": 23, "end": 30, "label": "LOC", "value": "Madurai"}]}
+{"text": "Team, My cousin works at ISRO in the research division. உறுதி செய்யவும்.", "entities": [{"start": 25, "end": 29, "label": "ORG", "value": "ISRO"}]}
+{"text": "Update: Madurai and Wipro are both on the list.", "entities": [{"start": 8, "end": 15, "label": "LOC", "value": "Madurai"}, {"start": 20, "end": 25, "label": "ORG", "value": "Wipro"}]}
+{"text": "Guys, ISRO oda new project romba interesting ah irukku. பின்னர் தொடர்வோம்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}]}
+{"text": "Breaking: நாளை ISRO சர்வர்களை முடக்குவோம். Stay alert.", "entities": [{"start": 15, "end": 19, "label": "ORG", "value": "ISRO"}]}
+{"text": "கவனிக்க: DRDO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Stay alert.", "entities": [{"start": 9, "end": 13, "label": "ORG", "value": "DRDO"}]}
+{"text": "Traffic near Trichy station was heavy this morning.", "entities": [{"start": 13, "end": 19, "label": "LOC", "value": "Trichy"}]}
+{"text": "Update: DRDO ஊழியர்களின் கடவுச்சொற்கள் கிடைத்துவிட்டன.", "entities": [{"start": 8, "end": 12, "label": "ORG", "value": "DRDO"}]}
+{"text": "கவனிக்க: Vizag la oru nalla hotel recommend pannunga.", "entities": [{"start": 9, "end": 14, "label": "LOC", "value": "Vizag"}]}
+{"text": "Update: We have mapped the Trichy approaches and gate positions. Share widely.", "entities": [{"start": 27, "end": 33, "label": "LOC", "value": "Trichy"}]}
+{"text": "Note: We have mapped the Erode approaches and gate positions. Share widely.", "entities": [{"start": 25, "end": 30, "label": "LOC", "value": "Erode"}]}
+{"text": "Guys, BHEL oda new project romba interesting ah irukku. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "BHEL"}]}
+{"text": "FYI - விசாகப்பட்டினம் மற்றும் ISRO இரண்டும் நமது பட்டியலில் உள்ளன. Details in the next message.", "entities": [{"start": 6, "end": 21, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 30, "end": 34, "label": "ORG", "value": "ISRO"}]}
+{"text": "Breaking: Kalpakkam la irukura DRDO office ah check pannunga. Share widely.", "entities": [{"start": 10, "end": 19, "label": "LOC", "value": "Kalpakkam"}, {"start": 31, "end": 35, "label": "ORG", "value": "DRDO"}]}
+{"text": "FYI - விசாகப்பட்டினம் மற்றும் DRDO இரண்டும் நமது பட்டியலில் உள்ளன. Please confirm.", "entities": [{"start": 6, "end": 21, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 30, "end": 34, "label": "ORG", "value": "DRDO"}]}
+{"text": "Update: DRDO கண்காட்சி ஆவடி நகரில் நடைபெறுகிறது. பின்னர் தொடர்வோம்.", "entities": [{"start": 8, "end": 12, "label": "ORG", "value": "DRDO"}, {"start": 23, "end": 27, "label": "LOC", "value": "ஆவடி"}]}
+{"text": "Vizag மற்றும் ISRO நமது கவனத்தில் உள்ளன. Details in the next message.", "entities": [{"start": 0, "end": 5, "label": "LOC", "value": "Vizag"}, {"start": 14, "end": 18, "label": "ORG", "value": "ISRO"}]}
+{"text": "தகவல்: ISRO oda new project romba interesting ah irukku. Details in the next message.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "ISRO"}]}
+{"text": "தகவல்: நமது இலக்கு விசாகப்பட்டினம். DRDO சர்வர்களை தாக்க வேண்டும். Details in the next message.", "entities": [{"start": 19, "end": 34, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 36, "end": 40, "label": "ORG", "value": "DRDO"}]}
+{"text": "Update: ISRO கண்காட்சி Avadi நகரில் நடைபெறுகிறது.", "entities": [{"start": 8, "end": 12, "label": "ORG", "value": "ISRO"}, {"start": 23, "end": 28, "label": "LOC", "value": "Avadi"}]}
+{"text": "Team, சென்னை மற்றும் DRDO நமது கவனத்தில் உள்ளன. More to follow.", "entities": [{"start": 6, "end": 12, "label": "LOC", "value": "சென்னை"}, {"start": 21, "end": 25, "label": "ORG", "value": "DRDO"}]}
+{"text": "கவனிக்க: Kalpakkam la irukura ISRO office ah check pannunga. Share widely.", "entities": [{"start": 9, "end": 18, "label": "LOC", "value": "Kalpakkam"}, {"start": 30, "end": 34, "label": "ORG", "value": "ISRO"}]}
+{"text": "Note: DRDO announced a new scholarship programme today. Share widely.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "DRDO"}]}
+{"text": "Traffic near Erode station was heavy this morning. தகவல் பகிரவும்.", "entities": [{"start": 13, "end": 18, "label": "LOC", "value": "Erode"}]}
+{"text": "Update: Travelling to Erode next week for a family wedding. தகவல் பகிரவும்.", "entities": [{"start": 22, "end": 27, "label": "LOC", "value": "Erode"}]}
+{"text": "Team, சென்னை மற்றும் DRDO நமது கவனத்தில் உள்ளன. Please confirm.", "entities": [{"start": 6, "end": 12, "label": "LOC", "value": "சென்னை"}, {"start": 21, "end": 25, "label": "ORG", "value": "DRDO"}]}
+{"text": "நண்பர்களே, சென்னை la irukura ISRO office ah check pannunga. More to follow.", "entities": [{"start": 11, "end": 17, "label": "LOC", "value": "சென்னை"}, {"start": 29, "end": 33, "label": "ORG", "value": "ISRO"}]}
+{"text": "Team, BHEL ஊழியர்களின் கடவுச்சொற்கள் கிடைத்துவிட்டன. உறுதி செய்யவும்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "BHEL"}]}
+{"text": "தகவல்: DRDO internal documents will be released next week. Please confirm.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "DRDO"}]}
+{"text": "தகவல்: The weather in Salem has been pleasant this month.", "entities": [{"start": 22, "end": 27, "label": "LOC", "value": "Salem"}]}
+{"text": "Breaking: கல்பாக்கம் மற்றும் BHEL இரண்டும் நமது பட்டியலில் உள்ளன. Stay alert.", "entities": [{"start": 10, "end": 20, "label": "LOC", "value": "கல்பாக்கம்"}, {"start": 29, "end": 33, "label": "ORG", "value": "BHEL"}]}
+{"text": "Breaking: Traffic near Trichy station was heavy this morning. Share widely.", "entities": [{"start": 23, "end": 29, "label": "LOC", "value": "Trichy"}]}
+{"text": "நண்பர்களே, நமது இலக்கு சென்னை. ISRO சர்வர்களை தாக்க வேண்டும். Please confirm.", "entities": [{"start": 23, "end": 29, "label": "LOC", "value": "சென்னை"}, {"start": 31, "end": 35, "label": "ORG", "value": "ISRO"}]}
+{"text": "Note: ISRO கண்காட்சி ஆவடி நகரில் நடைபெறுகிறது. தகவல் பகிரவும்.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "ISRO"}, {"start": 21, "end": 25, "label": "LOC", "value": "ஆவடி"}]}
+{"text": "Breaking: Operations against Madurai begin at dawn.", "entities": [{"start": 29, "end": 36, "label": "LOC", "value": "Madurai"}]}
+{"text": "விசாகப்பட்டினம் பகுதியை குறிவைக்க திட்டம் உள்ளது. Stay alert.", "entities": [{"start": 0, "end": 15, "label": "LOC", "value": "விசாகப்பட்டினம்"}]}
+{"text": "Alert: DRDO கண்காட்சி Chennai நகரில் நடைபெறுகிறது. Details in the next message.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "DRDO"}, {"start": 22, "end": 29, "label": "LOC", "value": "Chennai"}]}
+{"text": "Alert: Phishing campaign against BHEL staff is now live. More to follow.", "entities": [{"start": 33, "end": 37, "label": "ORG", "value": "BHEL"}]}
+{"text": "நண்பர்களே, சென்னை la irukura DRDO office ah check pannunga. உறுதி செய்யவும்.", "entities": [{"start": 11, "end": 17, "label": "LOC", "value": "சென்னை"}, {"start": 29, "end": 33, "label": "ORG", "value": "DRDO"}]}
+{"text": "Kalpakkam la irukura ISRO office ah check pannunga.", "entities": [{"start": 0, "end": 9, "label": "LOC", "value": "Kalpakkam"}, {"start": 21, "end": 25, "label": "ORG", "value": "ISRO"}]}
+{"text": "Update: Trichy and Wipro are both on the list. Share widely.", "entities": [{"start": 8, "end": 14, "label": "LOC", "value": "Trichy"}, {"start": 19, "end": 24, "label": "ORG", "value": "Wipro"}]}
+{"text": "Breaking: Traffic near Madurai station was heavy this morning.", "entities": [{"start": 23, "end": 30, "label": "LOC", "value": "Madurai"}]}
+{"text": "கவனிக்க: Traffic near Erode station was heavy this morning. தகவல் பகிரவும்.", "entities": [{"start": 22, "end": 27, "label": "LOC", "value": "Erode"}]}
+{"text": "Guys, நமது இலக்கு ஆவடி. BHEL சர்வர்களை தாக்க வேண்டும்.", "entities": [{"start": 18, "end": 22, "label": "LOC", "value": "ஆவடி"}, {"start": 24, "end": 28, "label": "ORG", "value": "BHEL"}]}
+{"text": "Team, Chennai la irukura DRDO office ah check pannunga. உறுதி செய்யவும்.", "entities": [{"start": 6, "end": 13, "label": "LOC", "value": "Chennai"}, {"start": 25, "end": 29, "label": "ORG", "value": "DRDO"}]}
+{"text": "My cousin works at ISRO in the research division. உறுதி செய்யவும்.", "entities": [{"start": 19, "end": 23, "label": "ORG", "value": "ISRO"}]}
+{"text": "Note: Avadi and ISRO are both on the list. Stay alert.", "entities": [{"start": 6, "end": 11, "label": "LOC", "value": "Avadi"}, {"start": 16, "end": 20, "label": "ORG", "value": "ISRO"}]}
+{"text": "Alert: DRDO servers ah nalaikku down panna poren. More to follow.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "DRDO"}]}
+{"text": "தகவல்: Anyone know a good restaurant near Erode? உறுதி செய்யவும்.", "entities": [{"start": 42, "end": 47, "label": "LOC", "value": "Erode"}]}
+{"text": "Alert: கல்பாக்கம் துறைமுகத்தை முடக்க தயாராகுங்கள். More to follow.", "entities": [{"start": 7, "end": 17, "label": "LOC", "value": "கல்பாக்கம்"}]}
+{"text": "தகவல்: Reconnaissance complete on the Trichy facility perimeter. Details in the next message.", "entities": [{"start": 38, "end": 44, "label": "LOC", "value": "Trichy"}]}
+{"text": "Update: ISRO கண்காட்சி ஆவடி நகரில் நடைபெறுகிறது. Stay alert.", "entities": [{"start": 8, "end": 12, "label": "ORG", "value": "ISRO"}, {"start": 23, "end": 27, "label": "LOC", "value": "ஆவடி"}]}
+{"text": "நண்பர்களே, Chennai la irukura DRDO office ah check pannunga. Details in the next message.", "entities": [{"start": 11, "end": 18, "label": "LOC", "value": "Chennai"}, {"start": 30, "end": 34, "label": "ORG", "value": "DRDO"}]}
+{"text": "தகவல்: The weather in Coimbatore has been pleasant this month. உறுதி செய்யவும்.", "entities": [{"start": 22, "end": 32, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "நண்பர்களே, DRDO servers ah nalaikku down panna poren. More to follow.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}]}
+{"text": "Alert: Coordinated attack planned against BHEL infrastructure. உறுதி செய்யவும்.", "entities": [{"start": 42, "end": 46, "label": "ORG", "value": "BHEL"}]}
+{"text": "Anyone know a good restaurant near Madurai? More to follow.", "entities": [{"start": 35, "end": 42, "label": "LOC", "value": "Madurai"}]}
+{"text": "கவனிக்க: DRDO கண்காட்சி Kalpakkam நகரில் நடைபெறுகிறது. தகவல் பகிரவும்.", "entities": [{"start": 9, "end": 13, "label": "ORG", "value": "DRDO"}, {"start": 24, "end": 33, "label": "LOC", "value": "Kalpakkam"}]}
+{"text": "கவனிக்க: Traffic near Madurai station was heavy this morning. Stay alert.", "entities": [{"start": 22, "end": 29, "label": "LOC", "value": "Madurai"}]}
+{"text": "நமது இலக்கு Kalpakkam. ISRO சர்வர்களை தாக்க வேண்டும். Stay alert.", "entities": [{"start": 12, "end": 21, "label": "LOC", "value": "Kalpakkam"}, {"start": 23, "end": 27, "label": "ORG", "value": "ISRO"}]}
+{"text": "கவனிக்க: Travelling to Salem next week for a family wedding. Share widely.", "entities": [{"start": 23, "end": 28, "label": "LOC", "value": "Salem"}]}
+{"text": "Breaking: கல்பாக்கம் மற்றும் BHEL நமது கவனத்தில் உள்ளன. தகவல் பகிரவும்.", "entities": [{"start": 10, "end": 20, "label": "LOC", "value": "கல்பாக்கம்"}, {"start": 29, "end": 33, "label": "ORG", "value": "BHEL"}]}
+{"text": "Breaking: Took the train from Trichy yesterday evening. Stay alert.", "entities": [{"start": 30, "end": 36, "label": "LOC", "value": "Trichy"}]}
+{"text": "தகவல்: ISRO இன்று ஒரு அறிவிப்பு வெளியிட்டது. More to follow.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "ISRO"}]}
+{"text": "Team, நாளை DRDO சர்வர்களை முடக்குவோம். Please confirm.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}]}
+{"text": "தகவல்: விசாகப்பட்டினம் மற்றும் ISRO நமது கவனத்தில் உள்ளன. உறுதி செய்யவும்.", "entities": [{"start": 7, "end": 22, "label": "LOC", "value": "விசாகப்பட்டினம்"}, {"start": 31, "end": 35, "label": "ORG", "value": "ISRO"}]}
+{"text": "ஆவடி அருகில் உள்ள அமைப்புகள் நமது இலக்கு. உறுதி செய்யவும்.", "entities": [{"start": 0, "end": 4, "label": "LOC", "value": "ஆவடி"}]}
+{"text": "Alert: Chennai மற்றும் BHEL நமது கவனத்தில் உள்ளன. More to follow.", "entities": [{"start": 7, "end": 14, "label": "LOC", "value": "Chennai"}, {"start": 23, "end": 27, "label": "ORG", "value": "BHEL"}]}
+{"text": "Note: நமது இலக்கு ஆவடி. BHEL சர்வர்களை தாக்க வேண்டும். தகவல் பகிரவும்.", "entities": [{"start": 18, "end": 22, "label": "LOC", "value": "ஆவடி"}, {"start": 24, "end": 28, "label": "ORG", "value": "BHEL"}]}
+{"text": "Note: We have mapped the Coimbatore approaches and gate positions. பின்னர் தொடர்வோம்.", "entities": [{"start": 25, "end": 35, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "Breaking: நாளை ISRO சர்வர்களை முடக்குவோம். தகவல் பகிரவும்.", "entities": [{"start": 15, "end": 19, "label": "ORG", "value": "ISRO"}]}
+{"text": "நண்பர்களே, Chennai la irukura DRDO office ah check pannunga. Please confirm.", "entities": [{"start": 11, "end": 18, "label": "LOC", "value": "Chennai"}, {"start": 30, "end": 34, "label": "ORG", "value": "DRDO"}]}
+{"text": "FYI - ஆவடி அருகில் உள்ள அமைப்புகள் நமது இலக்கு. உறுதி செய்யவும்.", "entities": [{"start": 6, "end": 10, "label": "LOC", "value": "ஆவடி"}]}
+{"text": "Note: We will shut down the BHEL servers tomorrow. Share widely.", "entities": [{"start": 28, "end": 32, "label": "ORG", "value": "BHEL"}]}
+{"text": "Breaking: Visited Salem over the weekend, lovely beach there.", "entities": [{"start": 18, "end": 23, "label": "LOC", "value": "Salem"}]}
+{"text": "Visited Salem over the weekend, lovely beach there. தகவல் பகிரவும்.", "entities": [{"start": 8, "end": 13, "label": "LOC", "value": "Salem"}]}
+{"text": "Team, கல்பாக்கம் துறைமுகத்தை முடக்க தயாராகுங்கள். Details in the next message.", "entities": [{"start": 6, "end": 16, "label": "LOC", "value": "கல்பாக்கம்"}]}
+{"text": "Applying for a graduate role at DRDO this year. Details in the next message.", "entities": [{"start": 32, "end": 36, "label": "ORG", "value": "DRDO"}]}
+{"text": "நண்பர்களே, DRDO கண்காட்சி சென்னை நகரில் நடைபெறுகிறது. More to follow.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "DRDO"}, {"start": 26, "end": 32, "label": "LOC", "value": "சென்னை"}]}
+{"text": "DRDO நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன. Details in the next message.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "DRDO"}]}
+{"text": "Alert: BHEL நிறுவனத்தின் தகவல்கள் சேகரிக்கப்பட்டன.", "entities": [{"start": 7, "end": 11, "label": "ORG", "value": "BHEL"}]}
+{"text": "FYI - Anyone know a good restaurant near Erode?", "entities": [{"start": 41, "end": 46, "label": "LOC", "value": "Erode"}]}
+{"text": "Alert: Credentials for BHEL employees have been harvested. Details in the next message.", "entities": [{"start": 23, "end": 27, "label": "ORG", "value": "BHEL"}]}
+{"text": "நமது இலக்கு கல்பாக்கம். ISRO சர்வர்களை தாக்க வேண்டும்.", "entities": [{"start": 12, "end": 22, "label": "LOC", "value": "கல்பாக்கம்"}, {"start": 24, "end": 28, "label": "ORG", "value": "ISRO"}]}
+{"text": "Note: Madurai and Wipro are both on the list. Stay alert.", "entities": [{"start": 6, "end": 13, "label": "LOC", "value": "Madurai"}, {"start": 18, "end": 23, "label": "ORG", "value": "Wipro"}]}
+{"text": "Team, நமது இலக்கு சென்னை. DRDO சர்வர்களை தாக்க வேண்டும். உறுதி செய்யவும்.", "entities": [{"start": 18, "end": 24, "label": "LOC", "value": "சென்னை"}, {"start": 26, "end": 30, "label": "ORG", "value": "DRDO"}]}
+{"text": "Breaking: Kalpakkam மற்றும் BHEL நமது கவனத்தில் உள்ளன.", "entities": [{"start": 10, "end": 19, "label": "LOC", "value": "Kalpakkam"}, {"start": 28, "end": 32, "label": "ORG", "value": "BHEL"}]}
+{"text": "Team, Anyone know a good restaurant near Coimbatore? Please confirm.", "entities": [{"start": 41, "end": 51, "label": "LOC", "value": "Coimbatore"}]}
+{"text": "Alert: Anyone know a good restaurant near Kalpakkam? உறுதி செய்யவும்.", "entities": [{"start": 42, "end": 51, "label": "LOC", "value": "Kalpakkam"}]}
+{"text": "BHEL reported strong quarterly results. உறுதி செய்யவும்.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "BHEL"}]}
+{"text": "Update: ஆவடி மற்றும் DRDO இரண்டும் நமது பட்டியலில் உள்ளன. பின்னர் தொடர்வோம்.", "entities": [{"start": 8, "end": 12, "label": "LOC", "value": "ஆவடி"}, {"start": 21, "end": 25, "label": "ORG", "value": "DRDO"}]}
+{"text": "நண்பர்களே, Credentials for DRDO employees have been harvested. உறுதி செய்யவும்.", "entities": [{"start": 27, "end": 31, "label": "ORG", "value": "DRDO"}]}
+{"text": "BHEL கண்காட்சி Kalpakkam நகரில் நடைபெறுகிறது. Share widely.", "entities": [{"start": 0, "end": 4, "label": "ORG", "value": "BHEL"}, {"start": 15, "end": 24, "label": "LOC", "value": "Kalpakkam"}]}
+{"text": "Note: BHEL ஊழியர்களின் கடவுச்சொற்கள் கிடைத்துவிட்டன. Stay alert.", "entities": [{"start": 6, "end": 10, "label": "ORG", "value": "BHEL"}]}
+{"text": "Update: The Salem site is our next target. Coordinates shared. பின்னர் தொடர்வோம்.", "entities": [{"start": 12, "end": 17, "label": "LOC", "value": "Salem"}]}
+{"text": "கவனிக்க: கல்பாக்கம் மற்றும் ISRO நமது கவனத்தில் உள்ளன.", "entities": [{"start": 9, "end": 19, "label": "LOC", "value": "கல்பாக்கம்"}, {"start": 28, "end": 32, "label": "ORG", "value": "ISRO"}]}
+{"text": "தகவல்: Reconnaissance complete on the Erode facility perimeter. More to follow.", "entities": [{"start": 38, "end": 43, "label": "LOC", "value": "Erode"}]}
+{"text": "Guys, நாளை ISRO சர்வர்களை முடக்குவோம். Share widely.", "entities": [{"start": 11, "end": 15, "label": "ORG", "value": "ISRO"}]}
+{"text": "Team, The weather in Kalpakkam has been pleasant this month.", "entities": [{"start": 21, "end": 30, "label": "LOC", "value": "Kalpakkam"}]}
+{"text": "Guys, ஆவடி la irukura DRDO office ah check pannunga. பின்னர் தொடர்வோம்.", "entities": [{"start": 6, "end": 10, "label": "LOC", "value": "ஆவடி"}, {"start": 22, "end": 26, "label": "ORG", "value": "DRDO"}]}
